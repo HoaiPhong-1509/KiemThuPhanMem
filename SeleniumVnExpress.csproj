@@ -23,6 +23,7 @@
 
     <!-- Wait Helpers -->
     <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+    <PackageReference Include="Selenium.WebDriver.MSEdgeDriver" Version="146.0.3856.20-pre" />
   </ItemGroup>
 
 </Project>

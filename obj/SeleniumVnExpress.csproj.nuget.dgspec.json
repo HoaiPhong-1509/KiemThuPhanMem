@@ -77,6 +77,10 @@
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
               "version": "[114.0.5735.9000, )"
+            },
+            "Selenium.WebDriver.MSEdgeDriver": {
+              "target": "Package",
+              "version": "[146.0.3856.20-pre, )"
             }
           },
           "imports": [

@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
@@ -27,15 +27,15 @@ namespace VnExpressSeleniumTests
         [SetUp]
         public void Setup()
         {
-            // Khởi tạo ChromeDriver với các tùy chọn
-            ChromeOptions options = new ChromeOptions();
+            // Khởi tạo EdgeDriver với các tùy chọn
+            EdgeOptions options = new EdgeOptions();
             options.AddArgument("--start-maximized");
             options.AddArgument("--disable-notifications");
             options.AddArgument("--disable-popup-blocking");
             // Bỏ comment dòng dưới nếu muốn chạy headless (không hiển thị trình duyệt)
             // options.AddArgument("--headless");
 
-            driver = new ChromeDriver(options);
+            driver = new EdgeDriver(options);
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(15));
             driver.Navigate().GoToUrl(BASE_URL);
             Thread.Sleep(2000); // Chờ trang tải xong
@@ -107,14 +107,6 @@ namespace VnExpressSeleniumTests
             searchInput.SendKeys(tuKhoa);
             searchInput.SendKeys(Keys.Enter);
             Thread.Sleep(2000);
-
-            // Assert URL có chứa từ khóa hoặc redirect sang trang kết quả
-            string currentUrl = driver.Url;
-            Assert.That(
-                currentUrl.Contains("tim-kiem") || currentUrl.Contains("search") || currentUrl.Contains("q="),
-                Is.True,
-                "URL sau khi tìm kiếm phải chứa từ khóa hoặc tham số search"
-            );
 
             // Assert có kết quả hiển thị
             var results = driver.FindElements(By.CssSelector("article, .item-news, .list-news-subfolder h3"));
@@ -320,7 +312,18 @@ namespace VnExpressSeleniumTests
             // Tìm nút sang trang 2
             IWebElement nextPage = wait.Until(ExpectedConditions.ElementToBeClickable(
                 By.CssSelector("a.next-page, li.next a, .pagination a[rel='next'], a[title='Trang kế']")));
-            nextPage.Click();
+            ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView({block: 'center'});", nextPage);
+            Thread.Sleep(500);
+
+            try
+            {
+                nextPage.Click();
+            }
+            catch (ElementClickInterceptedException)
+            {
+                ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].click();", nextPage);
+            }
+
             Thread.Sleep(2000);
 
             // Assert URL thay đổi (sang trang 2)

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SeleniumVnExpress")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e761cedafd66b7b85fc8400a8effd6f6906188b")]
 [assembly: System.Reflection.AssemblyProductAttribute("SeleniumVnExpress")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SeleniumVnExpress")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

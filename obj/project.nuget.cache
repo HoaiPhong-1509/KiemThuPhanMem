@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UdNF7ksCFl4=",
+  "dgSpecHash": "rGSxU7ufG08=",
   "success": true,
   "projectFilePath": "C:\\Users\\ASUS\\Desktop\\KiemThuPM\\SeleniumVnExpress.csproj",
   "expectedPackageFiles": [
@@ -18,10 +18,11 @@
     "C:\\Users\\ASUS\\.nuget\\packages\\selenium.support\\4.10.0\\selenium.support.4.10.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\selenium.webdriver\\4.10.0\\selenium.webdriver.4.10.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\selenium.webdriver.chromedriver\\114.0.5735.9000\\selenium.webdriver.chromedriver.114.0.5735.9000.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\selenium.webdriver.msedgedriver\\146.0.3856.20-pre\\selenium.webdriver.msedgedriver.146.0.3856.20-pre.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

@@ -405,6 +405,12 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
+      "Selenium.WebDriver.MSEdgeDriver/146.0.3856.20-pre": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.MSEdgeDriver.targets": {}
+        }
+      },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
@@ -999,6 +1005,25 @@
         "selenium.webdriver.chromedriver.nuspec"
       ]
     },
+    "Selenium.WebDriver.MSEdgeDriver/146.0.3856.20-pre": {
+      "sha512": "moW3aL6G10fznhbB99qDsQGkQGNI3g821+N4JyBD3hdlyHtWWWug/ujuTtGCNae4fQxBOM0+KytPtwcpcsB87g==",
+      "type": "package",
+      "path": "selenium.webdriver.msedgedriver/146.0.3856.20-pre",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "build/DefinePropertiesMSEdgeDriver.targets",
+        "build/Selenium.WebDriver.MSEdgeDriver.targets",
+        "driver/linux64/msedgedriver",
+        "driver/mac64/msedgedriver",
+        "driver/win32/msedgedriver.exe",
+        "driver/win64/msedgedriver.exe",
+        "selenium.webdriver.msedgedriver.146.0.3856.20-pre.nupkg.sha512",
+        "selenium.webdriver.msedgedriver.nuspec"
+      ]
+    },
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
@@ -1029,7 +1054,8 @@
       "NUnit3TestAdapter >= 4.4.2",
       "Selenium.Support >= 4.10.0",
       "Selenium.WebDriver >= 4.10.0",
-      "Selenium.WebDriver.ChromeDriver >= 114.0.5735.9000"
+      "Selenium.WebDriver.ChromeDriver >= 114.0.5735.9000",
+      "Selenium.WebDriver.MSEdgeDriver >= 146.0.3856.20-pre"
     ]
   },
   "packageFolders": {
@@ -1109,6 +1135,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[114.0.5735.9000, )"
+          },
+          "Selenium.WebDriver.MSEdgeDriver": {
+            "target": "Package",
+            "version": "[146.0.3856.20-pre, )"
           }
         },
         "imports": [
