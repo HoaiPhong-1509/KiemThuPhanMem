@@ -15,62 +15,61 @@
 
 ## Lenh chay
 ```bash
-jmeter -n -t jmeter/NewsSites-Stress-500-1000.jmx -l jmeter/results/all-results.jtl -e -o jmeter/results/html-report
+jmeter -n -t jmeter/NewsSites-Stress-500-1000.jmx -l jmeter/results/all-results-latest.jtl -e -o jmeter/results/html-report-latest
 ```
 
 ## Trang thai thuc thi hien tai
-- Da chay thanh cong ngay 2026-04-15 bang JMeter 5.6.3.
-- File ket qua tong: `jmeter/results/all-results.jtl`
+- Da chay thanh cong ngay 2026-04-16 bang JMeter 5.6.3.
+- File ket qua tong: `jmeter/results/all-results-latest.jtl`
 - File ket qua theo muc tai:
   - `jmeter/results/stress-500-users.jtl`
   - `jmeter/results/stress-1000-users.jtl`
-- Dashboard HTML: `jmeter/results/html-report/index.html`
+- Dashboard HTML: `jmeter/results/html-report-latest/index.html`
 
 ## Screenshot bat buoc
 - Summary Report: `submission/04-performance-report/screenshots/summary-report.png`
-- Graph Results: `submission/04-performance-report/screenshots/graph-results.png`
+- Graph Results (Response Time): `submission/04-performance-report/screenshots/graph-response-times.png`
+- Graph Results (Throughput): `submission/04-performance-report/screenshots/graph-throughput.png`
 
 ## Phan tich ket qua
 
 ### 1) Response Time
-- 500 users:
-  - Average: 4474.35 ms
-  - p90: 10002 ms
-  - p95: 10007 ms
-  - Max: 30705 ms
-- 1000 users:
-  - Average: 4689.40 ms
-  - p90: 10007 ms
-  - p95: 10012 ms
-  - Max: 30749 ms
+- Tong (tat ca sample):
+  - Average: 17635.48 ms
+  - Median: 10003 ms
+  - p90: 38915 ms
+  - p95: 51521 ms
+  - p99: 74960 ms
+  - Max: 150368 ms
+- Transaction VnExpress:
+  - GET VnExpress Home: avg 12662.21 ms, error 89.18%
+  - GET VnExpress Home - 1000: avg 12252.82 ms, error 91.19%
 
-Nhan xet: Response time tang cao va sat nguong timeout 10s o ca 2 muc tai, cho thay he thong bi qua tai o mot so endpoint.
+Nhan xet: Response time vuot xa nguong timeout o nhieu sample, dac biet voi VnExpress trong tai cao.
 
 ### 2) Throughput
-- Throughput trung binh:
-  - 500 users: 45.05 req/s
-  - 1000 users: 61.30 req/s
-- Throughput theo host (all-results):
-  - vnexpress.net: 51.79 req/s
-  - zingnews.vn: 50.00 req/s
-  - znews.vn (redirect host): 100.00 req/s
+- Tong throughput: 96.90 req/s
+- Theo transaction chinh:
+  - GET VnExpress Home: 9.68 req/s
+  - GET VnExpress Home - 1000: 15.98 req/s
+  - GET Zing News Home: 9.70 req/s
+  - GET Zing News Home - 1000: 15.91 req/s
 
-Nhan xet: Throughput tang khi tang user, nhung hieu nang thuc te cua VnExpress khong on dinh do error/timed out cao.
+Nhan xet: Throughput dat muc cao, nhung chat luong phan hoi khong on dinh do error rate lon.
 
 ### 3) Error Rate
-- Error % tong:
-  - 500 users: 47.63%
-  - 1000 users: 48.32%
-  - all-results (tong hop): 24.03% (do co mau redirect thanh cong tu Zing)
-- Nhom loi chinh:
-  - Loi timeout/qua thoi gian dap ung o nhom request `GET VnExpress Home` va `GET VnExpress Home - 1000`
-  - Zing News khong ghi nhan loi trong lan chay nay (0%)
+- Tong Error %: 34.08% (17058/50048 samples)
+- Error % theo transaction:
+  - GET VnExpress Home: 89.18%
+  - GET VnExpress Home - 1000: 91.19%
+  - GET Zing News Home: 21.28%
+  - GET Zing News Home - 1000: 25.95%
 
-Nhan xet: VnExpress co ty le loi rat cao o muc stress 500-1000 users; Zing News on dinh hon trong cung dieu kien test.
+Nhan xet: Loi tap trung rat cao o transaction VnExpress, la diem nghen chinh cua he thong duoc test.
 
 ## Ket luan performance
-- Muc tai on dinh nhat: 500 users on dinh hon 1000 users nhung van co error rate cao.
-- Gioi han he thong quan sat duoc: o 500-1000 users, endpoint VnExpress khong dap ung on dinh (error ~48%).
+- O tai 500-1000 users, he thong khong on dinh cho endpoint VnExpress (error gan 90%+).
+- Zing News co ket qua tot hon nhung van co error rate 21-26% trong stress test.
 - De xuat toi uu:
   1. Tang kha nang chiu tai backend/cache cho trang chu.
   2. Toi uu CDN va static asset loading.

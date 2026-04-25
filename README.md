@@ -8,6 +8,32 @@
 
 ## Cài đặt & Chạy
 
+### Chạy nhanh (không cần nhớ nhiều lệnh)
+
+Chỉ cần 1 lệnh theo mục đích:
+
+```bash
+npm run selenium:normal
+```
+
+- Chạy full 10 test Selenium VnExpress để lấy kết quả chính thức nộp giảng viên.
+
+```bash
+npm run selenium:demo
+```
+
+- Chạy nhanh 3 case chính để demo: Search, Filter, Click đọc bài.
+
+```bash
+npm run selenium:fault
+```
+
+- Chạy chế độ inject lỗi có kiểm soát để chứng minh assert bắt lỗi đúng.
+
+Sau khi chạy, xem:
+- File TRX trong thư mục `TestResults`
+- Screenshot từng bước trong thư mục `bin/Debug/net6.0/artifacts/selenium-steps`
+
 ### Bước 1: Restore packages
 ```bash
 dotnet restore

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="78604092-41e3-4349-affa-cc7de9f5cbbe" name="ASUS@LAPTOP-OVJCF5S1 2026-04-25 19:29:55" runUser="LAPTOP-OVJCF5S1\ASUS" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-25T19:29:55.0336623+07:00" queuing="2026-04-25T19:29:55.0336630+07:00" start="2026-04-25T19:29:44.3994794+07:00" finish="2026-04-25T19:30:21.1592758+07:00" />
+  <TestSettings name="default" id="0a64e524-e45b-4a7f-8c66-3238a651b5aa">
+    <Deployment runDeploymentRoot="ASUS_LAPTOP-OVJCF5S1_2026-04-25_19_29_55" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="db5810c1-36dd-4ab9-8bff-c51534b6dd89" testId="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba" testName="TC07_DocBai_ChiTietBaiViet" computerName="LAPTOP-OVJCF5S1" duration="00:00:14.3699360" startTime="2026-04-25T19:30:06.6997931+07:00" endTime="2026-04-25T19:30:21.0697286+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db5810c1-36dd-4ab9-8bff-c51534b6dd89">
+      <Output>
+        <StdOut>Đang click vào bài: Khoản vay 106 tỷ USD của EU thắp hy vọng cho Ukraine&#xD;
+[TC07 PASS] Mở bài thành công. Tiêu đề: Khoản vay 106 tỷ USD của EU thắp hy vọng cho Ukraine...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2ff6b84e-8f8f-4160-86bd-cfa551715274" testId="8153e881-2237-a56d-73b6-ee21bacbb2be" testName="TC02_TimKiem_TuKhoaHopLe" computerName="LAPTOP-OVJCF5S1" duration="00:00:09.6731269" startTime="2026-04-25T19:29:45.2931577+07:00" endTime="2026-04-25T19:29:54.9661698+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ff6b84e-8f8f-4160-86bd-cfa551715274">
+      <Output>
+        <StdOut>[TC02 PASS] Tìm kiếm 'bóng đá' trả về 71 kết quả.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="665d9fca-0a2a-4246-ab00-464e49cb5a07" testId="6e5c7170-1fe3-4de6-cc5c-89874330c700" testName="TC05_Filter_ChuyenMucThoiSu" computerName="LAPTOP-OVJCF5S1" duration="00:00:11.7310040" startTime="2026-04-25T19:29:54.9687400+07:00" endTime="2026-04-25T19:30:06.6997435+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="665d9fca-0a2a-4246-ab00-464e49cb5a07">
+      <Output>
+        <StdOut>[TC05 PASS] Chuyên mục Thời sự hiển thị 104 bài. URL: https://vnexpress.net/thoi-su</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TC05_Filter_ChuyenMucThoiSu" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="6e5c7170-1fe3-4de6-cc5c-89874330c700">
+      <Execution id="665d9fca-0a2a-4246-ab00-464e49cb5a07" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC05_Filter_ChuyenMucThoiSu" />
+    </UnitTest>
+    <UnitTest name="TC07_DocBai_ChiTietBaiViet" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba">
+      <Execution id="db5810c1-36dd-4ab9-8bff-c51534b6dd89" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC07_DocBai_ChiTietBaiViet" />
+    </UnitTest>
+    <UnitTest name="TC02_TimKiem_TuKhoaHopLe" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="8153e881-2237-a56d-73b6-ee21bacbb2be">
+      <Execution id="2ff6b84e-8f8f-4160-86bd-cfa551715274" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC02_TimKiem_TuKhoaHopLe" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba" executionId="db5810c1-36dd-4ab9-8bff-c51534b6dd89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8153e881-2237-a56d-73b6-ee21bacbb2be" executionId="2ff6b84e-8f8f-4160-86bd-cfa551715274" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e5c7170-1fe3-4de6-cc5c-89874330c700" executionId="665d9fca-0a2a-4246-ab00-464e49cb5a07" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.4.0.0: Test execution started&#xD;
+Running selected tests in C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 62955&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 62955.&#xD;
+[1777120186.214][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 60519&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 60519.&#xD;
+[1777120196.357][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 52622&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 52622.&#xD;
+[1777120207.760][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+NUnit Adapter 4.4.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-25T19:29:55.0027016+07:00">
+        <Text>[TC02 PASS] Tìm kiếm 'bóng đá' trả về 71 kết quả.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-25T19:30:06.7014587+07:00">
+        <Text>[TC05 PASS] Chuyên mục Thời sự hiển thị 104 bài. URL: https://vnexpress.net/thoi-su&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-25T19:30:21.0708616+07:00">
+        <Text>Đang click vào bài: Khoản vay 106 tỷ USD của EU thắp hy vọng cho Ukraine&#xD;
+[TC07 PASS] Mở bài thành công. Tiêu đề: Khoản vay 106 tỷ USD của EU thắp hy vọng cho Ukraine...&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

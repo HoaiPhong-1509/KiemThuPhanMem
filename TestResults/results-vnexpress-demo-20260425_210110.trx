@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="bbf2fc27-aeef-4a03-acd6-be9eb19a28f7" name="ASUS@LAPTOP-OVJCF5S1 2026-04-25 21:01:30" runUser="LAPTOP-OVJCF5S1\ASUS" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-25T21:01:30.7158748+07:00" queuing="2026-04-25T21:01:30.7158752+07:00" start="2026-04-25T21:01:17.1976769+07:00" finish="2026-04-25T21:01:55.1154704+07:00" />
+  <TestSettings name="default" id="99e56428-e06b-4a28-91c1-55a22b089d33">
+    <Deployment runDeploymentRoot="ASUS_LAPTOP-OVJCF5S1_2026-04-25_21_01_30" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="80b8d68a-4b61-4aeb-8df6-729304f9aac4" testId="6e5c7170-1fe3-4de6-cc5c-89874330c700" testName="TC05_Filter_ChuyenMucThoiSu" computerName="LAPTOP-OVJCF5S1" duration="00:00:09.5339230" startTime="2026-04-25T21:01:30.6171513+07:00" endTime="2026-04-25T21:01:40.1510712+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80b8d68a-4b61-4aeb-8df6-729304f9aac4">
+      <Output>
+        <StdOut>[21:01:32] [INFO] Test bắt đầu. FaultInjection=OFF&#xD;
+[21:01:32] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:36] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:37] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC05_Filter_ChuyenMucThoiSu_20260425_210130\01_00_home_loaded.png&#xD;
+[21:01:37] [INFO] TC05 - Filter chuyên mục Thời sự&#xD;
+[21:01:37] [INFO] Validate selector exists [menu-thoi-su] =&gt; By.XPath: //a[contains(@href, 'thoi-su') and (contains(text(),'Thời sự') or contains(text(),'thời sự'))]&#xD;
+[21:01:37] [INFO] Wait clickable [menu-thoi-su] =&gt; By.XPath: //a[contains(@href, 'thoi-su') and (contains(text(),'Thời sự') or contains(text(),'thời sự'))]&#xD;
+[21:01:39] [INFO] Wait URL contains 'thoi-su' (TC05 click menu Thời sự)&#xD;
+[21:01:39] [INFO] Wait document ready: TC05 page loaded&#xD;
+[21:01:39] [INFO] Wait elements [thoi-su-articles] =&gt; By.CssSelector: article, .item-news, h3.title-news, minCount=1&#xD;
+[21:01:39] [INFO] Wait first non-empty element from selector group: thoi-su-heading&#xD;
+[21:01:39] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC05_Filter_ChuyenMucThoiSu_20260425_210130\02_tc05_thoi_su_loaded.png&#xD;
+[21:01:39] [INFO] [TC05 PASS] Chuyên mục Thời sự hiển thị 110 bài. URL: https://vnexpress.net/thoi-su</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cf180144-9962-4ba4-be4f-f229c8de2f10" testId="8153e881-2237-a56d-73b6-ee21bacbb2be" testName="TC02_TimKiem_TuKhoaHopLe" computerName="LAPTOP-OVJCF5S1" duration="00:00:11.5093610" startTime="2026-04-25T21:01:19.1059731+07:00" endTime="2026-04-25T21:01:30.6152471+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cf180144-9962-4ba4-be4f-f229c8de2f10">
+      <Output>
+        <StdOut>[21:01:20] [INFO] Test bắt đầu. FaultInjection=OFF&#xD;
+[21:01:20] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:20] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:26] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\01_00_home_loaded.png&#xD;
+[21:01:26] [INFO] TC02 - Bắt đầu tìm kiếm từ khóa hợp lệ&#xD;
+[21:01:26] [INFO] Mở search box cho keyword: bóng đá&#xD;
+[21:01:26] [INFO] Validate selector exists [search-toggle] =&gt; By.CssSelector: a.btn-search, .ic-search, [data-role='search-toggle']&#xD;
+[21:01:26] [INFO] Wait clickable [search-toggle] =&gt; By.CssSelector: a.btn-search, .ic-search, [data-role='search-toggle']&#xD;
+[21:01:27] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\02_search_box_opened.png&#xD;
+[21:01:27] [INFO] Validate selector exists [search-input] =&gt; By.CssSelector: input[type='search'], input[name='q'], .search-input&#xD;
+[21:01:27] [INFO] Wait visible [search-input] =&gt; By.CssSelector: input[type='search'], input[name='q'], .search-input&#xD;
+[21:01:28] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\03_tc02_keyword_typed.png&#xD;
+[21:01:28] [INFO] Wait document ready: TC02 search submit&#xD;
+[21:01:28] [INFO] Wait elements [search-result-cards] =&gt; By.CssSelector: article, .item-news, .list-news-subfolder h3, minCount=1&#xD;
+[21:01:29] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\04_tc02_search_results.png&#xD;
+[21:01:29] [INFO] [TC02 PASS] Tìm kiếm 'bóng đá' trả về 71 kết quả, relevant=3</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="39e06016-815e-4a63-8603-c01f11f63c51" testId="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba" testName="TC07_DocBai_ChiTietBaiViet" computerName="LAPTOP-OVJCF5S1" duration="00:00:14.8377620" startTime="2026-04-25T21:01:40.1514964+07:00" endTime="2026-04-25T21:01:54.9892620+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="39e06016-815e-4a63-8603-c01f11f63c51">
+      <Output>
+        <StdOut>[21:01:41] [INFO] Test bắt đầu. FaultInjection=OFF&#xD;
+[21:01:41] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:46] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:47] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC07_DocBai_ChiTietBaiViet_20260425_210140\01_00_home_loaded.png&#xD;
+[21:01:47] [INFO] TC07 - Click đọc bài chi tiết&#xD;
+[21:01:47] [INFO] Validate selector exists [home-article-links] =&gt; By.CssSelector: h1.title-news a[href], h2.title-news a[href], h3.title-news a[href], article h2 a[href], article h3 a[href]&#xD;
+[21:01:47] [INFO] Wait elements [home-article-links] =&gt; By.CssSelector: h1.title-news a[href], h2.title-news a[href], h3.title-news a[href], article h2 a[href], article h3 a[href], minCount=3&#xD;
+[21:01:48] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:50] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:50] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC07_DocBai_ChiTietBaiViet_20260425_210140\02_tc07_back_home.png&#xD;
+[21:01:50] [INFO] Đang thử click bài: Hành trình bất bại của Việt Nam khi vô địch U17 Đông Nam Á&#xD;
+[21:01:50] [INFO] Link bài viết: https://vnexpress.net/hanh-trinh-bat-bai-cua-viet-nam-khi-vo-dich-u17-dong-nam-a-5067122.html&#xD;
+[21:01:53] [INFO] Validate selector exists [article-title] =&gt; By.CssSelector: h1.title-detail, h1.heading-title, article h1, h1&#xD;
+[21:01:54] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC07_DocBai_ChiTietBaiViet_20260425_210140\03_tc07_article_detail_loaded.png&#xD;
+[21:01:54] [INFO] [TC07 PASS] Mở bài thành công. Bài: Hành trình bất bại của Việt Nam khi vô địch U17 Đông Nam Á&#xD;
+[21:01:54] [INFO] [TC07 PASS] Tiêu đề: Hành trình bất bại của Việt Nam khi vô địch U17 Đông Nam Á...</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="TC05_Filter_ChuyenMucThoiSu" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="6e5c7170-1fe3-4de6-cc5c-89874330c700">
+      <Execution id="80b8d68a-4b61-4aeb-8df6-729304f9aac4" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC05_Filter_ChuyenMucThoiSu" />
+    </UnitTest>
+    <UnitTest name="TC07_DocBai_ChiTietBaiViet" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba">
+      <Execution id="39e06016-815e-4a63-8603-c01f11f63c51" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC07_DocBai_ChiTietBaiViet" />
+    </UnitTest>
+    <UnitTest name="TC02_TimKiem_TuKhoaHopLe" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="8153e881-2237-a56d-73b6-ee21bacbb2be">
+      <Execution id="cf180144-9962-4ba4-be4f-f229c8de2f10" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC02_TimKiem_TuKhoaHopLe" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="6e5c7170-1fe3-4de6-cc5c-89874330c700" executionId="80b8d68a-4b61-4aeb-8df6-729304f9aac4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8153e881-2237-a56d-73b6-ee21bacbb2be" executionId="cf180144-9962-4ba4-be4f-f229c8de2f10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba" executionId="39e06016-815e-4a63-8603-c01f11f63c51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.4.0.0: Test execution started&#xD;
+Running selected tests in C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll&#xD;
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 54992&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 54992.&#xD;
+[1777125680.400][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 55679&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 55679.&#xD;
+[1777125692.012][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 52784&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 52784.&#xD;
+[1777125701.440][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+NUnit Adapter 4.4.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-25T21:01:30.6578663+07:00">
+        <Text>[21:01:20] [INFO] Test bắt đầu. FaultInjection=OFF&#xD;
+[21:01:20] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:20] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:26] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\01_00_home_loaded.png&#xD;
+[21:01:26] [INFO] TC02 - Bắt đầu tìm kiếm từ khóa hợp lệ&#xD;
+[21:01:26] [INFO] Mở search box cho keyword: bóng đá&#xD;
+[21:01:26] [INFO] Validate selector exists [search-toggle] =&gt; By.CssSelector: a.btn-search, .ic-search, [data-role='search-toggle']&#xD;
+[21:01:26] [INFO] Wait clickable [search-toggle] =&gt; By.CssSelector: a.btn-search, .ic-search, [data-role='search-toggle']&#xD;
+[21:01:27] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\02_search_box_opened.png&#xD;
+[21:01:27] [INFO] Validate selector exists [search-input] =&gt; By.CssSelector: input[type='search'], input[name='q'], .search-input&#xD;
+[21:01:27] [INFO] Wait visible [search-input] =&gt; By.CssSelector: input[type='search'], input[name='q'], .search-input&#xD;
+[21:01:28] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\03_tc02_keyword_typed.png&#xD;
+[21:01:28] [INFO] Wait document ready: TC02 search submit&#xD;
+[21:01:28] [INFO] Wait elements [search-result-cards] =&gt; By.CssSelector: article, .item-news, .list-news-subfolder h3, minCount=1&#xD;
+[21:01:29] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC02_TimKiem_TuKhoaHopLe_20260425_210119\04_tc02_search_results.png&#xD;
+[21:01:29] [INFO] [TC02 PASS] Tìm kiếm 'bóng đá' trả về 71 kết quả, relevant=3&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-25T21:01:40.1541442+07:00">
+        <Text>[21:01:32] [INFO] Test bắt đầu. FaultInjection=OFF&#xD;
+[21:01:32] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:36] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:37] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC05_Filter_ChuyenMucThoiSu_20260425_210130\01_00_home_loaded.png&#xD;
+[21:01:37] [INFO] TC05 - Filter chuyên mục Thời sự&#xD;
+[21:01:37] [INFO] Validate selector exists [menu-thoi-su] =&gt; By.XPath: //a[contains(@href, 'thoi-su') and (contains(text(),'Thời sự') or contains(text(),'thời sự'))]&#xD;
+[21:01:37] [INFO] Wait clickable [menu-thoi-su] =&gt; By.XPath: //a[contains(@href, 'thoi-su') and (contains(text(),'Thời sự') or contains(text(),'thời sự'))]&#xD;
+[21:01:39] [INFO] Wait URL contains 'thoi-su' (TC05 click menu Thời sự)&#xD;
+[21:01:39] [INFO] Wait document ready: TC05 page loaded&#xD;
+[21:01:39] [INFO] Wait elements [thoi-su-articles] =&gt; By.CssSelector: article, .item-news, h3.title-news, minCount=1&#xD;
+[21:01:39] [INFO] Wait first non-empty element from selector group: thoi-su-heading&#xD;
+[21:01:39] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC05_Filter_ChuyenMucThoiSu_20260425_210130\02_tc05_thoi_su_loaded.png&#xD;
+[21:01:39] [INFO] [TC05 PASS] Chuyên mục Thời sự hiển thị 110 bài. URL: https://vnexpress.net/thoi-su&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-25T21:01:54.9913405+07:00">
+        <Text>[21:01:41] [INFO] Test bắt đầu. FaultInjection=OFF&#xD;
+[21:01:41] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:46] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:47] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC07_DocBai_ChiTietBaiViet_20260425_210140\01_00_home_loaded.png&#xD;
+[21:01:47] [INFO] TC07 - Click đọc bài chi tiết&#xD;
+[21:01:47] [INFO] Validate selector exists [home-article-links] =&gt; By.CssSelector: h1.title-news a[href], h2.title-news a[href], h3.title-news a[href], article h2 a[href], article h3 a[href]&#xD;
+[21:01:47] [INFO] Wait elements [home-article-links] =&gt; By.CssSelector: h1.title-news a[href], h2.title-news a[href], h3.title-news a[href], article h2 a[href], article h3 a[href], minCount=3&#xD;
+[21:01:48] [INFO] Navigate: https://vnexpress.net&#xD;
+[21:01:50] [INFO] Wait document ready: navigate to https://vnexpress.net&#xD;
+[21:01:50] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC07_DocBai_ChiTietBaiViet_20260425_210140\02_tc07_back_home.png&#xD;
+[21:01:50] [INFO] Đang thử click bài: Hành trình bất bại của Việt Nam khi vô địch U17 Đông Nam Á&#xD;
+[21:01:50] [INFO] Link bài viết: https://vnexpress.net/hanh-trinh-bat-bai-cua-viet-nam-khi-vo-dich-u17-dong-nam-a-5067122.html&#xD;
+[21:01:53] [INFO] Validate selector exists [article-title] =&gt; By.CssSelector: h1.title-detail, h1.heading-title, article h1, h1&#xD;
+[21:01:54] [INFO] Step screenshot saved: C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\artifacts\selenium-steps\TC07_DocBai_ChiTietBaiViet_20260425_210140\03_tc07_article_detail_loaded.png&#xD;
+[21:01:54] [INFO] [TC07 PASS] Mở bài thành công. Bài: Hành trình bất bại của Việt Nam khi vô địch U17 Đông Nam Á&#xD;
+[21:01:54] [INFO] [TC07 PASS] Tiêu đề: Hành trình bất bại của Việt Nam khi vô địch U17 Đông Nam Á...&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

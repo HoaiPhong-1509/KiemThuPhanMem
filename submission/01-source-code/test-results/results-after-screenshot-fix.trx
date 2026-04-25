@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="e72cda93-710a-4718-8fb4-451d8c6353d5" name="ASUS@LAPTOP-OVJCF5S1 2026-04-16 22:48:25" runUser="LAPTOP-OVJCF5S1\ASUS" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-04-16T22:48:25.9332288+07:00" queuing="2026-04-16T22:48:25.9332293+07:00" start="2026-04-16T22:48:23.3147971+07:00" finish="2026-04-16T22:50:38.3545523+07:00" />
+  <TestSettings name="default" id="2bae4267-09b4-4c13-adcd-1f3d6418b1a2">
+    <Deployment runDeploymentRoot="ASUS_LAPTOP-OVJCF5S1_2026-04-16_22_48_25" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="61c32980-8370-4fbb-ab98-0003d36a06c4" testId="c55bb59e-57e4-9023-fa29-7801336fb535" testName="TC09_TimKiem_KetQuaDungChuDe" computerName="LAPTOP-OVJCF5S1" duration="00:00:11.7360640" startTime="2026-04-16T22:50:13.9825223+07:00" endTime="2026-04-16T22:50:25.7185860+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="61c32980-8370-4fbb-ab98-0003d36a06c4">
+      <Output>
+        <StdOut>[TC09 PASS] Tìm kiếm 'COVID' trả về 86 kết quả.&#xD;
+  - Sẽ không quy định cứng ngưỡng doanh thu miễn thuế với hộ kinh doanh&#xD;
+  - Nơi sinh hay quê quán?&#xD;
+  - Bên trong đoạn ngầm metro Nhổn - ga Hà Nội&#xD;
+  - Hai siêu tàu dầu tiếp cận Iran giữa lệnh phong tỏa của Mỹ&#xD;
+  - Giải thể Ủy ban An toàn giao thông quốc gia&#xD;
+  - Đồng Nai đạt chuẩn đô thị lên thành phố trực thuộc Trung ương&#xD;
+  - Miền Bắc nguy cơ mưa giông, mưa đá diện rộng từ đêm nay&#xD;
+  - Giây phút lao ra biển cứu hai cháu bé bị sóng cuốn xa 100 m&#xD;
+  - Rời Florida vì 'kiếm 175.000 USD mỗi năm vẫn thấy nghèo'&#xD;
+  - Băn khoăn khi VNeID không hiển thị đủ thuê bao chính chủ&#xD;
+  - Giáo sư Phùng Hồ Hải nhận giải thưởng danh giá của Đức&#xD;
+  - Sẽ có 30 khu công nghiệp VSIP tại Việt Nam&#xD;
+  - Thánh lễ tuyên Chân phước cho linh mục Trương Bửu Diệp ngày 2/7&#xD;
+  - Điện Kremlin nói Mỹ từ chối để Nga tiếp nhận uranium Iran&#xD;
+  - Một khách hàng trúng Jackpot gần 92 tỷ đồng&#xD;
+  - Việt Nam thắng 10-0 trước khi gặp Indonesia ở U17 Đông Nam Á&#xD;
+  - Mỹ có thể đang tăng cường lực lượng phong tỏa cảng biển Iran&#xD;
+  - Tổng thống Hàn Quốc sắp thăm Việt Nam&#xD;
+  - Hai phu nhân lãnh đạo Việt - Trung xem tổng duyệt vở nhạc kịch&#xD;
+  - Elon Musk 'khoe' chip AI Tesla AI5&#xD;
+  - &#xD;
+  - &#xD;
+  - &#xD;
+  - &#xD;
+  - &#xD;
+  - Tư lệnh Pakistan 'giúp thu hẹp khác biệt' giữa Mỹ - Iran&#xD;
+  - Mỹ 'muốn huy động các hãng ôtô' để tăng sản lượng vũ khí&#xD;
+  - Hạt nhân - điểm nghẽn cản trở đàm phán Mỹ - Iran&#xD;
+  - &#xD;
+  - Thủ tướng Anh tuyên bố 'không nhượng bộ' trước sức ép từ ông Trump&#xD;
+  - &#xD;
+  - Mỹ áp thêm trừng phạt với dầu Iran&#xD;
+  - 12&#xD;
+  - Ông Bùi Thành Nhơn giao ghế Chủ tịch NovaGroup cho con trai&#xD;
+  - Phó tổng giám đốc FPT: Chúng tôi đã có nhiều nỗ lực để ổn định giá cổ phiếu&#xD;
+  - Đất Xanh cùng lúc thay Chủ tịch và Tổng giám đốc&#xD;
+  - &#xD;
+  - Mỹ sẽ không gia hạn chính sách miễn trừ với dầu Nga&#xD;
+  - &#xD;
+  - Cổ phiếu nhóm Vingroup nổi sóng&#xD;
+  - 21&#xD;
+  - Đà Nẵng hỗ trợ doanh nghiệp nhỏ và vừa tới 200 triệu đồng mỗi năm&#xD;
+  - &#xD;
+  - Người châu Âu mua xe điện kỷ lục trước khủng hoảng xăng dầu&#xD;
+  - 49&#xD;
+  - Đất nền ế khách&#xD;
+  - Phú Thọ dự kiến chuyển đổi gần 600 ha đất rừng làm khu đô thị&#xD;
+  - Chật vật cắt lỗ chung cư vùng ven&#xD;
+  - 172&#xD;
+  - Nhà 40 m2 hướng tây lấy cảm hứng từ những tờ giấy ghi chú&#xD;
+  - 12&#xD;
+  - TP HCM yêu cầu làm rõ khu vực để xe trong chung cư&#xD;
+  - 13&#xD;
+  - Vị trí nào cho McIlroy trong ngôi đền huyền thoại?&#xD;
+  - Diaz: 'Real đáng nhận thẻ đỏ'&#xD;
+  - Ông Hoàng Văn Phúc dẫn dắt tuyển nữ Việt Nam&#xD;
+  - 50&#xD;
+  - Vợ Văn Hậu tháp tùng chồng đi gia hạn hợp đồng với CAHN&#xD;
+  - 21&#xD;
+  - Villas-Boas: 'Hỗn loạn chiến lược đẩy Tottenham đến bờ vực xuống hạng'&#xD;
+  - 19&#xD;
+  - Miss World Opal Suchata hòa mình với lễ hội Songkran&#xD;
+  - Sách&#xD;
+  - Tiểu thuyết về án oan nổi tiếng thời Trần&#xD;
+  - Katy Perry, cựu Thủ tướng Canada diện đồ ăn ý khi hẹn hò&#xD;
+  - &#xD;
+  - Vợ chồng Châu Nhuận Phát ở nhà hơn 25 triệu USD&#xD;
+  - &#xD;
+  - Trận chiến thành Troy trong phim Nolan 'gây choáng ngợp'&#xD;
+  - 11&#xD;
+  - Giải mã 12 giấc mơ phổ biến nhất&#xD;
+  - Vì sao món ăn ít ngấy hơn khi chiên ngập dầu?&#xD;
+  - Cú sốc 'cảm giác vô dụng' khi nghỉ hưu&#xD;
+  - &#xD;
+  - Tác hại ít biết của thói quen ngủ trưa kéo dài&#xD;
+  - 12&#xD;
+  - Tâm lý con người thay đổi thế nào qua các kỳ họp lớp&#xD;
+  - 11&#xD;
+  - Lương giáo viên hạng I không tăng như đề xuất&#xD;
+  - Tỷ lệ trượt visa du học Mỹ cao nhất 10 năm&#xD;
+  - Thủ khoa đánh giá năng lực ĐH Quốc gia TP HCM đạt 1098/1200 điểm&#xD;
+  - &#xD;
+  - Phụ huynh cân não vì đăng ký lớp 10 'như chơi chứng khoán'&#xD;
+  - 29&#xD;
+  - Hiệu trưởng ĐH Công nghệ: Ngành bán dẫn không dành cho các 'tay mơ'&#xD;
+  -</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f2f78a37-cde0-412b-a165-47d16bace75c" testId="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba" testName="TC07_DocBai_ChiTietBaiViet" computerName="LAPTOP-OVJCF5S1" duration="00:00:17.3847770" startTime="2026-04-16T22:49:37.7700497+07:00" endTime="2026-04-16T22:49:55.1548261+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f2f78a37-cde0-412b-a165-47d16bace75c">
+      <Output>
+        <StdOut>Đang click vào bài: Iran 'điều tiêm kích hộ tống' máy bay chở tư lệnh Pakistan&#xD;
+[TC07 PASS] Mở bài thành công. Tiêu đề: Iran 'điều tiêm kích hộ tống' máy bay chở tư lệnh Pakistan...</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fb020ac3-cb07-4d9f-8192-9ec7d3210b1c" testId="0de6faa2-273c-5aa0-69a4-98b200758f9e" testName="FilterRelevantResults_ReturnsOnlyMatchingTitles" computerName="LAPTOP-OVJCF5S1" duration="00:00:00.0169230" startTime="2026-04-16T22:48:24.7680604+07:00" endTime="2026-04-16T22:48:24.7848501+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb020ac3-cb07-4d9f-8192-9ec7d3210b1c" />
+    <UnitTestResult executionId="a1ad1720-39a4-41b4-9714-09210d163d2c" testId="f22e55c7-4578-5a51-dd51-7d7f413f0810" testName="TC01_TrangChu_TaiThanhCong" computerName="LAPTOP-OVJCF5S1" duration="00:00:07.9212740" startTime="2026-04-16T22:48:24.7980047+07:00" endTime="2026-04-16T22:48:32.7192781+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1ad1720-39a4-41b4-9714-09210d163d2c">
+      <Output>
+        <StdOut>[TC01 PASS] Trang chủ tải thành công. Title: Báo VnExpress - Báo tiếng Việt nhiều người xem nhất</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="588baef3-e770-4259-b36c-a666f1a1ff17" testId="152e2df2-ff13-1449-6412-ba301ce88fae" testName="IsRelevantResult_ReturnsTrue_WhenTitleContainsKeywordToken" computerName="LAPTOP-OVJCF5S1" duration="00:00:00.0004120" startTime="2026-04-16T22:48:24.7882852+07:00" endTime="2026-04-16T22:48:24.7886971+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="588baef3-e770-4259-b36c-a666f1a1ff17" />
+    <UnitTestResult executionId="4454ccff-1ad6-4cf8-9bab-f9323676d379" testId="c10050bc-a255-92a9-1f23-ed70a2766a4b" testName="ValidateKeyword_ReturnsEmpty_WhenKeywordIsBlank" computerName="LAPTOP-OVJCF5S1" duration="00:00:00.0051670" startTime="2026-04-16T22:48:24.7887129+07:00" endTime="2026-04-16T22:48:24.7938795+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4454ccff-1ad6-4cf8-9bab-f9323676d379" />
+    <UnitTestResult executionId="6d09d956-098c-490d-8431-b09168e95141" testId="34d7cbf9-07f5-5f62-07bb-902ba04d8d39" testName="ValidateKeyword_ReturnsTooLong_WhenKeywordExceedsMaxLength" computerName="LAPTOP-OVJCF5S1" duration="00:00:00.0003080" startTime="2026-04-16T22:48:24.7939271+07:00" endTime="2026-04-16T22:48:24.7942350+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d09d956-098c-490d-8431-b09168e95141" />
+    <UnitTestResult executionId="7c671519-bfc2-4174-bddd-e374de63edee" testId="fc1c6ec1-1655-f200-daff-e2fab12e447c" testName="TC06_Filter_ChuyenMucTheThao" computerName="LAPTOP-OVJCF5S1" duration="00:00:11.9520560" startTime="2026-04-16T22:49:25.8179370+07:00" endTime="2026-04-16T22:49:37.7699919+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c671519-bfc2-4174-bddd-e374de63edee">
+      <Output>
+        <StdOut>[TC06 PASS] Chuyên mục Thể thao hiển thị 98 bài. URL: https://vnexpress.net/the-thao</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9da00b8f-c1ea-4e00-b083-1ea42492f6cd" testId="6e5c7170-1fe3-4de6-cc5c-89874330c700" testName="TC05_Filter_ChuyenMucThoiSu" computerName="LAPTOP-OVJCF5S1" duration="00:00:14.3716450" startTime="2026-04-16T22:49:11.4462392+07:00" endTime="2026-04-16T22:49:25.8178832+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9da00b8f-c1ea-4e00-b083-1ea42492f6cd">
+      <Output>
+        <StdOut>[TC05 PASS] Chuyên mục Thời sự hiển thị 104 bài. URL: https://vnexpress.net/thoi-su</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ffaa3dd8-b28f-4dc4-a696-04687d9e52f3" testId="6755547b-8896-72cf-5c55-797a838987d0" testName="ValidateKeyword_ReturnsValid_WhenKeywordWithinLimit" computerName="LAPTOP-OVJCF5S1" duration="00:00:00.0001900" startTime="2026-04-16T22:48:24.7942561+07:00" endTime="2026-04-16T22:48:24.7944453+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffaa3dd8-b28f-4dc4-a696-04687d9e52f3" />
+    <UnitTestResult executionId="65db35b2-2e56-4099-a820-342c51870a25" testId="87e572af-5cf7-f6e4-782d-529ca4d6d768" testName="TC04_TimKiem_KeywordDai" computerName="LAPTOP-OVJCF5S1" duration="00:00:12.4692450" startTime="2026-04-16T22:48:58.9769531+07:00" endTime="2026-04-16T22:49:11.4461975+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65db35b2-2e56-4099-a820-342c51870a25">
+      <Output>
+        <StdOut>[TC04 PASS] Keyword dài 200 ký tự xử lý bình thường. URL: https://vnexpress.net/</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="be0bda02-ced7-416e-8c1b-c2cddbdb52ac" testId="5bf8aa18-7fa8-617e-2091-f065680a8c6e" testName="TC10_TimKiem_KyTuDacBiet" computerName="LAPTOP-OVJCF5S1" duration="00:00:12.5383710" startTime="2026-04-16T22:50:25.7186553+07:00" endTime="2026-04-16T22:50:38.2570263+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be0bda02-ced7-416e-8c1b-c2cddbdb52ac">
+      <Output>
+        <StdOut>[TC10 PASS] Ký tự đặc biệt được xử lý an toàn. URL: https://vnexpress.net/</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d01714e1-4502-4d7d-abef-5634045e8ca6" testId="d6712de3-b25f-96fb-acec-7feaac0c3db4" testName="TC03_TimKiem_KeywordRong" computerName="LAPTOP-OVJCF5S1" duration="00:00:12.8280049" startTime="2026-04-16T22:48:46.1489131+07:00" endTime="2026-04-16T22:48:58.9769174+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d01714e1-4502-4d7d-abef-5634045e8ca6">
+      <Output>
+        <StdOut>[TC03 PASS] Tìm kiếm keyword rỗng không gây crash. URL: https://vnexpress.net/</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e31f335c-8454-4725-87b3-be6bc9064e4a" testId="8153e881-2237-a56d-73b6-ee21bacbb2be" testName="TC02_TimKiem_TuKhoaHopLe" computerName="LAPTOP-OVJCF5S1" duration="00:00:13.4295570" startTime="2026-04-16T22:48:32.7193146+07:00" endTime="2026-04-16T22:48:46.1488710+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e31f335c-8454-4725-87b3-be6bc9064e4a">
+      <Output>
+        <StdOut>[TC02 PASS] Tìm kiếm 'bóng đá' trả về 71 kết quả.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="caa5c1a9-5b44-49e2-b0f9-f5d87d4dbfd0" testId="db14e879-1706-f01d-ddc7-fd3296a083fa" testName="IsRelevantResult_ReturnsFalse_WhenTitleDoesNotContainKeywordToken" computerName="LAPTOP-OVJCF5S1" duration="00:00:00.0007919" startTime="2026-04-16T22:48:24.7874563+07:00" endTime="2026-04-16T22:48:24.7882483+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caa5c1a9-5b44-49e2-b0f9-f5d87d4dbfd0" />
+    <UnitTestResult executionId="e96d5aa9-da21-4ffd-99cb-26890ad152da" testId="154a160a-972a-639c-d947-0d8f55eb9586" testName="TC08_PhanTrang_TrangTiepTheo" computerName="LAPTOP-OVJCF5S1" duration="00:00:18.8275180" startTime="2026-04-16T22:49:55.1548711+07:00" endTime="2026-04-16T22:50:13.9823879+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e96d5aa9-da21-4ffd-99cb-26890ad152da">
+      <Output>
+        <StdOut>[TC08 PASS] Phân trang hoạt động. URL trang 2: https://vnexpress.net/thoi-su-p2</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="ValidateKeyword_ReturnsEmpty_WhenKeywordIsBlank" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="c10050bc-a255-92a9-1f23-ed70a2766a4b">
+      <Execution id="4454ccff-1ad6-4cf8-9bab-f9323676d379" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.SearchLogicTests" name="ValidateKeyword_ReturnsEmpty_WhenKeywordIsBlank" />
+    </UnitTest>
+    <UnitTest name="TC06_Filter_ChuyenMucTheThao" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="fc1c6ec1-1655-f200-daff-e2fab12e447c">
+      <Execution id="7c671519-bfc2-4174-bddd-e374de63edee" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC06_Filter_ChuyenMucTheThao" />
+    </UnitTest>
+    <UnitTest name="TC05_Filter_ChuyenMucThoiSu" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="6e5c7170-1fe3-4de6-cc5c-89874330c700">
+      <Execution id="9da00b8f-c1ea-4e00-b083-1ea42492f6cd" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC05_Filter_ChuyenMucThoiSu" />
+    </UnitTest>
+    <UnitTest name="TC08_PhanTrang_TrangTiepTheo" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="154a160a-972a-639c-d947-0d8f55eb9586">
+      <Execution id="e96d5aa9-da21-4ffd-99cb-26890ad152da" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC08_PhanTrang_TrangTiepTheo" />
+    </UnitTest>
+    <UnitTest name="ValidateKeyword_ReturnsValid_WhenKeywordWithinLimit" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="6755547b-8896-72cf-5c55-797a838987d0">
+      <Execution id="ffaa3dd8-b28f-4dc4-a696-04687d9e52f3" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.SearchLogicTests" name="ValidateKeyword_ReturnsValid_WhenKeywordWithinLimit" />
+    </UnitTest>
+    <UnitTest name="TC04_TimKiem_KeywordDai" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="87e572af-5cf7-f6e4-782d-529ca4d6d768">
+      <Execution id="65db35b2-2e56-4099-a820-342c51870a25" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC04_TimKiem_KeywordDai" />
+    </UnitTest>
+    <UnitTest name="IsRelevantResult_ReturnsFalse_WhenTitleDoesNotContainKeywordToken" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="db14e879-1706-f01d-ddc7-fd3296a083fa">
+      <Execution id="caa5c1a9-5b44-49e2-b0f9-f5d87d4dbfd0" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.SearchLogicTests" name="IsRelevantResult_ReturnsFalse_WhenTitleDoesNotContainKeywordToken" />
+    </UnitTest>
+    <UnitTest name="TC10_TimKiem_KyTuDacBiet" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="5bf8aa18-7fa8-617e-2091-f065680a8c6e">
+      <Execution id="be0bda02-ced7-416e-8c1b-c2cddbdb52ac" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC10_TimKiem_KyTuDacBiet" />
+    </UnitTest>
+    <UnitTest name="ValidateKeyword_ReturnsTooLong_WhenKeywordExceedsMaxLength" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="34d7cbf9-07f5-5f62-07bb-902ba04d8d39">
+      <Execution id="6d09d956-098c-490d-8431-b09168e95141" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.SearchLogicTests" name="ValidateKeyword_ReturnsTooLong_WhenKeywordExceedsMaxLength" />
+    </UnitTest>
+    <UnitTest name="TC03_TimKiem_KeywordRong" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="d6712de3-b25f-96fb-acec-7feaac0c3db4">
+      <Execution id="d01714e1-4502-4d7d-abef-5634045e8ca6" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC03_TimKiem_KeywordRong" />
+    </UnitTest>
+    <UnitTest name="TC07_DocBai_ChiTietBaiViet" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba">
+      <Execution id="f2f78a37-cde0-412b-a165-47d16bace75c" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC07_DocBai_ChiTietBaiViet" />
+    </UnitTest>
+    <UnitTest name="FilterRelevantResults_ReturnsOnlyMatchingTitles" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="0de6faa2-273c-5aa0-69a4-98b200758f9e">
+      <Execution id="fb020ac3-cb07-4d9f-8192-9ec7d3210b1c" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.SearchLogicTests" name="FilterRelevantResults_ReturnsOnlyMatchingTitles" />
+    </UnitTest>
+    <UnitTest name="TC09_TimKiem_KetQuaDungChuDe" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="c55bb59e-57e4-9023-fa29-7801336fb535">
+      <Execution id="61c32980-8370-4fbb-ab98-0003d36a06c4" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC09_TimKiem_KetQuaDungChuDe" />
+    </UnitTest>
+    <UnitTest name="IsRelevantResult_ReturnsTrue_WhenTitleContainsKeywordToken" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="152e2df2-ff13-1449-6412-ba301ce88fae">
+      <Execution id="588baef3-e770-4259-b36c-a666f1a1ff17" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.SearchLogicTests" name="IsRelevantResult_ReturnsTrue_WhenTitleContainsKeywordToken" />
+    </UnitTest>
+    <UnitTest name="TC01_TrangChu_TaiThanhCong" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="f22e55c7-4578-5a51-dd51-7d7f413f0810">
+      <Execution id="a1ad1720-39a4-41b4-9714-09210d163d2c" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC01_TrangChu_TaiThanhCong" />
+    </UnitTest>
+    <UnitTest name="TC02_TimKiem_TuKhoaHopLe" storage="c:\users\asus\desktop\kiemthupm\bin\debug\net6.0\seleniumvnexpress.dll" id="8153e881-2237-a56d-73b6-ee21bacbb2be">
+      <Execution id="e31f335c-8454-4725-87b3-be6bc9064e4a" />
+      <TestMethod codeBase="C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll" adapterTypeName="executor://nunit3testexecutor/" className="VnExpressSeleniumTests.VnExpressTests" name="TC02_TimKiem_TuKhoaHopLe" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="c55bb59e-57e4-9023-fa29-7801336fb535" executionId="61c32980-8370-4fbb-ab98-0003d36a06c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e7e4435-9b53-b424-2e4f-ad29df8fd6ba" executionId="f2f78a37-cde0-412b-a165-47d16bace75c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0de6faa2-273c-5aa0-69a4-98b200758f9e" executionId="fb020ac3-cb07-4d9f-8192-9ec7d3210b1c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f22e55c7-4578-5a51-dd51-7d7f413f0810" executionId="a1ad1720-39a4-41b4-9714-09210d163d2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="152e2df2-ff13-1449-6412-ba301ce88fae" executionId="588baef3-e770-4259-b36c-a666f1a1ff17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c10050bc-a255-92a9-1f23-ed70a2766a4b" executionId="4454ccff-1ad6-4cf8-9bab-f9323676d379" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34d7cbf9-07f5-5f62-07bb-902ba04d8d39" executionId="6d09d956-098c-490d-8431-b09168e95141" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc1c6ec1-1655-f200-daff-e2fab12e447c" executionId="7c671519-bfc2-4174-bddd-e374de63edee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e5c7170-1fe3-4de6-cc5c-89874330c700" executionId="9da00b8f-c1ea-4e00-b083-1ea42492f6cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6755547b-8896-72cf-5c55-797a838987d0" executionId="ffaa3dd8-b28f-4dc4-a696-04687d9e52f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87e572af-5cf7-f6e4-782d-529ca4d6d768" executionId="65db35b2-2e56-4099-a820-342c51870a25" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5bf8aa18-7fa8-617e-2091-f065680a8c6e" executionId="be0bda02-ced7-416e-8c1b-c2cddbdb52ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6712de3-b25f-96fb-acec-7feaac0c3db4" executionId="d01714e1-4502-4d7d-abef-5634045e8ca6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8153e881-2237-a56d-73b6-ee21bacbb2be" executionId="e31f335c-8454-4725-87b3-be6bc9064e4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db14e879-1706-f01d-ddc7-fd3296a083fa" executionId="caa5c1a9-5b44-49e2-b0f9-f5d87d4dbfd0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="154a160a-972a-639c-d947-0d8f55eb9586" executionId="e96d5aa9-da21-4ffd-99cb-26890ad152da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="16" executed="16" passed="16" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.4.0.0: Test execution started&#xD;
+Running all tests in C:\Users\ASUS\Desktop\KiemThuPM\bin\Debug\net6.0\SeleniumVnExpress.dll&#xD;
+   NUnit3TestExecutor discovered 16 of 16 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 49992&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 49992.&#xD;
+[1776354505.853][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 53787&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 53787.&#xD;
+[1776354514.012][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 65374&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 65374.&#xD;
+[1776354527.427][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 60645&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 60645.&#xD;
+[1776354540.280][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 62201&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 62201.&#xD;
+[1776354552.733][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 60666&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 60666.&#xD;
+[1776354567.099][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 61106&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 61106.&#xD;
+[1776354578.947][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 53848&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 53848.&#xD;
+[1776354596.454][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 53941&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 53941.&#xD;
+[1776354615.169][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+Starting msedgedriver 146.0.3856.20 (699fe853158741282613629fd8527bae31e47c1f) on port 50132&#xD;
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver&#xD;
+Only local connections are allowed.&#xD;
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.&#xD;
+msedgedriver was started successfully on port 50132.&#xD;
+[1776354626.933][WARNING]: This version of Microsoft Edge WebDriver has not been tested with Microsoft Edge version 147.&#xD;
+NUnit Adapter 4.4.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:48:32.7218800+07:00">
+        <Text>[TC01 PASS] Trang chủ tải thành công. Title: Báo VnExpress - Báo tiếng Việt nhiều người xem nhất&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:48:46.1500930+07:00">
+        <Text>[TC02 PASS] Tìm kiếm 'bóng đá' trả về 71 kết quả.&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:48:58.9785198+07:00">
+        <Text>[TC03 PASS] Tìm kiếm keyword rỗng không gây crash. URL: https://vnexpress.net/&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:49:11.4476462+07:00">
+        <Text>[TC04 PASS] Keyword dài 200 ký tự xử lý bình thường. URL: https://vnexpress.net/&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:49:25.8201756+07:00">
+        <Text>[TC05 PASS] Chuyên mục Thời sự hiển thị 104 bài. URL: https://vnexpress.net/thoi-su&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:49:37.7715009+07:00">
+        <Text>[TC06 PASS] Chuyên mục Thể thao hiển thị 98 bài. URL: https://vnexpress.net/the-thao&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:49:55.1560832+07:00">
+        <Text>Đang click vào bài: Iran 'điều tiêm kích hộ tống' máy bay chở tư lệnh Pakistan&#xD;
+[TC07 PASS] Mở bài thành công. Tiêu đề: Iran 'điều tiêm kích hộ tống' máy bay chở tư lệnh Pakistan...&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:50:13.9873004+07:00">
+        <Text>[TC08 PASS] Phân trang hoạt động. URL trang 2: https://vnexpress.net/thoi-su-p2&#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:50:25.7206319+07:00">
+        <Text>[TC09 PASS] Tìm kiếm 'COVID' trả về 86 kết quả.&#xD;
+  - Sẽ không quy định cứng ngưỡng doanh thu miễn thuế với hộ kinh doanh&#xD;
+  - Nơi sinh hay quê quán?&#xD;
+  - Bên trong đoạn ngầm metro Nhổn - ga Hà Nội&#xD;
+  - Hai siêu tàu dầu tiếp cận Iran giữa lệnh phong tỏa của Mỹ&#xD;
+  - Giải thể Ủy ban An toàn giao thông quốc gia&#xD;
+  - Đồng Nai đạt chuẩn đô thị lên thành phố trực thuộc Trung ương&#xD;
+  - Miền Bắc nguy cơ mưa giông, mưa đá diện rộng từ đêm nay&#xD;
+  - Giây phút lao ra biển cứu hai cháu bé bị sóng cuốn xa 100 m&#xD;
+  - Rời Florida vì 'kiếm 175.000 USD mỗi năm vẫn thấy nghèo'&#xD;
+  - Băn khoăn khi VNeID không hiển thị đủ thuê bao chính chủ&#xD;
+  - Giáo sư Phùng Hồ Hải nhận giải thưởng danh giá của Đức&#xD;
+  - Sẽ có 30 khu công nghiệp VSIP tại Việt Nam&#xD;
+  - Thánh lễ tuyên Chân phước cho linh mục Trương Bửu Diệp ngày 2/7&#xD;
+  - Điện Kremlin nói Mỹ từ chối để Nga tiếp nhận uranium Iran&#xD;
+  - Một khách hàng trúng Jackpot gần 92 tỷ đồng&#xD;
+  - Việt Nam thắng 10-0 trước khi gặp Indonesia ở U17 Đông Nam Á&#xD;
+  - Mỹ có thể đang tăng cường lực lượng phong tỏa cảng biển Iran&#xD;
+  - Tổng thống Hàn Quốc sắp thăm Việt Nam&#xD;
+  - Hai phu nhân lãnh đạo Việt - Trung xem tổng duyệt vở nhạc kịch&#xD;
+  - Elon Musk 'khoe' chip AI Tesla AI5&#xD;
+  - &#xD;
+  - &#xD;
+  - &#xD;
+  - &#xD;
+  - &#xD;
+  - Tư lệnh Pakistan 'giúp thu hẹp khác biệt' giữa Mỹ - Iran&#xD;
+  - Mỹ 'muốn huy động các hãng ôtô' để tăng sản lượng vũ khí&#xD;
+  - Hạt nhân - điểm nghẽn cản trở đàm phán Mỹ - Iran&#xD;
+  - &#xD;
+  - Thủ tướng Anh tuyên bố 'không nhượng bộ' trước sức ép từ ông Trump&#xD;
+  - &#xD;
+  - Mỹ áp thêm trừng phạt với dầu Iran&#xD;
+  - 12&#xD;
+  - Ông Bùi Thành Nhơn giao ghế Chủ tịch NovaGroup cho con trai&#xD;
+  - Phó tổng giám đốc FPT: Chúng tôi đã có nhiều nỗ lực để ổn định giá cổ phiếu&#xD;
+  - Đất Xanh cùng lúc thay Chủ tịch và Tổng giám đốc&#xD;
+  - &#xD;
+  - Mỹ sẽ không gia hạn chính sách miễn trừ với dầu Nga&#xD;
+  - &#xD;
+  - Cổ phiếu nhóm Vingroup nổi sóng&#xD;
+  - 21&#xD;
+  - Đà Nẵng hỗ trợ doanh nghiệp nhỏ và vừa tới 200 triệu đồng mỗi năm&#xD;
+  - &#xD;
+  - Người châu Âu mua xe điện kỷ lục trước khủng hoảng xăng dầu&#xD;
+  - 49&#xD;
+  - Đất nền ế khách&#xD;
+  - Phú Thọ dự kiến chuyển đổi gần 600 ha đất rừng làm khu đô thị&#xD;
+  - Chật vật cắt lỗ chung cư vùng ven&#xD;
+  - 172&#xD;
+  - Nhà 40 m2 hướng tây lấy cảm hứng từ những tờ giấy ghi chú&#xD;
+  - 12&#xD;
+  - TP HCM yêu cầu làm rõ khu vực để xe trong chung cư&#xD;
+  - 13&#xD;
+  - Vị trí nào cho McIlroy trong ngôi đền huyền thoại?&#xD;
+  - Diaz: 'Real đáng nhận thẻ đỏ'&#xD;
+  - Ông Hoàng Văn Phúc dẫn dắt tuyển nữ Việt Nam&#xD;
+  - 50&#xD;
+  - Vợ Văn Hậu tháp tùng chồng đi gia hạn hợp đồng với CAHN&#xD;
+  - 21&#xD;
+  - Villas-Boas: 'Hỗn loạn chiến lược đẩy Tottenham đến bờ vực xuống hạng'&#xD;
+  - 19&#xD;
+  - Miss World Opal Suchata hòa mình với lễ hội Songkran&#xD;
+  - Sách&#xD;
+  - Tiểu thuyết về án oan nổi tiếng thời Trần&#xD;
+  - Katy Perry, cựu Thủ tướng Canada diện đồ ăn ý khi hẹn hò&#xD;
+  - &#xD;
+  - Vợ chồng Châu Nhuận Phát ở nhà hơn 25 triệu USD&#xD;
+  - &#xD;
+  - Trận chiến thành Troy trong phim Nolan 'gây choáng ngợp'&#xD;
+  - 11&#xD;
+  - Giải mã 12 giấc mơ phổ biến nhất&#xD;
+  - Vì sao món ăn ít ngấy hơn khi chiên ngập dầu?&#xD;
+  - Cú sốc 'cảm giác vô dụng' khi nghỉ hưu&#xD;
+  - &#xD;
+  - Tác hại ít biết của thói quen ngủ trưa kéo dài&#xD;
+  - 12&#xD;
+  - Tâm lý con người thay đổi thế nào qua các kỳ họp lớp&#xD;
+  - 11&#xD;
+  - Lương giáo viên hạng I không tăng như đề xuất&#xD;
+  - Tỷ lệ trượt visa du học Mỹ cao nhất 10 năm&#xD;
+  - Thủ khoa đánh giá năng lực ĐH Quốc gia TP HCM đạt 1098/1200 điểm&#xD;
+  - &#xD;
+  - Phụ huynh cân não vì đăng ký lớp 10 'như chơi chứng khoán'&#xD;
+  - 29&#xD;
+  - Hiệu trưởng ĐH Công nghệ: Ngành bán dẫn không dành cho các 'tay mơ'&#xD;
+  - &#xD;
+</Text>
+      </RunInfo>
+      <RunInfo computerName="LAPTOP-OVJCF5S1" outcome="Warning" timestamp="2026-04-16T22:50:38.2579249+07:00">
+        <Text>[TC10 PASS] Ký tự đặc biệt được xử lý an toàn. URL: https://vnexpress.net/&#xD;
+</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

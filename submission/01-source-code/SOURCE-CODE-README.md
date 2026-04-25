@@ -14,9 +14,9 @@
 
 ## Lenh chay Selenium + NUnit
 ```bash
-dotnet restore
-dotnet build
-dotnet test
+dotnet restore KiemThuPM.sln
+dotnet build KiemThuPM.sln -c Debug
+dotnet test KiemThuPM.sln -c Debug --logger "trx;LogFileName=results-after-screenshot-fix.trx"
 ```
 
 ## Lenh chay rieng NUnit logic tests
@@ -26,16 +26,18 @@ dotnet test --filter "FullyQualifiedName~SearchLogicTests"
 
 ## Lenh chay JMeter (non-GUI)
 ```bash
-jmeter -n -t jmeter/NewsSites-Stress-500-1000.jmx -l jmeter/results/all-results.jtl -e -o jmeter/results/html-report
+jmeter -n -t jmeter/NewsSites-Stress-500-1000.jmx -l jmeter/results/all-results-latest.jtl -e -o jmeter/results/html-report-latest
 ```
 
 ## Ghi chu
 - Script JMeter co 2 Thread Group: 500 users va 1000 users.
 - Ket qua summary theo tung muc tai duoc ghi vao `jmeter/results/`.
 - Artifact JMeter sau khi chay:
-	- `jmeter/results/all-results.jtl`
+	- `jmeter/results/all-results-latest.jtl`
 	- `jmeter/results/stress-500-users.jtl`
 	- `jmeter/results/stress-1000-users.jtl`
-	- `jmeter/results/html-report/index.html`
-- Ket qua NUnit da duoc luu tai `submission/01-source-code/test-results/submission-nunit-results.trx`.
+	- `jmeter/results/html-report-latest/index.html`
+- Ket qua NUnit da duoc luu tai `submission/01-source-code/test-results/results-after-screenshot-fix.trx`.
+- Ket qua JMeter da duoc luu tai `submission/01-source-code/test-results/all-results-latest.jtl`.
 - Ket qua chay thuc te hien tai: 16/16 test pass.
+- Selenium da bo sung hook chup screenshot tu dong cho moi test fail trong `artifacts/selenium-failures/`.

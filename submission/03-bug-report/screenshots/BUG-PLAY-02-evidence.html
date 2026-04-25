@@ -1,0 +1,24 @@
+﻿<!doctype html>
+<html><head><meta charset="utf-8"><title>BUG-PLAY-02 Evidence</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;background:#1a0f0f;color:#ffecec;margin:0;padding:24px}
+.card{max-width:1200px;margin:0 auto;background:#2a1414;border:1px solid #6f2f2f;border-radius:12px;padding:20px}
+h1{margin:0 0 12px;color:#ff8a8a} .meta{color:#ffcece;margin-bottom:14px}
+pre{background:#180b0b;border:1px solid #8a3a3a;border-left:6px solid #ff8a8a;border-radius:8px;padding:14px;white-space:pre-wrap;word-break:break-word;color:#ffd9d9}
+.note{margin-top:12px;color:#ffe6e6}
+</style></head><body>
+<div class="card">
+  <h1>BUG-PLAY-02 - Zing News has many broken image/tracking URLs</h1>
+  <div class="meta">Source: Playwright error-context | test: advanced bug scan: https://zingnews.vn/</div>
+  <pre>Error: Broken images tại https://zingnews.vn/
+Expected length: 0
+Received length: 156
+
+Examples:
+https://log.znews.vn/Counter2.aspx?... 
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1644156...
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1643502...
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1643946...</pre>
+  <div class="note">Expected: no broken image entries. Actual: 156 problematic image/tracking URLs detected.</div>
+</div>
+</body></html>

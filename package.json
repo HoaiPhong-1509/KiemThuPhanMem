@@ -1,0 +1,29 @@
+{
+  "name": "kiemthupm",
+  "version": "1.0.0",
+  "description": "- .NET 6.0 SDK: https://dotnet.microsoft.com/download - Google Chrome (phiên bản mới nhất) - Visual Studio 2022 hoặc VS Code + C# extension",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "selenium:normal": "powershell -ExecutionPolicy Bypass -File .\\scripts\\run-selenium.ps1 normal",
+    "selenium:demo": "powershell -ExecutionPolicy Bypass -File .\\scripts\\run-selenium.ps1 demo",
+    "selenium:fault": "powershell -ExecutionPolicy Bypass -File .\\scripts\\run-selenium.ps1 fault"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoaiPhong-1509/KiemThuPhanMem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoaiPhong-1509/KiemThuPhanMem/issues"
+  },
+  "homepage": "https://github.com/HoaiPhong-1509/KiemThuPhanMem#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1"
+  }
+}

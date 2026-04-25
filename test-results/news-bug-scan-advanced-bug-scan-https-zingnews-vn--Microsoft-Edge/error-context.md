@@ -1,0 +1,1591 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: news-bug-scan.spec.ts >> advanced bug scan: https://zingnews.vn/
+- Location: tests\news-bug-scan.spec.ts:6:7
+
+# Error details
+
+```
+Error: Broken images tại https://zingnews.vn/:
+https://log.znews.vn/Counter2.aspx?trackurl=https%3A%2F%2Fznews.vn%2F%23appid%3Dzingweb%26type%3Dhome&uid=4000.nwoknu.1776356508552.55453807&zab=0&ts=1776356508780&znsid=6a2cbe04-6e06-43a6-b0f6-53bc8412b1ff
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1644156&pos=zingweb_home_sectionfeatured1&uid=4000.nwoknu.1776356508552.55453807
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1643502&pos=zingweb_home_sectionfeatured2&uid=4000.nwoknu.1776356508552.55453807
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1643946&pos=zingweb_home_sectionfeatured3&uid=4000.nwoknu.1776356508552.55453807
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1644167&pos=zingweb_home_sectionfeatured4&uid=4000.nwoknu.1776356508552.55453807
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1644070&pos=zingweb_home_sectionfeatured5&uid=4000.nwoknu.1776356508552.55453807
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1644147&pos=zingweb_home_sectionfeatured6&uid=4000.nwoknu.1776356508552.55453807
+https://log.znews.vn/imps?type=article&appid=zingweb&id=1644109&pos=zingweb_home_sectionfeatured7&uid=4000.nwoknu.1776356508552.55453807
+
+
+
+expect(received).toHaveLength(expected)
+
+Expected length: 0
+Received length: 156
+Received array:  ["https://log.znews.vn/Counter2.aspx?trackurl=https%3A%2F%2Fznews.vn%2F%23appid%3Dzingweb%26type%3Dhome&uid=4000.nwoknu.1776356508552.55453807&zab=0&ts=1776356508780&znsid=6a2cbe04-6e06-43a6-b0f6-53bc8412b1ff", "https://log.znews.vn/imps?type=article&appid=zingweb&id=1644156&pos=zingweb_home_sectionfeatured1&uid=4000.nwoknu.1776356508552.55453807", "https://log.znews.vn/imps?type=article&appid=zingweb&id=1643502&pos=zingweb_home_sectionfeatured2&uid=4000.nwoknu.1776356508552.55453807", "https://log.znews.vn/imps?type=article&appid=zingweb&id=1643946&pos=zingweb_home_sectionfeatured3&uid=4000.nwoknu.1776356508552.55453807", "https://log.znews.vn/imps?type=article&appid=zingweb&id=1644167&pos=zingweb_home_sectionfeatured4&uid=4000.nwoknu.1776356508552.55453807", "https://log.znews.vn/imps?type=article&appid=zingweb&id=1644070&pos=zingweb_home_sectionfeatured5&uid=4000.nwoknu.1776356508552.55453807", "https://log.znews.vn/imps?type=article&appid=zingweb&id=1644147&pos=zingweb_home_sectionfeatured6&uid=4000.nwoknu.1776356508552.55453807", "https://log.znews.vn/imps?type=article&appid=zingweb&id=1644109&pos=zingweb_home_sectionfeatured7&uid=4000.nwoknu.1776356508552.55453807", "", "", …]
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link [ref=e5] [cursor=pointer]:
+      - /url: https://adtima.vn
+    - iframe [ref=e7]:
+      - generic [active] [ref=f9e1]:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img "Project" [ref=f9e4] [cursor=pointer]
+                - img [ref=f9e5]
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - heading [level=1] [ref=e10]:
+        - link "Tri thức trực tuyến - Thông tin uy tín, hình ảnh ấn tượng" [ref=e11] [cursor=pointer]:
+          - /url: https://znews.vn
+      - navigation [ref=e12]:
+        - list [ref=e13]:
+          - listitem [ref=e14]:
+            - link "Xuất bản" [ref=e15] [cursor=pointer]:
+              - /url: https://znews.vn/xuat-ban.html
+          - listitem [ref=e16]:
+            - link "Kinh doanh" [ref=e17] [cursor=pointer]:
+              - /url: https://znews.vn/kinh-doanh-tai-chinh.html
+          - listitem [ref=e18]:
+            - link "Sức khỏe" [ref=e19] [cursor=pointer]:
+              - /url: https://znews.vn/suc-khoe.html
+          - listitem [ref=e20]:
+            - link "Thể thao" [ref=e21] [cursor=pointer]:
+              - /url: https://znews.vn/the-thao.html
+          - listitem [ref=e22]:
+            - link "Đời sống" [ref=e23] [cursor=pointer]:
+              - /url: https://znews.vn/doi-song.html
+          - listitem [ref=e24]:
+            - link "Công nghệ" [ref=e25] [cursor=pointer]:
+              - /url: https://znews.vn/cong-nghe.html
+          - listitem [ref=e26]:
+            - link "Giải trí" [ref=e27] [cursor=pointer]:
+              - /url: https://znews.vn/giai-tri.html
+          - listitem [ref=e28]:
+            - link "Lifestyle" [ref=e29] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/lifestyle.html
+          - listitem [ref=e30] [cursor=pointer]
+      - generic [ref=e32]:
+        - button "Tìm kiếm" [ref=e35] [cursor=pointer]:
+          - generic [ref=e36]: 
+        - text: 
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - list [ref=e39]:
+        - listitem [ref=e40]:
+          - text: "#"
+          - link "Tổng Bí thư, Chủ tịch nước thăm Trung Quốc" [ref=e41] [cursor=pointer]:
+            - /url: /tieu-diem/tong-bi-thu-tham-trung-quoc.html?src=home_trending
+        - listitem [ref=e42]:
+          - text: "#"
+          - link "Mỹ và Israel tấn công Iran" [ref=e43] [cursor=pointer]:
+            - /url: /tieu-diem/my_tan_cong_iran.html?src=home_trending
+        - listitem [ref=e44]:
+          - text: "#"
+          - link "Bộ máy lãnh đạo 2026-2031" [ref=e45] [cursor=pointer]:
+            - /url: /tieu-diem/lanh-dao-2026-2031.html?src=home_trending
+      - generic [ref=e46]:
+        - list [ref=e47] [cursor=pointer]:
+          - listitem [ref=e48]:
+            - strong [ref=e49]: TP. Hồ Chí Minh
+            - generic [ref=e50]:
+              - emphasis [ref=e51]: 29°C
+              - text: / 27-35°C
+            - generic: 
+        - text: 
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - article [ref=e55]:
+          - paragraph [ref=e56]:
+            - link "Dong Nai chinh thuc len do thi loai I hinh anh" [ref=e57] [cursor=pointer]:
+              - /url: https://znews.vn/dong-nai-chinh-thuc-len-do-thi-loai-i-post1644156.html
+              - img "Dong Nai chinh thuc len do thi loai I hinh anh" [ref=e58]
+          - generic [ref=e59]:
+            - heading "Đồng Nai chính thức lên đô thị loại I" [level=3] [ref=e60]:
+              - link "Đồng Nai chính thức lên đô thị loại I" [ref=e61] [cursor=pointer]:
+                - /url: https://znews.vn/dong-nai-chinh-thuc-len-do-thi-loai-i-post1644156.html
+            - list [ref=e62]:
+              - listitem [ref=e63]:
+                - text: •
+                - link "Dự kiến Đồng Nai là thành phố trực thuộc Trung ương từ ngày 30/4" [ref=e64] [cursor=pointer]:
+                  - /url: https://znews.vn/du-kien-dong-nai-la-thanh-pho-truc-thuoc-trung-uong-tu-ngay-304-post1643561.html
+        - article [ref=e65]:
+          - paragraph [ref=e66]:
+            - link "Tong Bi thu, Chu tich nuoc To Lam va Phu nhan tham thanh pho Nam Ninh hinh anh" [ref=e67] [cursor=pointer]:
+              - /url: https://znews.vn/tong-bi-thu-chu-tich-nuoc-to-lam-va-phu-nhan-tham-thanh-pho-nam-ninh-post1643502.html
+              - img "Tong Bi thu, Chu tich nuoc To Lam va Phu nhan tham thanh pho Nam Ninh hinh anh" [ref=e68]
+          - heading "Tổng Bí thư, Chủ tịch nước Tô Lâm và Phu nhân thăm thành phố Nam Ninh" [level=3] [ref=e70]:
+            - link "Tổng Bí thư, Chủ tịch nước Tô Lâm và Phu nhân thăm thành phố Nam Ninh" [ref=e71] [cursor=pointer]:
+              - /url: https://znews.vn/tong-bi-thu-chu-tich-nuoc-to-lam-va-phu-nhan-tham-thanh-pho-nam-ninh-post1643502.html
+        - article [ref=e72]:
+          - paragraph [ref=e73]:
+            - link "Buoc tien cong nghe dua con nguoi len khong gian hinh anh" [ref=e74] [cursor=pointer]:
+              - /url: https://znews.vn/buoc-tien-cong-nghe-dua-con-nguoi-len-khong-gian-post1643946.html
+              - img "Buoc tien cong nghe dua con nguoi len khong gian hinh anh" [ref=e75]
+          - heading "Bước tiến công nghệ đưa con người lên không gian" [level=3] [ref=e77]:
+            - link "Bước tiến công nghệ đưa con người lên không gian" [ref=e78] [cursor=pointer]:
+              - /url: https://znews.vn/buoc-tien-cong-nghe-dua-con-nguoi-len-khong-gian-post1643946.html
+      - generic [ref=e79]:
+        - article [ref=e80]:
+          - paragraph [ref=e81]:
+            - link "Thu tuong Le Minh Hung lam viec voi 52 doanh nghiep hang dau My hinh anh" [ref=e82] [cursor=pointer]:
+              - /url: https://znews.vn/thu-tuong-le-minh-hung-lam-viec-voi-52-doanh-nghiep-hang-dau-my-post1644167.html
+              - img "Thu tuong Le Minh Hung lam viec voi 52 doanh nghiep hang dau My hinh anh" [ref=e83]
+          - heading "Thủ tướng Lê Minh Hưng làm việc với 52 doanh nghiệp hàng đầu Mỹ" [level=3] [ref=e85]:
+            - link "Thủ tướng Lê Minh Hưng làm việc với 52 doanh nghiệp hàng đầu Mỹ" [ref=e86] [cursor=pointer]:
+              - /url: https://znews.vn/thu-tuong-le-minh-hung-lam-viec-voi-52-doanh-nghiep-hang-dau-my-post1644167.html
+        - article [ref=e87]:
+          - paragraph [ref=e88]:
+            - link "The co My - Iran thay doi hinh anh" [ref=e89] [cursor=pointer]:
+              - /url: https://znews.vn/the-co-my-iran-thay-doi-post1644070.html
+              - img "The co My - Iran thay doi hinh anh" [ref=e90]
+          - heading "Thế cờ Mỹ - Iran thay đổi" [level=3] [ref=e92]:
+            - link "Thế cờ Mỹ - Iran thay đổi" [ref=e93] [cursor=pointer]:
+              - /url: https://znews.vn/the-co-my-iran-thay-doi-post1644070.html
+        - article [ref=e94]:
+          - paragraph [ref=e95]:
+            - link "9 cau thu chuan bi roi Liverpool hinh anh" [ref=e96] [cursor=pointer]:
+              - /url: https://znews.vn/9-cau-thu-chuan-bi-roi-liverpool-post1644147.html
+              - img "9 cau thu chuan bi roi Liverpool hinh anh" [ref=e97]
+          - heading "9 cầu thủ chuẩn bị rời Liverpool" [level=3] [ref=e99]:
+            - link "9 cầu thủ chuẩn bị rời Liverpool" [ref=e100] [cursor=pointer]:
+              - /url: https://znews.vn/9-cau-thu-chuan-bi-roi-liverpool-post1644147.html
+        - article [ref=e101]:
+          - paragraph [ref=e102]:
+            - link "Ly do Huong Tram nhan 'bao phan no' hinh anh" [ref=e103] [cursor=pointer]:
+              - /url: https://znews.vn/ly-do-huong-tram-nhan-bao-phan-no-post1644109.html
+              - img "Ly do Huong Tram nhan 'bao phan no' hinh anh" [ref=e104]
+          - heading "Lý do Hương Tràm nhận 'bão phẫn nộ'" [level=3] [ref=e106]:
+            - link "Lý do Hương Tràm nhận 'bão phẫn nộ'" [ref=e107] [cursor=pointer]:
+              - /url: https://znews.vn/ly-do-huong-tram-nhan-bao-phan-no-post1644109.html
+        - article [ref=e108]:
+          - paragraph [ref=e109]:
+            - link "Ong Bui Cao Nhat Quan thay cha lam Chu tich HDQT NovaGroup hinh anh" [ref=e110] [cursor=pointer]:
+              - /url: https://znews.vn/ong-bui-cao-nhat-quan-thay-cha-lam-chu-tich-hdqt-novagroup-post1644175.html
+              - img "Ong Bui Cao Nhat Quan thay cha lam Chu tich HDQT NovaGroup hinh anh" [ref=e111]
+          - heading "Ông Bùi Cao Nhật Quân thay cha làm Chủ tịch HĐQT NovaGroup" [level=3] [ref=e113]:
+            - link "Ông Bùi Cao Nhật Quân thay cha làm Chủ tịch HĐQT NovaGroup" [ref=e114] [cursor=pointer]:
+              - /url: https://znews.vn/ong-bui-cao-nhat-quan-thay-cha-lam-chu-tich-hdqt-novagroup-post1644175.html
+    - generic [ref=e115]:
+      - heading "Books" [level=2] [ref=e117]:
+        - link "Books" [ref=e118] [cursor=pointer]:
+          - /url: /tieu-diem/daihoihoixuatban.html
+      - generic [ref=e121]:
+        - list [ref=e123]:
+          - listitem [ref=e124]:
+            - article [ref=e125]:
+              - paragraph [ref=e126]:
+                - link "Khoi day dong luc phat trien cua nganh xuat ban hinh anh" [ref=e127] [cursor=pointer]:
+                  - /url: https://znews.vn/khoi-day-dong-luc-phat-trien-cua-nganh-xuat-ban-post1640449.html
+                  - img "Khoi day dong luc phat trien cua nganh xuat ban hinh anh" [ref=e128]
+              - heading "Khơi dậy động lực phát triển của ngành xuất bản" [level=3] [ref=e130]:
+                - link "Khơi dậy động lực phát triển của ngành xuất bản" [ref=e131] [cursor=pointer]:
+                  - /url: https://znews.vn/khoi-day-dong-luc-phat-trien-cua-nganh-xuat-ban-post1640449.html
+          - listitem [ref=e132]:
+            - article [ref=e133]:
+              - paragraph [ref=e134]:
+                - link "Quyen luc ‘khung’ cua nhung nguoi noi tieng trong gioi sach hinh anh" [ref=e135] [cursor=pointer]:
+                  - /url: https://znews.vn/quyen-luc-khung-cua-nhung-nguoi-noi-tieng-trong-gioi-sach-post1642822.html
+                  - img "Quyen luc ‘khung’ cua nhung nguoi noi tieng trong gioi sach hinh anh" [ref=e136]
+              - heading "Quyền lực ‘khủng’ của những người nổi tiếng trong giới sách" [level=3] [ref=e138]:
+                - link "Quyền lực ‘khủng’ của những người nổi tiếng trong giới sách" [ref=e139] [cursor=pointer]:
+                  - /url: https://znews.vn/quyen-luc-khung-cua-nhung-nguoi-noi-tieng-trong-gioi-sach-post1642822.html
+          - listitem [ref=e140]:
+            - article [ref=e141]:
+              - paragraph [ref=e142]:
+                - link "Disney 'dung sau' bo manga gia tuong den toi nhat moi thoi dai hinh anh" [ref=e143] [cursor=pointer]:
+                  - /url: https://znews.vn/disney-dung-sau-bo-manga-gia-tuong-den-toi-nhat-moi-thoi-dai-post1642977.html
+                  - img "Disney 'dung sau' bo manga gia tuong den toi nhat moi thoi dai hinh anh" [ref=e144]
+              - heading "Disney 'đứng sau' bộ manga giả tưởng đen tối nhất mọi thời đại" [level=3] [ref=e146]:
+                - link "Disney 'đứng sau' bộ manga giả tưởng đen tối nhất mọi thời đại" [ref=e147] [cursor=pointer]:
+                  - /url: https://znews.vn/disney-dung-sau-bo-manga-gia-tuong-den-toi-nhat-moi-thoi-dai-post1642977.html
+          - listitem [ref=e148]:
+            - article [ref=e149]:
+              - paragraph [ref=e150]:
+                - link "Ky niem dung 'chui' may tinh o Dai hoc Harvard cua Bill Gates hinh anh" [ref=e151] [cursor=pointer]:
+                  - /url: https://znews.vn/ky-niem-dung-chui-may-tinh-o-dai-hoc-harvard-cua-bill-gates-post1643051.html
+                  - img "Ky niem dung 'chui' may tinh o Dai hoc Harvard cua Bill Gates hinh anh" [ref=e152]
+              - heading "Kỷ niệm dùng 'chui' máy tính ở Đại học Harvard của Bill Gates" [level=3] [ref=e154]:
+                - link "Kỷ niệm dùng 'chui' máy tính ở Đại học Harvard của Bill Gates" [ref=e155] [cursor=pointer]:
+                  - /url: https://znews.vn/ky-niem-dung-chui-may-tinh-o-dai-hoc-harvard-cua-bill-gates-post1643051.html
+          - listitem [ref=e156]:
+            - article [ref=e157]:
+              - paragraph [ref=e158]:
+                - link "Can canh dong tranh duoc UNESCO dua vao danh sach ‘bao ve khan cap’ hinh anh" [ref=e159] [cursor=pointer]:
+                  - /url: https://znews.vn/can-canh-dong-tranh-duoc-unesco-dua-vao-danh-sach-bao-ve-khan-cap-post1641159.html
+                  - img "Can canh dong tranh duoc UNESCO dua vao danh sach ‘bao ve khan cap’ hinh anh" [ref=e160]
+              - heading "Cận cảnh dòng tranh được UNESCO đưa vào danh sách ‘bảo vệ khẩn cấp’" [level=3] [ref=e162]:
+                - link "Cận cảnh dòng tranh được UNESCO đưa vào danh sách ‘bảo vệ khẩn cấp’" [ref=e163] [cursor=pointer]:
+                  - /url: https://znews.vn/can-canh-dong-tranh-duoc-unesco-dua-vao-danh-sach-bao-ve-khan-cap-post1641159.html
+          - listitem [ref=e164]:
+            - article [ref=e165]:
+              - paragraph [ref=e166]:
+                - link "Nhung ngay dau thong nhat dat nuoc trong ky uc nu bac si quan y hinh anh" [ref=e167] [cursor=pointer]:
+                  - /url: https://znews.vn/nhung-ngay-dau-thong-nhat-dat-nuoc-trong-ky-uc-nu-bac-si-quan-y-post1642956.html
+                  - img "Nhung ngay dau thong nhat dat nuoc trong ky uc nu bac si quan y hinh anh" [ref=e168]
+              - heading "Những ngày đầu thống nhất đất nước trong ký ức nữ bác sĩ quân y" [level=3] [ref=e170]:
+                - link "Những ngày đầu thống nhất đất nước trong ký ức nữ bác sĩ quân y" [ref=e171] [cursor=pointer]:
+                  - /url: https://znews.vn/nhung-ngay-dau-thong-nhat-dat-nuoc-trong-ky-uc-nu-bac-si-quan-y-post1642956.html
+          - listitem [ref=e172]:
+            - article [ref=e173]:
+              - paragraph [ref=e174]:
+                - link "Suc hap dan cua nghe tu sua hien vat o Co Cung hinh anh" [ref=e175] [cursor=pointer]:
+                  - /url: https://znews.vn/suc-hap-dan-cua-nghe-tu-sua-hien-vat-o-co-cung-post1643004.html
+                  - img "Suc hap dan cua nghe tu sua hien vat o Co Cung hinh anh" [ref=e176]
+              - heading "Sức hấp dẫn của nghề tu sửa hiện vật ở Cố Cung" [level=3] [ref=e178]:
+                - link "Sức hấp dẫn của nghề tu sửa hiện vật ở Cố Cung" [ref=e179] [cursor=pointer]:
+                  - /url: https://znews.vn/suc-hap-dan-cua-nghe-tu-sua-hien-vat-o-co-cung-post1643004.html
+          - listitem [ref=e180]:
+            - article [ref=e181]:
+              - paragraph [ref=e182]:
+                - link "Trai nghiem cong nghe VR, Thu vien nguoi tai Ngay Sach va Van hoa doc hinh anh" [ref=e183] [cursor=pointer]:
+                  - /url: https://znews.vn/trai-nghiem-cong-nghe-vr-thu-vien-nguoi-tai-ngay-sach-va-van-hoa-doc-post1643003.html
+                  - img "Trai nghiem cong nghe VR, Thu vien nguoi tai Ngay Sach va Van hoa doc hinh anh" [ref=e184]
+              - heading "Trải nghiệm công nghệ VR, Thư viện người tại Ngày Sách và Văn hóa đọc" [level=3] [ref=e186]:
+                - link "Trải nghiệm công nghệ VR, Thư viện người tại Ngày Sách và Văn hóa đọc" [ref=e187] [cursor=pointer]:
+                  - /url: https://znews.vn/trai-nghiem-cong-nghe-vr-thu-vien-nguoi-tai-ngay-sach-va-van-hoa-doc-post1643003.html
+          - listitem [ref=e188]:
+            - article [ref=e189]:
+              - paragraph [ref=e190]:
+                - link "Hormuz giua vong xoay quyen luc hinh anh" [ref=e191] [cursor=pointer]:
+                  - /url: https://znews.vn/hormuz-giua-vong-xoay-quyen-luc-post1643235.html
+                  - img "Hormuz giua vong xoay quyen luc hinh anh" [ref=e192]
+              - heading "Hormuz giữa vòng xoáy quyền lực" [level=3] [ref=e194]:
+                - link "Hormuz giữa vòng xoáy quyền lực" [ref=e195] [cursor=pointer]:
+                  - /url: https://znews.vn/hormuz-giua-vong-xoay-quyen-luc-post1643235.html
+          - listitem [ref=e196]:
+            - article [ref=e197]:
+              - paragraph [ref=e198]:
+                - link "Thoi ky thinh vuong cua nhung quan ca phe o London? hinh anh" [ref=e199] [cursor=pointer]:
+                  - /url: https://znews.vn/thoi-ky-thinh-vuong-cua-nhung-quan-ca-phe-o-london-post1642824.html
+                  - img "Thoi ky thinh vuong cua nhung quan ca phe o London? hinh anh" [ref=e200]
+              - heading "Thời kỳ thịnh vượng của những quán cà phê ở London?" [level=3] [ref=e202]:
+                - link "Thời kỳ thịnh vượng của những quán cà phê ở London?" [ref=e203] [cursor=pointer]:
+                  - /url: https://znews.vn/thoi-ky-thinh-vuong-cua-nhung-quan-ca-phe-o-london-post1642824.html
+          - listitem [ref=e204]:
+            - article [ref=e205]:
+              - paragraph [ref=e206]:
+                - link "Nha toan hoc vi dai nhat trong lich su nhan loai hinh anh" [ref=e207] [cursor=pointer]:
+                  - /url: https://znews.vn/nha-toan-hoc-vi-dai-nhat-trong-lich-su-nhan-loai-post1643056.html
+                  - img "Nha toan hoc vi dai nhat trong lich su nhan loai hinh anh" [ref=e208]
+              - heading "Nhà toán học vĩ đại nhất trong lịch sử nhân loại" [level=3] [ref=e210]:
+                - link "Nhà toán học vĩ đại nhất trong lịch sử nhân loại" [ref=e211] [cursor=pointer]:
+                  - /url: https://znews.vn/nha-toan-hoc-vi-dai-nhat-trong-lich-su-nhan-loai-post1643056.html
+          - listitem [ref=e212]:
+            - article [ref=e213]:
+              - paragraph [ref=e214]:
+                - link "Viet lai lich su vu tru hinh anh" [ref=e215] [cursor=pointer]:
+                  - /url: https://znews.vn/viet-lai-lich-su-vu-tru-post1642066.html
+                  - img "Viet lai lich su vu tru hinh anh" [ref=e216]
+              - heading "Viết lại lịch sử vũ trụ" [level=3] [ref=e218]:
+                - link "Viết lại lịch sử vũ trụ" [ref=e219] [cursor=pointer]:
+                  - /url: https://znews.vn/viet-lai-lich-su-vu-tru-post1642066.html
+        - generic:
+          - button "" [disabled] [ref=e220]:
+            - generic [ref=e221]: 
+          - button "" [ref=e222]:
+            - generic [ref=e223]: 
+  - generic [ref=e225]:
+    - generic [ref=e226]:
+      - generic [ref=e227]:
+        - heading "MULTIMEDIA" [level=2] [ref=e228]
+        - list [ref=e229]:
+          - listitem [ref=e230]:
+            - link "" [ref=e231] [cursor=pointer]:
+              - /url: /video
+              - generic [ref=e232]: 
+          - listitem [ref=e233]:
+            - link "" [ref=e234] [cursor=pointer]:
+              - /url: /series/vodcast.html
+              - generic [ref=e235]: 
+          - listitem [ref=e236]:
+            - link "" [ref=e237] [cursor=pointer]:
+              - /url: /series/long-form.html
+              - generic [ref=e238]: 
+          - listitem [ref=e239]:
+            - link "" [ref=e240] [cursor=pointer]:
+              - /url: /series/zingstory.html
+              - generic [ref=e241]: 
+          - listitem [ref=e242]:
+            - link "" [ref=e243] [cursor=pointer]:
+              - /url: /series/trac-nghiem-quizz.html
+              - generic [ref=e244]: 
+      - generic [ref=e246]:
+        - article [ref=e247]:
+          - paragraph [ref=e248]:
+            - link "Israel tiep tuc khong kich Lebanon bat chap cac cuoc dam phan hinh anh" [ref=e249] [cursor=pointer]:
+              - /url: https://znews.vn/video-israel-tiep-tuc-khong-kich-lebanon-bat-chap-cac-cuoc-dam-phan-post1644017.html
+              - img "Israel tiep tuc khong kich Lebanon bat chap cac cuoc dam phan hinh anh" [ref=e250]
+            - generic:
+              - generic: 
+          - generic [ref=e252]:
+            - heading "Israel tiếp tục không kích Lebanon bất chấp các cuộc đàm phán" [level=3] [ref=e253]:
+              - link "Israel tiếp tục không kích Lebanon bất chấp các cuộc đàm phán" [ref=e254] [cursor=pointer]:
+                - /url: https://znews.vn/video-israel-tiep-tuc-khong-kich-lebanon-bat-chap-cac-cuoc-dam-phan-post1644017.html
+            - paragraph [ref=e255]: Israel tiếp tục không kích vào miền Nam Lebanon ngay trong quá trình đàm phán giữa hai bên đang diễn ra tại Mỹ. Hoạt động không kích vẫn tiếp diễn sau khi đàm phán kết thúc. Trong khi thủ đô Beirrut và các vùng lân cận không bị tấn công trong những ngày gần đây, một phần vì sức ép của Mỹ đối với Israel, các khu vực ở miền Nam Lebanon vẫn hứng chịu bom đạn.
+        - article [ref=e256]:
+          - paragraph [ref=e257]:
+            - link "Tong Bi thu, Chu tich nuoc va Phu nhan tham thanh pho Nam Ninh hinh anh" [ref=e258] [cursor=pointer]:
+              - /url: https://znews.vn/tong-bi-thu-chu-tich-nuoc-va-phu-nhan-tham-thanh-pho-nam-ninh-post1643508.html
+              - img "Tong Bi thu, Chu tich nuoc va Phu nhan tham thanh pho Nam Ninh hinh anh" [ref=e259]
+          - heading "Tổng Bí thư, Chủ tịch nước và Phu nhân thăm thành phố Nam Ninh" [level=3] [ref=e261]:
+            - link "Tổng Bí thư, Chủ tịch nước và Phu nhân thăm thành phố Nam Ninh" [ref=e262] [cursor=pointer]:
+              - /url: https://znews.vn/tong-bi-thu-chu-tich-nuoc-va-phu-nhan-tham-thanh-pho-nam-ninh-post1643508.html
+        - article [ref=e263]:
+          - paragraph [ref=e264]:
+            - link "Hien trang 60 toa nha khu tap the Thanh Xuan Bac hinh anh" [ref=e265] [cursor=pointer]:
+              - /url: https://znews.vn/hien-trang-60-toa-nha-khu-tap-the-thanh-xuan-bac-post1643872.html
+              - img "Hien trang 60 toa nha khu tap the Thanh Xuan Bac hinh anh" [ref=e266]
+          - heading "Hiện trạng 60 tòa nhà khu tập thể Thanh Xuân Bắc" [level=3] [ref=e268]:
+            - link "Hiện trạng 60 tòa nhà khu tập thể Thanh Xuân Bắc" [ref=e269] [cursor=pointer]:
+              - /url: https://znews.vn/hien-trang-60-toa-nha-khu-tap-the-thanh-xuan-bac-post1643872.html
+    - generic [ref=e270]:
+      - heading "# Tổng Bí thư, Chủ tịch nước thăm Trung Quốc" [level=2] [ref=e272]:
+        - text: "#"
+        - link "Tổng Bí thư, Chủ tịch nước thăm Trung Quốc" [ref=e273] [cursor=pointer]:
+          - /url: /tieu-diem/tong-bi-thu-tham-trung-quoc.html
+      - generic [ref=e275]:
+        - article [ref=e276]:
+          - paragraph [ref=e277]:
+            - link "Phu nhan Ngo Phuong Ly gap go, trao doi voi Phu nhan Banh Le Vien hinh anh" [ref=e278] [cursor=pointer]:
+              - /url: https://znews.vn/phu-nhan-ngo-phuong-ly-gap-go-trao-doi-voi-phu-nhan-banh-le-vien-post1643514.html
+              - img "Phu nhan Ngo Phuong Ly gap go, trao doi voi Phu nhan Banh Le Vien hinh anh" [ref=e279]
+        - article [ref=e280]:
+          - heading "Phu nhân Ngô Phương Ly gặp gỡ, trao đổi với Phu nhân Bành Lệ Viên" [level=3] [ref=e282]:
+            - link "Phu nhân Ngô Phương Ly gặp gỡ, trao đổi với Phu nhân Bành Lệ Viên" [ref=e283] [cursor=pointer]:
+              - /url: https://znews.vn/phu-nhan-ngo-phuong-ly-gap-go-trao-doi-voi-phu-nhan-banh-le-vien-post1643514.html
+        - article [ref=e284]:
+          - generic [ref=e285]:
+            - text: •
+            - heading "Tổng Bí thư, Chủ tịch nước thăm Bảo tàng Lịch sử ĐCS Trung Quốc" [level=3] [ref=e286]:
+              - link "Tổng Bí thư, Chủ tịch nước thăm Bảo tàng Lịch sử ĐCS Trung Quốc" [ref=e287] [cursor=pointer]:
+                - /url: https://znews.vn/tong-bi-thu-chu-tich-nuoc-tham-bao-tang-lich-su-dcs-trung-quoc-post1643520.html
+        - article [ref=e288]:
+          - generic [ref=e289]:
+            - text: •
+            - heading "Tổng Bí thư, Chủ tịch nước dự Chương trình nghệ thuật Việt - Trung" [level=3] [ref=e290]:
+              - link "Tổng Bí thư, Chủ tịch nước dự Chương trình nghệ thuật Việt - Trung" [ref=e291] [cursor=pointer]:
+                - /url: https://znews.vn/tong-bi-thu-chu-tich-nuoc-du-chuong-trinh-nghe-thuat-viet-trung-post1643521.html
+    - generic [ref=e292]:
+      - generic [ref=e293]:
+        - heading "Trending" [level=2]
+      - generic [ref=e295]:
+        - article [ref=e296]:
+          - paragraph [ref=e297]:
+            - link "Cong an vao cuoc vu nguoi dan ong xong vao nha danh cu ba o TP.HCM hinh anh" [ref=e298] [cursor=pointer]:
+              - /url: https://znews.vn/cong-an-vao-cuoc-vu-nguoi-dan-ong-xong-vao-nha-danh-cu-ba-o-tphcm-post1643449.html
+              - img "Cong an vao cuoc vu nguoi dan ong xong vao nha danh cu ba o TP.HCM hinh anh" [ref=e299]
+          - generic [ref=e300]:
+            - heading "Công an vào cuộc vụ người đàn ông xông vào nhà đánh cụ bà ở TP.HCM" [level=3] [ref=e301]:
+              - link "Công an vào cuộc vụ người đàn ông xông vào nhà đánh cụ bà ở TP.HCM" [ref=e302] [cursor=pointer]:
+                - /url: https://znews.vn/cong-an-vao-cuoc-vu-nguoi-dan-ong-xong-vao-nha-danh-cu-ba-o-tphcm-post1643449.html
+            - paragraph [ref=e303]: Từ tranh cãi chuyện chó phóng uế trước cửa, người đàn ông đã xông vào nhà hàng xóm hành hung cụ bà lớn tuổi. Vụ việc được camera an ninh ghi lại gây bức xúc dư luận.
+        - article [ref=e304]:
+          - paragraph [ref=e305]:
+            - link "Buoc ngoat bat ngo My - Iran hinh anh" [ref=e306] [cursor=pointer]:
+              - /url: https://znews.vn/buoc-ngoat-bat-ngo-my-iran-post1644072.html
+              - img "Buoc ngoat bat ngo My - Iran hinh anh" [ref=e307]
+          - heading "Bước ngoặt bất ngờ Mỹ - Iran" [level=3] [ref=e309]:
+            - link "Bước ngoặt bất ngờ Mỹ - Iran" [ref=e310] [cursor=pointer]:
+              - /url: https://znews.vn/buoc-ngoat-bat-ngo-my-iran-post1644072.html
+        - article [ref=e311]:
+          - paragraph [ref=e312]:
+            - link "Khach Tay bat ngo khi mo, nam vien 5 ngay o Viet Nam het 60 trieu dong hinh anh" [ref=e313] [cursor=pointer]:
+              - /url: https://znews.vn/khach-tay-bat-ngo-khi-mo-nam-vien-5-ngay-o-viet-nam-het-60-trieu-dong-post1644069.html
+              - img "Khach Tay bat ngo khi mo, nam vien 5 ngay o Viet Nam het 60 trieu dong hinh anh" [ref=e314]
+          - heading "Khách Tây bất ngờ khi mổ, nằm viện 5 ngày ở Việt Nam hết 60 triệu đồng" [level=3] [ref=e316]:
+            - link "Khách Tây bất ngờ khi mổ, nằm viện 5 ngày ở Việt Nam hết 60 triệu đồng" [ref=e317] [cursor=pointer]:
+              - /url: https://znews.vn/khach-tay-bat-ngo-khi-mo-nam-vien-5-ngay-o-viet-nam-het-60-trieu-dong-post1644069.html
+        - article [ref=e318]:
+          - paragraph [ref=e319]:
+            - link "'No' giai doc dac Vietlott gan 92 ty dong hinh anh" [ref=e320] [cursor=pointer]:
+              - /url: https://znews.vn/no-giai-doc-dac-vietlott-gan-92-ty-dong-post1644187.html
+              - img "'No' giai doc dac Vietlott gan 92 ty dong hinh anh" [ref=e321]
+          - heading "'Nổ' giải độc đắc Vietlott gần 92 tỷ đồng" [level=3] [ref=e323]:
+            - link "'Nổ' giải độc đắc Vietlott gần 92 tỷ đồng" [ref=e324] [cursor=pointer]:
+              - /url: https://znews.vn/no-giai-doc-dac-vietlott-gan-92-ty-dong-post1644187.html
+        - article [ref=e325]:
+          - paragraph [ref=e326]:
+            - link "Thanh le tuyen phong Chan phuoc cho linh muc Truong Buu Diep ngay 2/7 hinh anh" [ref=e327] [cursor=pointer]:
+              - /url: https://znews.vn/thanh-le-tuyen-phong-chan-phuoc-cho-linh-muc-truong-buu-diep-ngay-27-post1643495.html
+              - img "Thanh le tuyen phong Chan phuoc cho linh muc Truong Buu Diep ngay 2/7 hinh anh" [ref=e328]
+          - heading "Thánh lễ tuyên phong Chân phước cho linh mục Trương Bửu Diệp ngày 2/7" [level=3] [ref=e330]:
+            - link "Thánh lễ tuyên phong Chân phước cho linh mục Trương Bửu Diệp ngày 2/7" [ref=e331] [cursor=pointer]:
+              - /url: https://znews.vn/thanh-le-tuyen-phong-chan-phuoc-cho-linh-muc-truong-buu-diep-ngay-27-post1643495.html
+    - generic [ref=e332]:
+      - generic [ref=e333]:
+        - heading "Kinh doanh" [level=2] [ref=e334]:
+          - link "Kinh doanh" [ref=e335] [cursor=pointer]:
+            - /url: https://znews.vn/kinh-doanh-tai-chinh.html
+        - list [ref=e336]:
+          - generic [ref=e339]:
+            - listitem [ref=e340]:
+              - link "Doanh nhân" [ref=e341] [cursor=pointer]:
+                - /url: https://znews.vn/doanh-nhan.html
+            - listitem [ref=e342]:
+              - link "Bất động sản" [ref=e343] [cursor=pointer]:
+                - /url: https://znews.vn/bat-dong-san.html
+            - listitem [ref=e344]:
+              - link "Tài chính - Chứng khoán" [ref=e345] [cursor=pointer]:
+                - /url: https://znews.vn/tai-chinh.html
+            - listitem [ref=e346]:
+              - link "Thị trường" [ref=e347] [cursor=pointer]:
+                - /url: https://znews.vn/kinh-doanh-thi-truong.html
+            - listitem [ref=e348]:
+              - link "Kinh tế số" [ref=e349] [cursor=pointer]:
+                - /url: https://znews.vn/kinh-te-so.html
+            - listitem [ref=e350]:
+              - link "Tiền Của Tôi" [ref=e351] [cursor=pointer]:
+                - /url: https://znews.vn/tien-cua-toi.html
+            - listitem [ref=e352]:
+              - link "Hàng không" [ref=e353] [cursor=pointer]:
+                - /url: https://znews.vn/hang-khong.html
+            - listitem [ref=e354]:
+              - link "Nông Nghiệp" [ref=e355] [cursor=pointer]:
+                - /url: https://znews.vn/nong-nghiep.html
+            - listitem [ref=e356]:
+              - link "TTDN" [ref=e357] [cursor=pointer]:
+                - /url: https://znews.vn/ttdn.html
+      - generic [ref=e359]:
+        - article [ref=e360]:
+          - paragraph [ref=e361]:
+            - 'link "Ong Truong Gia Binh: FPT dang tai sinh hinh anh" [ref=e362] [cursor=pointer]':
+              - /url: https://znews.vn/ong-truong-gia-binh-fpt-dang-tai-sinh-post1644150.html
+              - 'img "Ong Truong Gia Binh: FPT dang tai sinh hinh anh" [ref=e363]'
+          - generic [ref=e364]:
+            - 'heading "Ông Trương Gia Bình: FPT đang tái sinh" [level=3] [ref=e365]':
+              - 'link "Ông Trương Gia Bình: FPT đang tái sinh" [ref=e366] [cursor=pointer]':
+                - /url: https://znews.vn/ong-truong-gia-binh-fpt-dang-tai-sinh-post1644150.html
+            - paragraph [ref=e367]: Chủ tịch Trương Gia Bình cho rằng FPT đang trong quá trình “tái sinh”, đặt tham vọng làm chủ công nghệ lõi và bứt phá nhờ AI trong 5-10 năm tới.
+        - article [ref=e368]:
+          - paragraph [ref=e369]:
+            - link "Nha dau tu trinh chu truong du an trung tam hanh chinh moi cua TP.HCM hinh anh" [ref=e370] [cursor=pointer]:
+              - /url: https://znews.vn/nha-dau-tu-trinh-chu-truong-du-an-trung-tam-hanh-chinh-moi-cua-tphcm-post1644122.html
+              - img "Nha dau tu trinh chu truong du an trung tam hanh chinh moi cua TP.HCM hinh anh" [ref=e371]
+          - heading "Nhà đầu tư trình chủ trương dự án trung tâm hành chính mới của TP.HCM" [level=3] [ref=e373]:
+            - link "Nhà đầu tư trình chủ trương dự án trung tâm hành chính mới của TP.HCM" [ref=e374] [cursor=pointer]:
+              - /url: https://znews.vn/nha-dau-tu-trinh-chu-truong-du-an-trung-tam-hanh-chinh-moi-cua-tphcm-post1644122.html
+        - article [ref=e375]:
+          - paragraph [ref=e376]:
+            - link "Vingroup vuot dinh, tai san ong Pham Nhat Vuong vuot 30 ty USD hinh anh" [ref=e377] [cursor=pointer]:
+              - /url: https://znews.vn/vingroup-vuot-dinh-tai-san-ong-pham-nhat-vuong-vuot-30-ty-usd-post1644114.html
+              - img "Vingroup vuot dinh, tai san ong Pham Nhat Vuong vuot 30 ty USD hinh anh" [ref=e378]
+          - heading "Vingroup vượt đỉnh, tài sản ông Phạm Nhật Vượng vượt 30 tỷ USD" [level=3] [ref=e380]:
+            - link "Vingroup vượt đỉnh, tài sản ông Phạm Nhật Vượng vượt 30 tỷ USD" [ref=e381] [cursor=pointer]:
+              - /url: https://znews.vn/vingroup-vuot-dinh-tai-san-ong-pham-nhat-vuong-vuot-30-ty-usd-post1644114.html
+        - article [ref=e382]:
+          - paragraph [ref=e383]:
+            - link "Gia dau diesel giam gan 2.000 dong/lit hinh anh" [ref=e384] [cursor=pointer]:
+              - /url: https://znews.vn/gia-dau-diesel-giam-gan-2000-donglit-post1643969.html
+              - img "Gia dau diesel giam gan 2.000 dong/lit hinh anh" [ref=e385]
+          - heading "Giá dầu diesel giảm gần 2.000 đồng/lít" [level=3] [ref=e387]:
+            - link "Giá dầu diesel giảm gần 2.000 đồng/lít" [ref=e388] [cursor=pointer]:
+              - /url: https://znews.vn/gia-dau-diesel-giam-gan-2000-donglit-post1643969.html
+        - article [ref=e389]:
+          - paragraph [ref=e390]:
+            - link "Con trai ty phu Nguyen Thi Phuong Thao noi ve thu hut von cho Viet Nam hinh anh" [ref=e391] [cursor=pointer]:
+              - /url: https://znews.vn/con-trai-ty-phu-nguyen-thi-phuong-thao-noi-ve-thu-hut-von-cho-viet-nam-post1643930.html
+              - img "Con trai ty phu Nguyen Thi Phuong Thao noi ve thu hut von cho Viet Nam hinh anh" [ref=e392]
+          - heading "Con trai tỷ phú Nguyễn Thị Phương Thảo nói về thu hút vốn cho Việt Nam" [level=3] [ref=e394]:
+            - link "Con trai tỷ phú Nguyễn Thị Phương Thảo nói về thu hút vốn cho Việt Nam" [ref=e395] [cursor=pointer]:
+              - /url: https://znews.vn/con-trai-ty-phu-nguyen-thi-phuong-thao-noi-ve-thu-hut-von-cho-viet-nam-post1643930.html
+      - generic [ref=e400]:
+        - link "Giá Vàng SJC Mua 167,700,000 Bán 171,200,000" [ref=e401] [cursor=pointer]:
+          - /url: /tieu-diem/gia-vang-hom-nay.html
+          - generic [ref=e402]: Giá Vàng SJC
+          - generic [ref=e405]:
+            - generic [ref=e406]:
+              - generic [ref=e407]: Mua
+              - generic [ref=e408]: 167,700,000
+            - generic [ref=e409]:
+              - generic [ref=e410]: Bán
+              - generic [ref=e411]: 171,200,000
+        - link "Tài trợ bởi Tỷ giá USD Mua 26,140 Bán 26,357 EUR Mua 30,671 Bán 31,572" [ref=e412] [cursor=pointer]:
+          - /url: /tieu-diem/ty-gia-ngoai-te.html
+          - generic [ref=e413]: Tài trợ bởi Tỷ giá
+          - generic [ref=e414]:
+            - generic [ref=e415]:
+              - generic [ref=e416]: USD
+              - generic [ref=e417]:
+                - generic [ref=e418]:
+                  - generic [ref=e419]: Mua
+                  - generic [ref=e420]: 26,140
+                - generic [ref=e421]:
+                  - generic [ref=e422]: Bán
+                  - generic [ref=e423]: 26,357
+            - generic [ref=e424]:
+              - generic [ref=e425]: EUR
+              - generic [ref=e426]:
+                - generic [ref=e427]:
+                  - generic [ref=e428]: Mua
+                  - generic [ref=e429]: 30,671
+                - generic [ref=e430]:
+                  - generic [ref=e431]: Bán
+                  - generic [ref=e432]: 31,572
+        - link "Chứng khoán VNINDEX 1,819.83 1.07% HNX 256.49 1.49% Upcom 128.22 -0.49%" [ref=e433] [cursor=pointer]:
+          - /url: /tieu-diem/thong-tin-chung-khoan.html
+          - generic [ref=e434]: Chứng khoán
+          - generic [ref=e435]:
+            - generic [ref=e436]:
+              - generic [ref=e437]: VNINDEX
+              - generic [ref=e438]:
+                - generic [ref=e439]: 1,819.83
+                - generic [ref=e440]: 1.07%
+            - generic [ref=e441]:
+              - generic [ref=e442]: HNX
+              - generic [ref=e443]:
+                - generic [ref=e444]: "256.49"
+                - generic [ref=e445]: 1.49%
+            - generic [ref=e446]:
+              - generic [ref=e447]: Upcom
+              - generic [ref=e448]:
+                - generic [ref=e449]: "128.22"
+                - generic [ref=e450]: "-0.49%"
+    - generic [ref=e451]:
+      - generic [ref=e452]:
+        - heading "Lifestyle" [level=2] [ref=e453]:
+          - link "Lifestyle" [ref=e454] [cursor=pointer]:
+            - /url: https://lifestyle.znews.vn/lifestyle.html
+        - list [ref=e455]:
+          - generic [ref=e458]:
+            - listitem [ref=e459]:
+              - link "#Money" [ref=e460] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-money.html
+            - listitem [ref=e461]:
+              - link "#Work" [ref=e462] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-work.html
+            - listitem [ref=e463]:
+              - link "#Living" [ref=e464] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-living.html
+            - listitem [ref=e465]:
+              - link "#Love" [ref=e466] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-love.html
+            - listitem [ref=e467]:
+              - link "#Art" [ref=e468] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-art.html
+            - listitem [ref=e469]:
+              - link "#Style" [ref=e470] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-style.html
+            - listitem [ref=e471]:
+              - link "#Beauty" [ref=e472] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-beauty.html
+            - listitem [ref=e473]:
+              - link "#Pickleball" [ref=e474] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-pickleball.html
+            - listitem [ref=e475]:
+              - link "#Smart Choice" [ref=e476] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/lifestyle-smart-choice.html
+            - listitem [ref=e477]:
+              - link "#SHINE" [ref=e478] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/shine.html
+      - generic [ref=e480]:
+        - article [ref=e481]:
+          - paragraph [ref=e482]:
+            - link "Tien, tieng Viet tren san khau bac nhat nuoc My hinh anh" [ref=e483] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/tien-tieng-viet-tren-san-khau-bac-nhat-nuoc-my-post1644091.html
+              - img "Tien, tieng Viet tren san khau bac nhat nuoc My hinh anh" [ref=e484]
+          - generic [ref=e485]:
+            - heading "Tiền, tiếng Việt trên sân khấu bậc nhất nước Mỹ" [level=3] [ref=e486]:
+              - link "Tiền, tiếng Việt trên sân khấu bậc nhất nước Mỹ" [ref=e487] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/tien-tieng-viet-tren-san-khau-bac-nhat-nuoc-my-post1644091.html
+            - paragraph [ref=e488]: Coachella (Mỹ), một trong những lễ hội âm nhạc và nghệ thuật lớn nhất thế giới, tiếp tục là nơi các nghệ sĩ và khách mời biến thời trang thành tuyên ngôn cá nhân.
+        - article [ref=e489]:
+          - paragraph [ref=e490]:
+            - link "‘Nu hoang pickleball’ bi danh bai trong tran keo 1 trieu USD hinh anh" [ref=e491] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/nu-hoang-pickleball-bi-danh-bai-trong-tran-keo-1-trieu-usd-post1644085.html
+              - img "‘Nu hoang pickleball’ bi danh bai trong tran keo 1 trieu USD hinh anh" [ref=e492]
+          - heading "‘Nữ hoàng pickleball’ bị đánh bại trong trận kèo 1 triệu USD" [level=3] [ref=e494]:
+            - link "‘Nữ hoàng pickleball’ bị đánh bại trong trận kèo 1 triệu USD" [ref=e495] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/nu-hoang-pickleball-bi-danh-bai-trong-tran-keo-1-trieu-usd-post1644085.html
+        - article [ref=e496]:
+          - paragraph [ref=e497]:
+            - link "Lo kem nen dat giua hai chan nam idol Kpop gay tranh cai hinh anh" [ref=e498] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/lo-kem-nen-dat-giua-hai-chan-nam-idol-kpop-gay-tranh-cai-post1644113.html
+              - img "Lo kem nen dat giua hai chan nam idol Kpop gay tranh cai hinh anh" [ref=e499]
+          - heading "Lọ kem nền đặt giữa hai chân nam idol Kpop gây tranh cãi" [level=3] [ref=e501]:
+            - link "Lọ kem nền đặt giữa hai chân nam idol Kpop gây tranh cãi" [ref=e502] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/lo-kem-nen-dat-giua-hai-chan-nam-idol-kpop-gay-tranh-cai-post1644113.html
+        - article [ref=e503]:
+          - paragraph [ref=e504]:
+            - link "Quan cap tre in chu tieng Viet cua Justin Bieber 'chay hang' hinh anh" [ref=e505] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/quan-cap-tre-in-chu-tieng-viet-cua-justin-bieber-chay-hang-post1644003.html
+              - img "Quan cap tre in chu tieng Viet cua Justin Bieber 'chay hang' hinh anh" [ref=e506]
+          - heading "Quần cạp trễ in chữ tiếng Việt của Justin Bieber 'cháy hàng'" [level=3] [ref=e508]:
+            - link "Quần cạp trễ in chữ tiếng Việt của Justin Bieber 'cháy hàng'" [ref=e509] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/quan-cap-tre-in-chu-tieng-viet-cua-justin-bieber-chay-hang-post1644003.html
+        - article [ref=e510]:
+          - paragraph [ref=e511]:
+            - link "Bo doi cau thu tuyen Viet Nam dong loat bao tin vui voi 'chi dep' hinh anh" [ref=e512] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/bo-doi-cau-thu-tuyen-viet-nam-dong-loat-bao-tin-vui-voi-chi-dep-post1643790.html
+              - img "Bo doi cau thu tuyen Viet Nam dong loat bao tin vui voi 'chi dep' hinh anh" [ref=e513]
+          - heading "Bộ đôi cầu thủ tuyển Việt Nam đồng loạt báo tin vui với 'chị đẹp'" [level=3] [ref=e515]:
+            - link "Bộ đôi cầu thủ tuyển Việt Nam đồng loạt báo tin vui với 'chị đẹp'" [ref=e516] [cursor=pointer]:
+              - /url: https://lifestyle.znews.vn/bo-doi-cau-thu-tuyen-viet-nam-dong-loat-bao-tin-vui-voi-chi-dep-post1643790.html
+    - generic [ref=e517]:
+      - generic [ref=e518]:
+        - heading "Sức khỏe" [level=2] [ref=e519]:
+          - link "Sức khỏe" [ref=e520] [cursor=pointer]:
+            - /url: https://znews.vn/suc-khoe.html
+        - list [ref=e521]:
+          - listitem [ref=e522]:
+            - link "Thành tựu Y khoa" [ref=e523] [cursor=pointer]:
+              - /url: https://znews.vn/thanh-tuu-y-khoa.html
+          - listitem [ref=e524]:
+            - link "Thẩm mỹ" [ref=e525] [cursor=pointer]:
+              - /url: https://znews.vn/tham-my.html
+          - listitem [ref=e526]:
+            - link "Dinh dưỡng" [ref=e527] [cursor=pointer]:
+              - /url: https://znews.vn/dinh-duong.html
+          - listitem [ref=e528]:
+            - link "Mẹ và Bé" [ref=e529] [cursor=pointer]:
+              - /url: https://znews.vn/me-va-be.html
+          - listitem [ref=e530]:
+            - link "Giới tính" [ref=e531] [cursor=pointer]:
+              - /url: https://znews.vn/gioi-tinh.html
+          - listitem [ref=e532]:
+            - link "Bệnh thường gặp" [ref=e533] [cursor=pointer]:
+              - /url: https://znews.vn/benh-thuong-gap.html
+      - generic [ref=e535]:
+        - article [ref=e536]:
+          - paragraph [ref=e537]:
+            - link "Hoat dong 'chua tung co' cua nganh Y te TP.HCM hinh anh" [ref=e538] [cursor=pointer]:
+              - /url: https://znews.vn/hoat-dong-chua-tung-co-cua-nganh-y-te-tphcm-post1643808.html
+              - img "Hoat dong 'chua tung co' cua nganh Y te TP.HCM hinh anh" [ref=e539]
+          - generic [ref=e540]:
+            - heading "Hoạt động 'chưa từng có' của ngành Y tế TP.HCM" [level=3] [ref=e541]:
+              - link "Hoạt động 'chưa từng có' của ngành Y tế TP.HCM" [ref=e542] [cursor=pointer]:
+                - /url: https://znews.vn/hoat-dong-chua-tung-co-cua-nganh-y-te-tphcm-post1643808.html
+            - paragraph [ref=e543]: Mỗi người dân TP.HCM sẽ được khám sức khỏe định kỳ miễn phí hàng năm, tầm soát bệnh sớm, lập hồ sơ sức khỏe điện tử và được theo dõi, chăm sóc liên tục suốt đời.
+        - article [ref=e544]:
+          - paragraph [ref=e545]:
+            - link "Rat hiem gap, hai tre cung mot me chao doi cach nhau 3 thang hinh anh" [ref=e546] [cursor=pointer]:
+              - /url: https://znews.vn/rat-hiem-gap-hai-tre-cung-mot-me-chao-doi-cach-nhau-3-thang-post1644164.html
+              - img "Rat hiem gap, hai tre cung mot me chao doi cach nhau 3 thang hinh anh" [ref=e547]
+          - heading "Rất hiếm gặp, hai trẻ cùng một mẹ chào đời cách nhau 3 tháng" [level=3] [ref=e549]:
+            - link "Rất hiếm gặp, hai trẻ cùng một mẹ chào đời cách nhau 3 tháng" [ref=e550] [cursor=pointer]:
+              - /url: https://znews.vn/rat-hiem-gap-hai-tre-cung-mot-me-chao-doi-cach-nhau-3-thang-post1644164.html
+        - article [ref=e551]:
+          - paragraph [ref=e552]:
+            - link "Tre 2 tuoi ra di trong dau xot chi sau mot ngay phat benh hinh anh" [ref=e553] [cursor=pointer]:
+              - /url: https://znews.vn/tre-2-tuoi-ra-di-trong-dau-xot-chi-sau-mot-ngay-phat-benh-post1644120.html
+              - img "Tre 2 tuoi ra di trong dau xot chi sau mot ngay phat benh hinh anh" [ref=e554]
+          - heading "Trẻ 2 tuổi ra đi trong đau xót chỉ sau một ngày phát bệnh" [level=3] [ref=e556]:
+            - link "Trẻ 2 tuổi ra đi trong đau xót chỉ sau một ngày phát bệnh" [ref=e557] [cursor=pointer]:
+              - /url: https://znews.vn/tre-2-tuoi-ra-di-trong-dau-xot-chi-sau-mot-ngay-phat-benh-post1644120.html
+        - article [ref=e558]:
+          - paragraph [ref=e559]:
+            - link "Sai lam an uong am tham tan pha than hinh anh" [ref=e560] [cursor=pointer]:
+              - /url: https://znews.vn/sai-lam-an-uong-am-tham-tan-pha-than-post1643916.html
+              - img "Sai lam an uong am tham tan pha than hinh anh" [ref=e561]
+          - heading "Sai lầm ăn uống âm thầm tàn phá thận" [level=3] [ref=e563]:
+            - link "Sai lầm ăn uống âm thầm tàn phá thận" [ref=e564] [cursor=pointer]:
+              - /url: https://znews.vn/sai-lam-an-uong-am-tham-tan-pha-than-post1643916.html
+        - article [ref=e565]:
+          - paragraph [ref=e566]:
+            - link "Uong nuoc dau den moi ngay chuc nang than se thay doi ra sao? hinh anh" [ref=e567] [cursor=pointer]:
+              - /url: https://znews.vn/uong-nuoc-dau-den-moi-ngay-chuc-nang-than-se-thay-doi-ra-sao-post1644169.html
+              - img "Uong nuoc dau den moi ngay chuc nang than se thay doi ra sao? hinh anh" [ref=e568]
+          - heading "Uống nước đậu đen mỗi ngày chức năng thận sẽ thay đổi ra sao?" [level=3] [ref=e570]:
+            - link "Uống nước đậu đen mỗi ngày chức năng thận sẽ thay đổi ra sao?" [ref=e571] [cursor=pointer]:
+              - /url: https://znews.vn/uong-nuoc-dau-den-moi-ngay-chuc-nang-than-se-thay-doi-ra-sao-post1644169.html
+    - complementary [ref=e572]:
+      - generic [ref=e574]:
+        - link [ref=e575] [cursor=pointer]:
+          - /url: javascript:;
+        - iframe [ref=e578]:
+          - generic [ref=f7e5]:
+            - link [ref=f7e6] [cursor=pointer]:
+              - /url: https://log.adtimaserver.vn/t/c?t=click&h=l3w&staticParams=GBjp5pgJxiKirzdiDRqJ2Yxm9jU6SenJ5sZmdLjRq3Q3qtek4Z0FpUyyqZ1_W5jCGvbbOGbHZFaum2VYvk2Gu4yxLfDRKF9WGhS-3jk77wXe9S6F7APef0QCOThN6C7Kvz4KDut0DNDqjOzc07CXPxTgDLQ16iYNq42A0ShfZ9h7-qAE1_02sU_JyPP_JaEHZvc_AcLE9jyF29xnxJcRE3dGRkiSAVveLFBPHpEoSZmrNNaytSQ3gFgTd0ZxLmoWv1iTbVK0Me9WjNDpt8dY1T3Ptb4B3_QD6V7_jr5fOEEI7nQ5aC88ERuo5MdwVa60ONZU-WDZlTFH-gUKJTqIsp0PuGeqhmrEW7OEM-gEADMFAfOQFgHtDzS3Pi-GxmR8UTFeFB47K9lxg-T1aiw&dynamicParams=Qfm4F_sUwjnQFGkiEn--4teoyrQw6mT138N-6Ge1X5LdBbgAhvpcONgkWknno9XGGWkWknyBIVuFEXAAO-KGX9aSfII5BbJPY2SCNSQzN07v3QP1mQBYmGLN6StvDmzLggYImQrJmeE2mTNrFhnbwzdz70uXGze-oE85NdMCPeauVTnpRaJuEKFi2cs-wuYVrhnFuIVW63zhOd6h4W5KvAU4LTaJpThtfvM0dyoWn77i1J41PhE3l_p2pPxsIEr0uev4kiwURRxHa1eDGOYjAGGzyv93BcRHZ1Nq5XtWFij-gVa1q5qcJ5SVrhnFuG2W4xx06n2JQx-WNA&dmpReqId=&uid=4000.nwoknu.1776356508552.55453807&sssx=ypi39lXddmpvjcS4R6de9nDRSHgvD8jCxBqlrXUS7emS1v50bkGoeOMbFdjIJ3PjTmd68Q1EOJQ_&contentId=v1_web_other_home&crossUid=4000.nwoknu.1776356508552.55453807&urlRedirect=aHR0cHM6Ly93d3cudGhlZ2lvaWRpZG9uZy5jb20vZHRkZC94aWFvbWktcmVkbWktYTctcHJvP3V0bV9zb3VyY2U9YWR0aW1hJnV0bV9tZWRpdW09Y3BjJnV0bV9jYW1wYWlnbj1yZWRtaS1hNy1wcm8%3D
+              - img [ref=f7e7]
+            - img [ref=f7e8]
+      - generic [ref=e579]:
+        - link [ref=e580] [cursor=pointer]:
+          - /url: javascript:;
+        - iframe [ref=e583]:
+          - generic [ref=f6e5]:
+            - link [ref=f6e6] [cursor=pointer]:
+              - /url: https://log.adtimaserver.vn/t/c?t=click&h=l3w&staticParams=GBjp5pgJxiKirzdiDRqJ2Yxm9jU6SenJ5sZmdLjRq3Q3qtek4Z0FpUyyqZ1_W5jCGvbbOGbHZFaum2VYvk2Gu4yxLfDRKF9WGhS-3jk77wXe9S6F7APef0QCOThN6C7Kvz4KDut0DNDqjOzc07CXPxTgDLQ16iYNq42A0ShfZ9h7-qAE1_02sU_JyPP_JaEHZvc_AcLE9jyF29xnxJcRE3dGRkiSAVveLFBPHpEoSZmrNNaytSQ3gFgTd0ZxLmoWv1iTbVK0Me9WjNDpt8dY1T3Ptb4B3_QD6V7_jr5fOEEI7nQ5aC88ERuo5MdwVa60ONZU-WDZlTFH-gUKJTqIsp0PuGeqhmrEW7OEM-gEADMFAfOQFgHtDzS3Pi-GxmR8UTFeFB47K9lxg-T1aiw&dynamicParams=CDDzGYt0QjkZXWfGWl8-Kx6smtQw6q0804P-6Gd8ZHJdBbgATzPqHIAkWoDc49XGGWnfq6qlOYtlWIv-dyoWn58rqqYhhbKGWKSCNSQz_nUtddMVGclhVoY1KSumRW7nCpbIUEFLdTk2mfogxllbwze6FAsXGze-aYatBdMCPS_3U90hVcInKa92UVveC6-TykmlOEydidTxGZ5oqnLS_IU45G0LicjN_jr_2ZpWn74rHZBdHpE3XgGUR25Wrdp8o0NCTV7kQa3VhMJqazf1WOGzyjZM7j2bVx9XI1_OsKinPvMZWRIG020M8rkFuG1fOoj8ej2JimS2tA&dmpReqId=&uid=4000.nwoknu.1776356508552.55453807&sssx=ypi39lXddmpvjcS4R6de9nDRSHgvD8jCxBqlrXUS7emS1v50bkGoeOMbFdjIJ3PjTmd68Q1EOJQ_&contentId=v1_web_other_home&crossUid=4000.nwoknu.1776356508552.55453807&urlRedirect=aHR0cHM6Ly93d3cudGhlZ2lvaWRpZG9uZy5jb20vZHRkZC94aWFvbWktcmVkbWktYTctcHJvP3V0bV9zb3VyY2U9YWR0aW1hJnV0bV9tZWRpdW09Y3BjJnV0bV9jYW1wYWlnbj1yZWRtaS1hNy1wcm8%3D
+              - img [ref=f6e7]
+            - img [ref=f6e8]
+      - generic [ref=e584]:
+        - heading "Đọc nhiều" [level=2] [ref=e586]
+        - generic [ref=e588]:
+          - article [ref=e589]:
+            - paragraph [ref=e590]:
+              - link "Bo vo khoc nuc no, om hon con re ung thu gan bi benh vien tra ve hinh anh" [ref=e591] [cursor=pointer]:
+                - /url: https://znews.vn/bo-vo-khoc-nuc-no-om-hon-con-re-ung-thu-gan-bi-benh-vien-tra-ve-post1644021.html
+                - img "Bo vo khoc nuc no, om hon con re ung thu gan bi benh vien tra ve hinh anh" [ref=e592]
+            - generic [ref=e593]:
+              - heading "Bố vợ khóc nức nở, ôm hôn con rể ung thư gan bị bệnh viện trả về" [level=3] [ref=e594]:
+                - link "Bố vợ khóc nức nở, ôm hôn con rể ung thư gan bị bệnh viện trả về" [ref=e595] [cursor=pointer]:
+                  - /url: https://znews.vn/bo-vo-khoc-nuc-no-om-hon-con-re-ung-thu-gan-bi-benh-vien-tra-ve-post1644021.html
+              - paragraph
+          - article [ref=e596]:
+            - paragraph [ref=e597]:
+              - link "Gia dau diesel giam gan 2.000 dong/lit hinh anh" [ref=e598] [cursor=pointer]:
+                - /url: https://znews.vn/gia-dau-diesel-giam-gan-2000-donglit-post1643969.html
+                - img "Gia dau diesel giam gan 2.000 dong/lit hinh anh" [ref=e599]
+            - generic [ref=e600]:
+              - heading "Giá dầu diesel giảm gần 2.000 đồng/lít" [level=3] [ref=e601]:
+                - link "Giá dầu diesel giảm gần 2.000 đồng/lít" [ref=e602] [cursor=pointer]:
+                  - /url: https://znews.vn/gia-dau-diesel-giam-gan-2000-donglit-post1643969.html
+              - paragraph
+          - article [ref=e603]:
+            - paragraph [ref=e604]:
+              - link "Google sap giai quyet thu kho chiu nhat khi luot web hinh anh" [ref=e605] [cursor=pointer]:
+                - /url: https://znews.vn/google-sap-giai-quyet-thu-kho-chiu-nhat-khi-luot-web-post1643778.html
+                - img "Google sap giai quyet thu kho chiu nhat khi luot web hinh anh" [ref=e606]
+            - generic [ref=e607]:
+              - heading "Google sắp giải quyết thứ khó chịu nhất khi lướt web" [level=3] [ref=e608]:
+                - link "Google sắp giải quyết thứ khó chịu nhất khi lướt web" [ref=e609] [cursor=pointer]:
+                  - /url: https://znews.vn/google-sap-giai-quyet-thu-kho-chiu-nhat-khi-luot-web-post1643778.html
+              - paragraph
+          - article [ref=e610]:
+            - paragraph [ref=e611]:
+              - link "Bo doi cau thu tuyen Viet Nam dong loat bao tin vui voi 'chi dep' hinh anh" [ref=e612] [cursor=pointer]:
+                - /url: https://lifestyle.znews.vn/bo-doi-cau-thu-tuyen-viet-nam-dong-loat-bao-tin-vui-voi-chi-dep-post1643790.html
+                - img "Bo doi cau thu tuyen Viet Nam dong loat bao tin vui voi 'chi dep' hinh anh" [ref=e613]
+            - generic [ref=e614]:
+              - heading "Bộ đôi cầu thủ tuyển Việt Nam đồng loạt báo tin vui với 'chị đẹp'" [level=3] [ref=e615]:
+                - link "Bộ đôi cầu thủ tuyển Việt Nam đồng loạt báo tin vui với 'chị đẹp'" [ref=e616] [cursor=pointer]:
+                  - /url: https://lifestyle.znews.vn/bo-doi-cau-thu-tuyen-viet-nam-dong-loat-bao-tin-vui-voi-chi-dep-post1643790.html
+              - paragraph
+          - article [ref=e617]:
+            - paragraph [ref=e618]:
+              - link "Sai lam an uong am tham tan pha than hinh anh" [ref=e619] [cursor=pointer]:
+                - /url: https://znews.vn/sai-lam-an-uong-am-tham-tan-pha-than-post1643916.html
+                - img "Sai lam an uong am tham tan pha than hinh anh" [ref=e620]
+            - generic [ref=e621]:
+              - heading "Sai lầm ăn uống âm thầm tàn phá thận" [level=3] [ref=e622]:
+                - link "Sai lầm ăn uống âm thầm tàn phá thận" [ref=e623] [cursor=pointer]:
+                  - /url: https://znews.vn/sai-lam-an-uong-am-tham-tan-pha-than-post1643916.html
+              - paragraph
+          - text: 
+      - generic [ref=e625]:
+        - heading "Podcast" [level=2] [ref=e627]:
+          - link "Podcast" [ref=e628] [cursor=pointer]:
+            - /url: /series/vodcast.html
+            - img "Podcast" [ref=e629]
+        - generic [ref=e631]:
+          - article [ref=e632]:
+            - paragraph [ref=e633]:
+              - link "Neu co hon 100 ty, ban se lam gi? hinh anh" [ref=e634] [cursor=pointer]:
+                - /url: https://znews.vn/neu-co-hon-100-ty-ban-se-lam-gi-post1639175.html
+                - img "Neu co hon 100 ty, ban se lam gi? hinh anh" [ref=e635]
+            - heading "Nếu có hơn 100 tỷ, bạn sẽ làm gì?" [level=3] [ref=e637]:
+              - link "Nếu có hơn 100 tỷ, bạn sẽ làm gì?" [ref=e638] [cursor=pointer]:
+                - /url: https://znews.vn/neu-co-hon-100-ty-ban-se-lam-gi-post1639175.html
+          - article [ref=e639]:
+            - paragraph [ref=e640]:
+              - link "Danh thu Hong Son bat mi cach toi uu tien luong moi thang hinh anh" [ref=e641] [cursor=pointer]:
+                - /url: https://znews.vn/danh-thu-hong-son-bat-mi-cach-toi-uu-tien-luong-moi-thang-post1633122.html
+                - img "Danh thu Hong Son bat mi cach toi uu tien luong moi thang hinh anh" [ref=e642]
+            - generic [ref=e643]:
+              - heading "Danh thủ Hồng Sơn bật mí cách tối ưu tiền lương mỗi tháng" [level=3] [ref=e644]:
+                - link "Danh thủ Hồng Sơn bật mí cách tối ưu tiền lương mỗi tháng" [ref=e645] [cursor=pointer]:
+                  - /url: https://znews.vn/danh-thu-hong-son-bat-mi-cach-toi-uu-tien-luong-moi-thang-post1633122.html
+              - paragraph
+          - article [ref=e646]:
+            - paragraph [ref=e647]:
+              - link "Tong giam doc Google Viet Nam uong ca phe sua da, ban ve AI hinh anh" [ref=e648] [cursor=pointer]:
+                - /url: https://znews.vn/tong-giam-doc-google-viet-nam-uong-ca-phe-sua-da-ban-ve-ai-post1628182.html
+                - img "Tong giam doc Google Viet Nam uong ca phe sua da, ban ve AI hinh anh" [ref=e649]
+            - generic [ref=e650]:
+              - heading "Tổng giám đốc Google Việt Nam uống cà phê sữa đá, bàn về AI" [level=3] [ref=e651]:
+                - link "Tổng giám đốc Google Việt Nam uống cà phê sữa đá, bàn về AI" [ref=e652] [cursor=pointer]:
+                  - /url: https://znews.vn/tong-giam-doc-google-viet-nam-uong-ca-phe-sua-da-ban-ve-ai-post1628182.html
+              - paragraph
+          - article [ref=e653]:
+            - paragraph [ref=e654]:
+              - link "Bai toan dau dau voi nhieu chu ho kinh doanh hinh anh" [ref=e655] [cursor=pointer]:
+                - /url: https://znews.vn/bai-toan-dau-dau-voi-nhieu-chu-ho-kinh-doanh-post1627536.html
+                - img "Bai toan dau dau voi nhieu chu ho kinh doanh hinh anh" [ref=e656]
+            - generic [ref=e657]:
+              - heading "Bài toán đau đầu với nhiều chủ hộ kinh doanh" [level=3] [ref=e658]:
+                - link "Bài toán đau đầu với nhiều chủ hộ kinh doanh" [ref=e659] [cursor=pointer]:
+                  - /url: https://znews.vn/bai-toan-dau-dau-voi-nhieu-chu-ho-kinh-doanh-post1627536.html
+              - paragraph
+      - generic [ref=e660]:
+        - link "Trung Nguyên" [ref=e663] [cursor=pointer]:
+          - /url: https://znews.vn/hanh-trinh-tu-trai-tim
+        - generic [ref=e664]:
+          - article [ref=e665]:
+            - paragraph [ref=e666]:
+              - link "Trung Nguyen Legend tiep tuc trien khai Hanh trinh Tu Trai Tim hinh anh" [ref=e667] [cursor=pointer]:
+                - /url: https://znews.vn/trung-nguyen-legend-tiep-tuc-trien-khai-hanh-trinh-tu-trai-tim-post1637717.html
+                - img "Trung Nguyen Legend tiep tuc trien khai Hanh trinh Tu Trai Tim hinh anh" [ref=e668]
+            - heading "Trung Nguyên Legend tiếp tục triển khai Hành trình Từ Trái Tim" [level=3] [ref=e669]:
+              - link "Trung Nguyên Legend tiếp tục triển khai Hành trình Từ Trái Tim" [ref=e670] [cursor=pointer]:
+                - /url: https://znews.vn/trung-nguyen-legend-tiep-tuc-trien-khai-hanh-trinh-tu-trai-tim-post1637717.html
+          - article [ref=e671]:
+            - paragraph [ref=e672]:
+              - link "Hanh trinh Tu Trai Tim lan toa khat vong khoi nghiep noi cao nguyen da hinh anh" [ref=e673] [cursor=pointer]:
+                - /url: https://znews.vn/hanh-trinh-tu-trai-tim-lan-toa-khat-vong-khoi-nghiep-noi-cao-nguyen-da-post1643759.html
+                - img "Hanh trinh Tu Trai Tim lan toa khat vong khoi nghiep noi cao nguyen da hinh anh" [ref=e674]
+            - heading "Hành trình Từ Trái Tim lan tỏa khát vọng khởi nghiệp nơi cao nguyên đá" [level=3] [ref=e676]:
+              - link "Hành trình Từ Trái Tim lan tỏa khát vọng khởi nghiệp nơi cao nguyên đá" [ref=e677] [cursor=pointer]:
+                - /url: https://znews.vn/hanh-trinh-tu-trai-tim-lan-toa-khat-vong-khoi-nghiep-noi-cao-nguyen-da-post1643759.html
+          - article [ref=e678]:
+            - paragraph [ref=e679]:
+              - 'link "Hanh trinh Tu Trai Tim: Lan toa khat vong khoi nghiep o cao nguyen da hinh anh" [ref=e680] [cursor=pointer]':
+                - /url: https://znews.vn/hanh-trinh-tu-trai-tim-lan-toa-khat-vong-khoi-nghiep-o-cao-nguyen-da-post1643406.html
+                - 'img "Hanh trinh Tu Trai Tim: Lan toa khat vong khoi nghiep o cao nguyen da hinh anh" [ref=e681]'
+            - 'heading "Hành trình Từ Trái Tim: Lan tỏa khát vọng khởi nghiệp ở cao nguyên đá" [level=3] [ref=e683]':
+              - 'link "Hành trình Từ Trái Tim: Lan tỏa khát vọng khởi nghiệp ở cao nguyên đá" [ref=e684] [cursor=pointer]':
+                - /url: https://znews.vn/hanh-trinh-tu-trai-tim-lan-toa-khat-vong-khoi-nghiep-o-cao-nguyen-da-post1643406.html
+        - paragraph [ref=e685]:
+          - link "Xem thêm" [ref=e686] [cursor=pointer]:
+            - /url: https://znews.vn/hanh-trinh-tu-trai-tim
+  - generic [ref=e689]:
+    - link [ref=e690] [cursor=pointer]:
+      - /url: javascript:;
+    - iframe [ref=e693]:
+      - generic [ref=f4e5]:
+        - link [ref=f4e6] [cursor=pointer]:
+          - /url: https://log.adtimaserver.vn/t/c?t=click&h=l3w&staticParams=GBjp5pgJxiKirzdiDRqJ2Yxm9jU6SenJ5sZmdLjRq3Q3qtek4Z0FpUyyqZ1_W5jCGvbbOGbHZFaum2VYvk2Gu4yxLfDRKF9WGhS-3jk77wXe9S6F7APef0QCOThN6C7Kvz4KDut0DNDqjOzc07CXPxTgDLQ16iYNq42A0ShfZ9h7-qAE1_02sU_JyPP_JaEHZvc_AcLE9jyF29xnxJcRE3dGRkiSAVveLFBPHpEoSZmrNNaytSQ3gFgTd0ZxLmoWv1iTbVK0Me9WjNDpt8dY1T3Ptb4B3_QD6V7_jr5fOEEI7nQ5aC88ERuo5MdwVa60ONZU-WDZlTFH-gUKJTqIsp0PuGeqhmrEW7OEM-gEADMFAfOQFgHtDzS3Pi-GxmR8UTFeFB47K9lxg-T1aiw&dynamicParams=4VkY1_sUwjlwtCmiEn--QncoyrQw6sQV38N-6GcV_xLdBbgAJhqcuNgkWulHI9XGGWm2cnyBIVuFsdCAO-KGX3ZyfII5BbLvw-SCNSQzl-5v3QP1maC4GGLN6SvPruzLggYIOWpJmaU1gooSJP1sDMXHXxMHx0BBJMHczFrm7zZvfIky2TqU8NRc4D0LVetVhcdOsOj1K5-ecS_KCn-8CTvYVFlDB1eDxBEQzfNcFS3HDFygfFf5fZuS_Q7WpbEhVcIGCHFqYfueqk5FxkFFuG1-G1QZSX7Jib5CdBUYhY6ZjfAN_hscZ0JuTx6KPA5dZqGX_-IHZCn4XzsQAarAbCmhDFzXoEdsUJ4ma9jhs8oWazNrX_9wBehS8y_f_391SAV6Y6xtblGNGO1-Gxw8Eg3pK4dm9A&dmpReqId=&uid=4000.nwoknu.1776356508552.55453807&sssx=ypi39lXddmpvjcS4R6de9nDRSHgvD8jCxBqlrXUS7emS1v50bkGoeOMbFdjIJ3PjTmd68Q1EOJQ_&contentId=v1_web_other_home&crossUid=4000.nwoknu.1776356508552.55453807&urlRedirect=aHR0cHM6Ly93d3cudGhlZ2lvaWRpZG9uZy5jb20vZHRkZC94aWFvbWktcmVkbWktYTctcHJvP3V0bV9zb3VyY2U9YWR0aW1hJnV0bV9tZWRpdW09Y3BjJnV0bV9jYW1wYWlnbj1yZWRtaS1hNy1wcm8%3D
+          - img [ref=f4e7]
+        - img [ref=f4e8]
+  - generic [ref=e696]:
+    - generic [ref=e697]:
+      - heading "Công nghệ" [level=2] [ref=e698]:
+        - link "Công nghệ" [ref=e699] [cursor=pointer]:
+          - /url: https://znews.vn/cong-nghe.html
+      - generic [ref=e700]:
+        - article [ref=e701]:
+          - paragraph [ref=e702]:
+            - link "CEO 'dang so' nhat the gioi hinh anh" [ref=e703] [cursor=pointer]:
+              - /url: https://znews.vn/ceo-dang-so-nhat-the-gioi-post1643141.html
+              - img "CEO 'dang so' nhat the gioi hinh anh" [ref=e704]
+          - heading "CEO 'đáng sợ' nhất thế giới" [level=3] [ref=e706]:
+            - link "CEO 'đáng sợ' nhất thế giới" [ref=e707] [cursor=pointer]:
+              - /url: https://znews.vn/ceo-dang-so-nhat-the-gioi-post1643141.html
+        - article [ref=e708]:
+          - heading "Sàn thương mại điện tử 10 tuổi từ chối đua giảm giá" [level=3] [ref=e710]:
+            - link "Sàn thương mại điện tử 10 tuổi từ chối đua giảm giá" [ref=e711] [cursor=pointer]:
+              - /url: https://znews.vn/san-thuong-mai-dien-tu-10-tuoi-tu-choi-dua-giam-gia-post1644174.html
+        - article [ref=e712]:
+          - heading "iPad Air sắp có thay đổi lớn" [level=3] [ref=e714]:
+            - link "iPad Air sắp có thay đổi lớn" [ref=e715] [cursor=pointer]:
+              - /url: https://znews.vn/ipad-air-sap-co-thay-doi-lon-post1643979.html
+    - generic [ref=e716]:
+      - heading "Đời sống" [level=2] [ref=e717]:
+        - link "Đời sống" [ref=e718] [cursor=pointer]:
+          - /url: https://znews.vn/doi-song.html
+      - generic [ref=e719]:
+        - article [ref=e720]:
+          - paragraph [ref=e721]:
+            - link "Vo chong Van Hau - Hai My gay chu y hinh anh" [ref=e722] [cursor=pointer]:
+              - /url: https://znews.vn/vo-chong-van-hau-hai-my-gay-chu-y-post1644165.html
+              - img "Vo chong Van Hau - Hai My gay chu y hinh anh" [ref=e723]
+          - heading "Vợ chồng Văn Hậu - Hải My gây chú ý" [level=3] [ref=e725]:
+            - link "Vợ chồng Văn Hậu - Hải My gây chú ý" [ref=e726] [cursor=pointer]:
+              - /url: https://znews.vn/vo-chong-van-hau-hai-my-gay-chu-y-post1644165.html
+        - article [ref=e727]:
+          - heading "Mưa đá rơi thủng mái nhà, chị gái bế em chạy thoát lúc nửa đêm" [level=3] [ref=e729]:
+            - link "Mưa đá rơi thủng mái nhà, chị gái bế em chạy thoát lúc nửa đêm" [ref=e730] [cursor=pointer]:
+              - /url: https://znews.vn/mua-da-roi-thung-mai-nha-chi-gai-be-em-chay-thoat-luc-nua-dem-post1644061.html
+        - article [ref=e731]:
+          - heading "Chủ cụm 22 sân pickleball lớn nhất Hà Nội vừa bị tháo dỡ lên tiếng" [level=3] [ref=e733]:
+            - link "Chủ cụm 22 sân pickleball lớn nhất Hà Nội vừa bị tháo dỡ lên tiếng" [ref=e734] [cursor=pointer]:
+              - /url: https://znews.vn/chu-cum-22-san-pickleball-lon-nhat-ha-noi-vua-bi-thao-do-len-tieng-post1644045.html
+    - generic [ref=e735]:
+      - heading "Du lịch" [level=2] [ref=e736]:
+        - link "Du lịch" [ref=e737] [cursor=pointer]:
+          - /url: https://znews.vn/du-lich.html
+      - generic [ref=e738]:
+        - article [ref=e739]:
+          - paragraph [ref=e740]:
+            - link "Giai ma 'dong chu la' tren bai bien Da Nang hinh anh" [ref=e741] [cursor=pointer]:
+              - /url: https://znews.vn/giai-ma-dong-chu-la-tren-bai-bien-da-nang-post1644103.html
+              - img "Giai ma 'dong chu la' tren bai bien Da Nang hinh anh" [ref=e742]
+          - heading "Giải mã 'dòng chữ lạ' trên bãi biển Đà Nẵng" [level=3] [ref=e744]:
+            - link "Giải mã 'dòng chữ lạ' trên bãi biển Đà Nẵng" [ref=e745] [cursor=pointer]:
+              - /url: https://znews.vn/giai-ma-dong-chu-la-tren-bai-bien-da-nang-post1644103.html
+        - article [ref=e746]:
+          - heading "Nguyên liệu khiến matcha thất thế ở Ấn Độ" [level=3] [ref=e748]:
+            - link "Nguyên liệu khiến matcha thất thế ở Ấn Độ" [ref=e749] [cursor=pointer]:
+              - /url: https://znews.vn/nguyen-lieu-khien-matcha-that-the-o-an-do-post1644141.html
+        - article [ref=e750]:
+          - heading "Khách Việt đến Nhật Bản bất ngờ tăng kỷ lục" [level=3] [ref=e752]:
+            - link "Khách Việt đến Nhật Bản bất ngờ tăng kỷ lục" [ref=e753] [cursor=pointer]:
+              - /url: https://znews.vn/khach-viet-den-nhat-ban-bat-ngo-tang-ky-luc-post1644068.html
+    - generic [ref=e754]:
+      - heading "Thế giới" [level=2] [ref=e755]:
+        - link "Thế giới" [ref=e756] [cursor=pointer]:
+          - /url: https://znews.vn/the-gioi.html
+      - generic [ref=e757]:
+        - article [ref=e758]:
+          - paragraph [ref=e759]:
+            - link "Nhat Ban 'mo kho vu khi' lon nhat ke tu The chien II hinh anh" [ref=e760] [cursor=pointer]:
+              - /url: https://znews.vn/nhat-ban-mo-kho-vu-khi-lon-nhat-ke-tu-the-chien-ii-post1644051.html
+              - img "Nhat Ban 'mo kho vu khi' lon nhat ke tu The chien II hinh anh" [ref=e761]
+          - heading "Nhật Bản 'mở kho vũ khí' lớn nhất kể từ Thế chiến II" [level=3] [ref=e763]:
+            - link "Nhật Bản 'mở kho vũ khí' lớn nhất kể từ Thế chiến II" [ref=e764] [cursor=pointer]:
+              - /url: https://znews.vn/nhat-ban-mo-kho-vu-khi-lon-nhat-ke-tu-the-chien-ii-post1644051.html
+        - article [ref=e765]:
+          - heading "Mỹ mất UAV đắt nhất thế giới trên Vịnh Ba Tư" [level=3] [ref=e767]:
+            - link "Mỹ mất UAV đắt nhất thế giới trên Vịnh Ba Tư" [ref=e768] [cursor=pointer]:
+              - /url: https://znews.vn/my-mat-uav-dat-nhat-the-gioi-tren-vinh-ba-tu-post1644127.html
+        - article [ref=e769]:
+          - heading "Iran chao đảo trước 'bom kinh tế' Mỹ" [level=3] [ref=e771]:
+            - link "Iran chao đảo trước 'bom kinh tế' Mỹ" [ref=e772] [cursor=pointer]:
+              - /url: https://znews.vn/iran-chao-dao-truoc-bom-kinh-te-my-post1640571.html
+    - generic [ref=e773]:
+      - heading "Giáo dục" [level=2] [ref=e774]:
+        - link "Giáo dục" [ref=e775] [cursor=pointer]:
+          - /url: https://znews.vn/giao-duc.html
+      - generic [ref=e776]:
+        - article [ref=e777]:
+          - paragraph [ref=e778]:
+            - link "Giao su Viet nhan giai thuong nghien cuu uy tin cua Duc hinh anh" [ref=e779] [cursor=pointer]:
+              - /url: https://znews.vn/giao-su-viet-nhan-giai-thuong-nghien-cuu-uy-tin-cua-duc-post1644134.html
+              - img "Giao su Viet nhan giai thuong nghien cuu uy tin cua Duc hinh anh" [ref=e780]
+          - heading "Giáo sư Việt nhận giải thưởng nghiên cứu uy tín của Đức" [level=3] [ref=e782]:
+            - link "Giáo sư Việt nhận giải thưởng nghiên cứu uy tín của Đức" [ref=e783] [cursor=pointer]:
+              - /url: https://znews.vn/giao-su-viet-nhan-giai-thuong-nghien-cuu-uy-tin-cua-duc-post1644134.html
+        - article [ref=e784]:
+          - heading "Quy định mới về xếp lương giáo viên công lập" [level=3] [ref=e786]:
+            - link "Quy định mới về xếp lương giáo viên công lập" [ref=e787] [cursor=pointer]:
+              - /url: https://znews.vn/quy-dinh-moi-ve-xep-luong-giao-vien-cong-lap-post1644119.html
+        - article [ref=e788]:
+          - heading "Chi tiết lịch thi vào lớp 10 tại TP.HCM" [level=3] [ref=e790]:
+            - link "Chi tiết lịch thi vào lớp 10 tại TP.HCM" [ref=e791] [cursor=pointer]:
+              - /url: https://znews.vn/chi-tiet-lich-thi-vao-lop-10-tai-tphcm-post1644115.html
+    - generic [ref=e792]:
+      - heading "Xã hội" [level=2] [ref=e793]:
+        - link "Xã hội" [ref=e794] [cursor=pointer]:
+          - /url: https://znews.vn/xa-hoi.html
+      - generic [ref=e795]:
+        - article [ref=e796]:
+          - paragraph [ref=e797]:
+            - link "Giai the Uy ban An toan giao thong Quoc gia tu ngay 1/6 hinh anh" [ref=e798] [cursor=pointer]:
+              - /url: https://znews.vn/giai-the-uy-ban-an-toan-giao-thong-quoc-gia-tu-ngay-16-post1643498.html
+              - img "Giai the Uy ban An toan giao thong Quoc gia tu ngay 1/6 hinh anh" [ref=e799]
+          - heading "Giải thể Ủy ban An toàn giao thông Quốc gia từ ngày 1/6" [level=3] [ref=e801]:
+            - link "Giải thể Ủy ban An toàn giao thông Quốc gia từ ngày 1/6" [ref=e802] [cursor=pointer]:
+              - /url: https://znews.vn/giai-the-uy-ban-an-toan-giao-thong-quoc-gia-tu-ngay-16-post1643498.html
+        - article [ref=e803]:
+          - heading "Thủ tướng yêu cầu rà soát, sắp xếp tinh gọn đầu mối tổ chức bộ, ngành" [level=3] [ref=e805]:
+            - link "Thủ tướng yêu cầu rà soát, sắp xếp tinh gọn đầu mối tổ chức bộ, ngành" [ref=e806] [cursor=pointer]:
+              - /url: https://znews.vn/thu-tuong-yeu-cau-ra-soat-sap-xep-tinh-gon-dau-moi-to-chuc-bo-nganh-post1643446.html
+        - article [ref=e807]:
+          - heading "Công bố quyết định của Thủ tướng về công tác cán bộ ở Đồng Nai" [level=3] [ref=e809]:
+            - link "Công bố quyết định của Thủ tướng về công tác cán bộ ở Đồng Nai" [ref=e810] [cursor=pointer]:
+              - /url: https://znews.vn/cong-bo-quyet-dinh-cua-thu-tuong-ve-cong-tac-can-bo-o-dong-nai-post1643499.html
+    - generic [ref=e811]:
+      - heading "Pháp luật" [level=2] [ref=e812]:
+        - link "Pháp luật" [ref=e813] [cursor=pointer]:
+          - /url: https://znews.vn/phap-luat.html
+      - generic [ref=e814]:
+        - article [ref=e815]:
+          - paragraph [ref=e816]:
+            - link "Bat tam giam Pho chu tich Hoi dong Truong Dai hoc Kinh Bac hinh anh" [ref=e817] [cursor=pointer]:
+              - /url: https://znews.vn/bat-tam-giam-pho-chu-tich-hoi-dong-truong-dai-hoc-kinh-bac-post1643315.html
+              - img "Bat tam giam Pho chu tich Hoi dong Truong Dai hoc Kinh Bac hinh anh" [ref=e818]
+          - heading "Bắt tạm giam Phó chủ tịch Hội đồng Trường Đại học Kinh Bắc" [level=3] [ref=e820]:
+            - link "Bắt tạm giam Phó chủ tịch Hội đồng Trường Đại học Kinh Bắc" [ref=e821] [cursor=pointer]:
+              - /url: https://znews.vn/bat-tam-giam-pho-chu-tich-hoi-dong-truong-dai-hoc-kinh-bac-post1643315.html
+        - article [ref=e822]:
+          - heading "Giăng bẫy lừa 18 người ra nước ngoài làm việc cho các tổ chức tội phạm" [level=3] [ref=e824]:
+            - link "Giăng bẫy lừa 18 người ra nước ngoài làm việc cho các tổ chức tội phạm" [ref=e825] [cursor=pointer]:
+              - /url: https://znews.vn/giang-bay-lua-18-nguoi-ra-nuoc-ngoai-lam-viec-cho-cac-to-chuc-toi-pham-post1643445.html
+        - article [ref=e826]:
+          - heading "Bắt giam giám đốc chỉ đạo che giấu doanh thu, trốn thuế" [level=3] [ref=e828]:
+            - link "Bắt giam giám đốc chỉ đạo che giấu doanh thu, trốn thuế" [ref=e829] [cursor=pointer]:
+              - /url: https://znews.vn/bat-giam-giam-doc-chi-dao-che-giau-doanh-thu-tron-thue-post1643447.html
+    - generic [ref=e830]:
+      - heading "Thể thao" [level=2] [ref=e831]:
+        - link "Thể thao" [ref=e832] [cursor=pointer]:
+          - /url: https://znews.vn/the-thao.html
+      - generic [ref=e833]:
+        - article [ref=e834]:
+          - paragraph [ref=e835]:
+            - link "Olise goi nho Henry trong don ket lieu Real Madrid hinh anh" [ref=e836] [cursor=pointer]:
+              - /url: https://znews.vn/olise-goi-nho-henry-trong-don-ket-lieu-real-madrid-post1644082.html
+              - img "Olise goi nho Henry trong don ket lieu Real Madrid hinh anh" [ref=e837]
+          - heading "Olise gợi nhớ Henry trong đòn kết liễu Real Madrid" [level=3] [ref=e839]:
+            - link "Olise gợi nhớ Henry trong đòn kết liễu Real Madrid" [ref=e840] [cursor=pointer]:
+              - /url: https://znews.vn/olise-goi-nho-henry-trong-don-ket-lieu-real-madrid-post1644082.html
+        - article [ref=e841]:
+          - heading "Cựu thủ môn Arsenal qua đời" [level=3] [ref=e843]:
+            - link "Cựu thủ môn Arsenal qua đời" [ref=e844] [cursor=pointer]:
+              - /url: https://znews.vn/cuu-thu-mon-arsenal-qua-doi-post1644177.html
+        - article [ref=e845]:
+          - heading "Real Madrid bị vạch trần" [level=3] [ref=e847]:
+            - link "Real Madrid bị vạch trần" [ref=e848] [cursor=pointer]:
+              - /url: https://znews.vn/real-madrid-bi-vach-tran-post1644149.html
+    - generic [ref=e849]:
+      - heading "Giải trí" [level=2] [ref=e850]:
+        - link "Giải trí" [ref=e851] [cursor=pointer]:
+          - /url: https://znews.vn/giai-tri.html
+      - generic [ref=e852]:
+        - article [ref=e853]:
+          - paragraph [ref=e854]:
+            - link "Min len tieng khi bi noi ho henh hinh anh" [ref=e855] [cursor=pointer]:
+              - /url: https://znews.vn/min-len-tieng-khi-bi-noi-ho-henh-post1643988.html
+              - img "Min len tieng khi bi noi ho henh hinh anh" [ref=e856]
+          - heading "Min lên tiếng khi bị nói hớ hênh" [level=3] [ref=e858]:
+            - link "Min lên tiếng khi bị nói hớ hênh" [ref=e859] [cursor=pointer]:
+              - /url: https://znews.vn/min-len-tieng-khi-bi-noi-ho-henh-post1643988.html
+        - article [ref=e860]:
+          - heading "Việt Trinh bị trầm cảm" [level=3] [ref=e862]:
+            - link "Việt Trinh bị trầm cảm" [ref=e863] [cursor=pointer]:
+              - /url: https://znews.vn/viet-trinh-bi-tram-cam-post1644168.html
+        - article [ref=e864]:
+          - heading "'Ông trùm giải trí' Trung Quốc qua đời" [level=3] [ref=e866]:
+            - link "'Ông trùm giải trí' Trung Quốc qua đời" [ref=e867] [cursor=pointer]:
+              - /url: https://znews.vn/ong-trum-giai-tri-trung-quoc-qua-doi-post1644160.html
+    - generic [ref=e868]:
+      - heading "Xe" [level=2] [ref=e869]:
+        - link "Xe" [ref=e870] [cursor=pointer]:
+          - /url: https://znews.vn/oto-xe-may.html
+      - generic [ref=e871]:
+        - article [ref=e872]:
+          - paragraph [ref=e873]:
+            - link "VinFast da lam gi de chiem ngoi dau tai thi truong xe Viet? hinh anh" [ref=e874] [cursor=pointer]:
+              - /url: https://znews.vn/vinfast-da-lam-gi-de-chiem-ngoi-dau-tai-thi-truong-xe-viet-post1643658.html
+              - img "VinFast da lam gi de chiem ngoi dau tai thi truong xe Viet? hinh anh" [ref=e875]
+          - heading "VinFast đã làm gì để chiếm ngôi đầu tại thị trường xe Việt?" [level=3] [ref=e877]:
+            - link "VinFast đã làm gì để chiếm ngôi đầu tại thị trường xe Việt?" [ref=e878] [cursor=pointer]:
+              - /url: https://znews.vn/vinfast-da-lam-gi-de-chiem-ngoi-dau-tai-thi-truong-xe-viet-post1643658.html
+        - article [ref=e879]:
+          - heading " Đây là Toyota Yaris Cross mới" [level=3] [ref=e881]:
+            - link " Đây là Toyota Yaris Cross mới" [ref=e882] [cursor=pointer]:
+              - /url: https://znews.vn/day-la-toyota-yaris-cross-moi-post1644116.html
+        - article [ref=e883]:
+          - heading "CEO Nissan khẳng định tương lai của 'siêu xe đường phố' Nissan GT-R" [level=3] [ref=e885]:
+            - link "CEO Nissan khẳng định tương lai của 'siêu xe đường phố' Nissan GT-R" [ref=e886] [cursor=pointer]:
+              - /url: https://znews.vn/ceo-nissan-khang-dinh-tuong-lai-cua-sieu-xe-duong-pho-nissan-gt-r-post1644075.html
+        - text: 
+    - generic [ref=e887]:
+      - heading "Thế giới sách" [level=2] [ref=e888]:
+        - link "Thế giới sách" [ref=e889] [cursor=pointer]:
+          - /url: https://znews.vn/sach-hay.html
+      - generic [ref=e890]:
+        - article [ref=e891]:
+          - paragraph [ref=e892]:
+            - link "Xu huong nang luong bi dao nguoc vi gia dau hinh anh" [ref=e893] [cursor=pointer]:
+              - /url: https://znews.vn/xu-huong-nang-luong-bi-dao-nguoc-vi-gia-dau-post1643789.html
+              - img "Xu huong nang luong bi dao nguoc vi gia dau hinh anh" [ref=e894]
+          - heading "Xu hướng năng lượng bị đảo ngược vì giá dầu" [level=3] [ref=e896]:
+            - link "Xu hướng năng lượng bị đảo ngược vì giá dầu" [ref=e897] [cursor=pointer]:
+              - /url: https://znews.vn/xu-huong-nang-luong-bi-dao-nguoc-vi-gia-dau-post1643789.html
+        - article [ref=e898]:
+          - heading "Hai lần tới đại học của nhà thiên văn học nổi tiếng" [level=3] [ref=e900]:
+            - link "Hai lần tới đại học của nhà thiên văn học nổi tiếng" [ref=e901] [cursor=pointer]:
+              - /url: https://znews.vn/hai-lan-toi-dai-hoc-cua-nha-thien-van-hoc-noi-tieng-post1643934.html
+        - article [ref=e902]:
+          - heading "Chân lý của người chết" [level=3] [ref=e904]:
+            - link "Chân lý của người chết" [ref=e905] [cursor=pointer]:
+              - /url: https://znews.vn/chan-ly-cua-nguoi-chet-post1643461.html
+    - generic [ref=e906]:
+      - heading "Tác giả" [level=2] [ref=e907]:
+        - link "Tác giả" [ref=e908] [cursor=pointer]:
+          - /url: https://znews.vn/tac-gia.html
+      - generic [ref=e909]:
+        - article [ref=e910]:
+          - paragraph [ref=e911]:
+            - link "Tac gia 'Mau hoa do' qua doi hinh anh" [ref=e912] [cursor=pointer]:
+              - /url: https://znews.vn/tac-gia-mau-hoa-do-qua-doi-post1641904.html
+              - img "Tac gia 'Mau hoa do' qua doi hinh anh" [ref=e913]
+          - heading "Tác giả 'Màu hoa đỏ' qua đời" [level=3] [ref=e915]:
+            - link "Tác giả 'Màu hoa đỏ' qua đời" [ref=e916] [cursor=pointer]:
+              - /url: https://znews.vn/tac-gia-mau-hoa-do-qua-doi-post1641904.html
+        - article [ref=e917]:
+          - heading "Những nguồn sáng âm thầm tỏa rạng giữa đời thường" [level=3] [ref=e919]:
+            - link "Những nguồn sáng âm thầm tỏa rạng giữa đời thường" [ref=e920] [cursor=pointer]:
+              - /url: https://znews.vn/nhung-nguon-sang-am-tham-toa-rang-giua-doi-thuong-post1643847.html
+        - article [ref=e921]:
+          - heading "Cái đẹp hun đúc bản lĩnh, cá tính người miền Nam" [level=3] [ref=e923]:
+            - link "Cái đẹp hun đúc bản lĩnh, cá tính người miền Nam" [ref=e924] [cursor=pointer]:
+              - /url: https://znews.vn/cai-dep-hun-duc-ban-linh-ca-tinh-nguoi-mien-nam-post1640916.html
+    - generic [ref=e925]:
+      - heading "Văn hóa đọc" [level=2] [ref=e926]:
+        - link "Văn hóa đọc" [ref=e927] [cursor=pointer]:
+          - /url: https://znews.vn/van-hoa-doc.html
+      - generic [ref=e928]:
+        - article [ref=e929]:
+          - paragraph [ref=e930]:
+            - link "Ai nu cua ong Trump doc sach gi? hinh anh" [ref=e931] [cursor=pointer]:
+              - /url: https://znews.vn/ivanka-trump-post1617040.html
+              - img "Ai nu cua ong Trump doc sach gi? hinh anh" [ref=e932]
+          - heading "Ái nữ của ông Trump đọc sách gì?" [level=3] [ref=e934]:
+            - link "Ái nữ của ông Trump đọc sách gì?" [ref=e935] [cursor=pointer]:
+              - /url: https://znews.vn/ivanka-trump-post1617040.html
+        - article [ref=e936]:
+          - heading "Tìm 'vỉa quặng vô giá' vùng Nam bộ" [level=3] [ref=e938]:
+            - link "Tìm 'vỉa quặng vô giá' vùng Nam bộ" [ref=e939] [cursor=pointer]:
+              - /url: https://znews.vn/tim-via-quang-vo-gia-vung-nam-bo-post1635984.html
+        - article [ref=e940]:
+          - heading " 10 người nổi tiếng tích trữ sách" [level=3] [ref=e942]:
+            - link " 10 người nổi tiếng tích trữ sách" [ref=e943] [cursor=pointer]:
+              - /url: https://znews.vn/10-nguoi-noi-tieng-tich-tru-sach-post1633093.html
+        - text: 
+    - generic [ref=e944]:
+      - heading "Nghiên cứu xuất bản" [level=2] [ref=e945]:
+        - link "Nghiên cứu xuất bản" [ref=e946] [cursor=pointer]:
+          - /url: https://znews.vn/nghien-cuu-xuat-ban.html
+      - generic [ref=e947]:
+        - article [ref=e948]:
+          - paragraph [ref=e949]:
+            - link "Nhung xu huong xuat ban lon tren the gioi hinh anh" [ref=e950] [cursor=pointer]:
+              - /url: https://znews.vn/nhung-xu-huong-xuat-ban-lon-tren-the-gioi-post1642328.html
+              - img "Nhung xu huong xuat ban lon tren the gioi hinh anh" [ref=e951]
+          - heading "Những xu hướng xuất bản lớn trên thế giới" [level=3] [ref=e953]:
+            - link "Những xu hướng xuất bản lớn trên thế giới" [ref=e954] [cursor=pointer]:
+              - /url: https://znews.vn/nhung-xu-huong-xuat-ban-lon-tren-the-gioi-post1642328.html
+        - article [ref=e955]:
+          - heading "Ngoài xem lậu, độc giả ebook còn lựa chọn nào?" [level=3] [ref=e957]:
+            - link "Ngoài xem lậu, độc giả ebook còn lựa chọn nào?" [ref=e958] [cursor=pointer]:
+              - /url: https://znews.vn/ngoai-xem-lau-doc-gia-ebook-con-lua-chon-nao-post1642492.html
+        - article [ref=e959]:
+          - heading "Đế chế manga Shonen Jump bị thách thức" [level=3] [ref=e961]:
+            - link "Đế chế manga Shonen Jump bị thách thức" [ref=e962] [cursor=pointer]:
+              - /url: https://znews.vn/de-che-manga-shonen-jump-bi-thach-thuc-post1643212.html
+    - generic [ref=e963]:
+      - heading "TTDN" [level=2] [ref=e964]:
+        - link "TTDN" [ref=e965] [cursor=pointer]:
+          - /url: https://znews.vn/ttdn.html
+      - generic [ref=e966]:
+        - article [ref=e967]:
+          - paragraph [ref=e968]:
+            - link "Eximbank tro thanh nha tao lap thi truong ngoai hoi tot nhat Viet Nam hinh anh" [ref=e969] [cursor=pointer]:
+              - /url: https://znews.vn/eximbank-tro-thanh-nha-tao-lap-thi-truong-ngoai-hoi-tot-nhat-viet-nam-post1643653.html
+              - img "Eximbank tro thanh nha tao lap thi truong ngoai hoi tot nhat Viet Nam hinh anh" [ref=e970]
+          - heading "Eximbank trở thành nhà tạo lập thị trường ngoại hối tốt nhất Việt Nam" [level=3] [ref=e972]:
+            - link "Eximbank trở thành nhà tạo lập thị trường ngoại hối tốt nhất Việt Nam" [ref=e973] [cursor=pointer]:
+              - /url: https://znews.vn/eximbank-tro-thanh-nha-tao-lap-thi-truong-ngoai-hoi-tot-nhat-viet-nam-post1643653.html
+        - article [ref=e974]:
+          - heading "Vinafeed được vinh danh ‘Hàng Việt Nam chất lượng cao 2026’" [level=3] [ref=e976]:
+            - link "Vinafeed được vinh danh ‘Hàng Việt Nam chất lượng cao 2026’" [ref=e977] [cursor=pointer]:
+              - /url: https://znews.vn/vinafeed-duoc-vinh-danh-hang-viet-nam-chat-luong-cao-2026-post1643894.html
+        - article [ref=e978]:
+          - heading "Hiểu đúng về thức ăn và chuẩn an toàn để bảo vệ thú cưng" [level=3] [ref=e980]:
+            - link "Hiểu đúng về thức ăn và chuẩn an toàn để bảo vệ thú cưng" [ref=e981] [cursor=pointer]:
+              - /url: https://znews.vn/hieu-dung-ve-thuc-an-va-chuan-an-toan-de-bao-ve-thu-cung-post1643813.html
+  - generic [ref=e983]:
+    - heading "MAGAZINE" [level=2] [ref=e985]
+    - generic [ref=e987]:
+      - list [ref=e989]:
+        - listitem [ref=e990]:
+          - link "Techcom Life tiên phong ứng dụng AI để nâng tầm trải nghiệm khách hàng" [ref=e991] [cursor=pointer]:
+            - /url: https://znews.vn/techcom-life-tien-phong-ung-dung-ai-de-nang-tam-trai-nghiem-khach-hang-post1638667.html
+            - article [ref=e992]:
+              - img "Techcom Life tiên phong ứng dụng AI để nâng tầm trải nghiệm khách hàng" [ref=e994]
+              - generic [ref=e995]:
+                - generic [ref=e996]: LONGFORM
+                - paragraph [ref=e997]: Techcom Life tiên phong ứng dụng AI để nâng tầm trải nghiệm khách hàng
+        - listitem [ref=e998]:
+          - link "Đảo Kharg của Iran bị tấn công 50 địa điểm" [ref=e999] [cursor=pointer]:
+            - /url: https://znews.vn/dao-kharg-cua-iran-bi-tan-cong-50-dia-diem-post1639583.html
+            - article [ref=e1000]:
+              - img "Đảo Kharg của Iran bị tấn công 50 địa điểm" [ref=e1002]
+              - generic [ref=e1003]:
+                - generic [ref=e1004]: TL;DR
+                - paragraph [ref=e1005]: Đảo Kharg của Iran bị tấn công 50 địa điểm
+        - listitem [ref=e1006]:
+          - link "Ca sĩ Việt lạm dụng hát nhép là không thể chấp nhận" [ref=e1007] [cursor=pointer]:
+            - /url: https://znews.vn/ca-si-viet-lam-dung-hat-nhep-la-khong-the-chap-nhan-post1640038.html
+            - article [ref=e1008]:
+              - img "Ca sĩ Việt lạm dụng hát nhép là không thể chấp nhận" [ref=e1010]
+              - generic [ref=e1011]:
+                - generic [ref=e1012]: TL;DR
+                - paragraph [ref=e1013]: Ca sĩ Việt lạm dụng hát nhép là không thể chấp nhận
+        - listitem [ref=e1014]:
+          - link "Tình báo Mỹ 'chịu thua' Tổng thống Trump" [ref=e1015] [cursor=pointer]:
+            - /url: https://znews.vn/tinh-bao-my-chiu-thua-tong-thong-trump-post1641207.html
+            - article [ref=e1016]:
+              - img "Tình báo Mỹ 'chịu thua' Tổng thống Trump" [ref=e1018]
+              - generic [ref=e1019]:
+                - generic [ref=e1020]: TL;DR
+                - paragraph [ref=e1021]: Tình báo Mỹ 'chịu thua' Tổng thống Trump
+        - listitem [ref=e1022]:
+          - link "Phi công Mỹ sinh tồn thế nào trong lúc chờ giải cứu?" [ref=e1023] [cursor=pointer]:
+            - /url: https://znews.vn/phi-cong-my-sinh-ton-the-nao-trong-luc-cho-giai-cuu-post1640945.html
+            - article [ref=e1024]:
+              - img "Phi công Mỹ sinh tồn thế nào trong lúc chờ giải cứu?" [ref=e1026]
+              - generic [ref=e1027]:
+                - generic [ref=e1028]: Mini Magazine
+                - paragraph [ref=e1029]: Phi công Mỹ sinh tồn thế nào trong lúc chờ giải cứu?
+        - listitem [ref=e1030]:
+          - link "Mỹ nếm trải cay đắng ở eo biển Hormuz" [ref=e1031] [cursor=pointer]:
+            - /url: https://znews.vn/my-nem-trai-cay-dang-o-eo-bien-hormuz-post1637613.html
+            - article [ref=e1032]:
+              - img "Mỹ nếm trải cay đắng ở eo biển Hormuz" [ref=e1034]
+              - generic [ref=e1035]:
+                - generic [ref=e1036]: TL;DR
+                - paragraph [ref=e1037]: Mỹ nếm trải cay đắng ở eo biển Hormuz
+        - listitem [ref=e1038]:
+          - link "Chuyện chưa từng có ở nhạc Việt" [ref=e1039] [cursor=pointer]:
+            - /url: https://znews.vn/chuyen-chua-tung-co-o-nhac-viet-post1639782.html
+            - article [ref=e1040]:
+              - img "Chuyện chưa từng có ở nhạc Việt" [ref=e1042]
+              - generic [ref=e1043]:
+                - generic [ref=e1044]: TL;DR
+                - paragraph [ref=e1045]: Chuyện chưa từng có ở nhạc Việt
+        - listitem [ref=e1046]:
+          - link "Mỹ giật mình vì Iran mạnh lên" [ref=e1047] [cursor=pointer]:
+            - /url: https://znews.vn/my-giat-minh-vi-iran-manh-len-post1643410.html
+            - article [ref=e1048]:
+              - img "Mỹ giật mình vì Iran mạnh lên" [ref=e1050]
+              - generic [ref=e1051]:
+                - generic [ref=e1052]: TL;DR
+                - paragraph [ref=e1053]: Mỹ giật mình vì Iran mạnh lên
+        - listitem [ref=e1054]:
+          - 'link "Vụ Minh Khang và tài xế: Grab trả giá vì lỗ hổng dữ liệu" [ref=e1055] [cursor=pointer]':
+            - /url: https://znews.vn/vu-minh-khang-va-tai-xe-grab-tra-gia-vi-lo-hong-du-lieu-post1637050.html
+            - article [ref=e1056]:
+              - 'img "Vụ Minh Khang và tài xế: Grab trả giá vì lỗ hổng dữ liệu" [ref=e1058]'
+              - generic [ref=e1059]:
+                - generic [ref=e1060]: Mini Magazine
+                - paragraph [ref=e1061]: "Vụ Minh Khang và tài xế: Grab trả giá vì lỗ hổng dữ liệu"
+        - listitem [ref=e1062]:
+          - link "Mỹ lại bước vào lối mòn Iran" [ref=e1063] [cursor=pointer]:
+            - /url: https://znews.vn/my-lai-buoc-vao-loi-mon-iran-post1643248.html
+            - article [ref=e1064]:
+              - img "Mỹ lại bước vào lối mòn Iran" [ref=e1066]
+              - generic [ref=e1067]:
+                - generic [ref=e1068]: Mini Magazine
+                - paragraph [ref=e1069]: Mỹ lại bước vào lối mòn Iran
+        - listitem [ref=e1070]:
+          - link "Thành bại trong chiến tranh giờ nằm ở UAV?" [ref=e1071] [cursor=pointer]:
+            - /url: https://znews.vn/thanh-bai-trong-chien-tranh-gio-nam-o-uav-post1636092.html
+            - article [ref=e1072]:
+              - img "Thành bại trong chiến tranh giờ nằm ở UAV?" [ref=e1074]
+              - generic [ref=e1075]:
+                - generic [ref=e1076]: STORY
+                - paragraph [ref=e1077]: Thành bại trong chiến tranh giờ nằm ở UAV?
+        - listitem [ref=e1078]:
+          - link "Tôi cạo trọc đầu, sống với ung thư ở tuổi 28" [ref=e1079] [cursor=pointer]:
+            - /url: https://znews.vn/toi-cao-troc-dau-song-voi-ung-thu-o-tuoi-28-post1635871.html
+            - article [ref=e1080]:
+              - img "Tôi cạo trọc đầu, sống với ung thư ở tuổi 28" [ref=e1082]
+              - generic [ref=e1083]:
+                - generic [ref=e1084]: STORY
+                - paragraph [ref=e1085]: Tôi cạo trọc đầu, sống với ung thư ở tuổi 28
+        - listitem [ref=e1086]:
+          - link "Xuất hiện lối thoát mới khỏi yết hầu Hormuz" [ref=e1087] [cursor=pointer]:
+            - /url: https://znews.vn/xuat-hien-loi-thoat-moi-khoi-yet-hau-hormuz-post1641916.html
+            - article [ref=e1088]:
+              - img "Xuất hiện lối thoát mới khỏi yết hầu Hormuz" [ref=e1090]
+              - generic [ref=e1091]:
+                - generic [ref=e1092]: TL;DR
+                - paragraph [ref=e1093]: Xuất hiện lối thoát mới khỏi yết hầu Hormuz
+        - listitem [ref=e1094]:
+          - link "Vì sao kinh tế Đồng Nai tăng trưởng vượt bậc?" [ref=e1095] [cursor=pointer]:
+            - /url: https://znews.vn/vi-sao-kinh-te-dong-nai-tang-truong-vuot-bac-post1639552.html
+            - article [ref=e1096]:
+              - img "Vì sao kinh tế Đồng Nai tăng trưởng vượt bậc?" [ref=e1098]
+              - generic [ref=e1099]:
+                - generic [ref=e1100]: LENS
+                - paragraph [ref=e1101]: Vì sao kinh tế Đồng Nai tăng trưởng vượt bậc?
+        - listitem [ref=e1102]:
+          - link "'Ánh sáng cuối đường hầm' cho xung đột Mỹ - Iran" [ref=e1103] [cursor=pointer]:
+            - /url: https://znews.vn/anh-sang-cuoi-duong-ham-cho-xung-dot-my-iran-post1640542.html
+            - article [ref=e1104]:
+              - img "'Ánh sáng cuối đường hầm' cho xung đột Mỹ - Iran" [ref=e1106]
+              - generic [ref=e1107]:
+                - generic [ref=e1108]: TL;DR
+                - paragraph [ref=e1109]: "'Ánh sáng cuối đường hầm' cho xung đột Mỹ - Iran"
+        - listitem [ref=e1110]:
+          - link "Iran kiếm bộn tiền giữa chiến sự với Mỹ" [ref=e1111] [cursor=pointer]:
+            - /url: https://znews.vn/iran-kiem-bon-tien-giua-chien-su-voi-my-post1640739.html
+            - article [ref=e1112]:
+              - img "Iran kiếm bộn tiền giữa chiến sự với Mỹ" [ref=e1114]
+              - generic [ref=e1115]:
+                - generic [ref=e1116]: Mini Magazine
+                - paragraph [ref=e1117]: Iran kiếm bộn tiền giữa chiến sự với Mỹ
+      - generic:
+        - button "" [disabled] [ref=e1118]:
+          - generic [ref=e1119]: 
+        - button "" [ref=e1120]:
+          - generic [ref=e1121]: 
+  - generic [ref=e1123]:
+    - heading "VIDEO" [level=2] [ref=e1125]:
+      - link "VIDEO" [ref=e1126] [cursor=pointer]:
+        - /url: /video
+    - generic [ref=e1127]:
+      - generic [ref=e1130]: 
+      - complementary [ref=e1132]:
+        - generic [ref=e1137]:
+          - article [ref=e1138]:
+            - paragraph [ref=e1139]:
+              - link " Thay nam sinh bi tai nan, xe di sau quay dau bo di hinh anh" [ref=e1140] [cursor=pointer]:
+                - /url: https://znews.vn/video-thay-nam-sinh-bi-tai-nan-xe-di-sau-quay-dau-bo-di-post1643512.html
+                - text: 
+                - img "Thay nam sinh bi tai nan, xe di sau quay dau bo di hinh anh" [ref=e1141]
+            - generic [ref=e1142]:
+              - heading "Thấy nam sinh bị tai nạn, xe đi sau quay đầu bỏ đi" [level=3] [ref=e1143]:
+                - link "Thấy nam sinh bị tai nạn, xe đi sau quay đầu bỏ đi" [ref=e1144] [cursor=pointer]:
+                  - /url: https://znews.vn/video-thay-nam-sinh-bi-tai-nan-xe-di-sau-quay-dau-bo-di-post1643512.html
+              - paragraph [ref=e1145]:
+                - link "Xã hội" [ref=e1146] [cursor=pointer]:
+                  - /url: /video-xa-hoi.html
+                - text: 
+              - paragraph
+          - article [ref=e1147]:
+            - paragraph [ref=e1148]:
+              - link " Ba vo bat khoc khi tham con re nam vien hinh anh" [ref=e1149] [cursor=pointer]:
+                - /url: https://znews.vn/video-ba-vo-bat-khoc-khi-tham-con-re-nam-vien-post1644023.html
+                - text: 
+                - img "Ba vo bat khoc khi tham con re nam vien hinh anh" [ref=e1150]
+            - generic [ref=e1151]:
+              - heading "Ba vợ bật khóc khi thăm con rể nằm viện" [level=3] [ref=e1152]:
+                - link "Ba vợ bật khóc khi thăm con rể nằm viện" [ref=e1153] [cursor=pointer]:
+                  - /url: https://znews.vn/video-ba-vo-bat-khoc-khi-tham-con-re-nam-vien-post1644023.html
+              - paragraph [ref=e1154]:
+                - link "Đời sống" [ref=e1155] [cursor=pointer]:
+                  - /url: /video-doi-song.html
+                - text: 
+              - paragraph
+          - article [ref=e1156]:
+            - paragraph [ref=e1157]:
+              - link " Cu da lam rung chuyen Real Madrid hinh anh" [ref=e1158] [cursor=pointer]:
+                - /url: https://znews.vn/video-cu-da-lam-rung-chuyen-real-madrid-post1643982.html
+                - text: 
+                - img "Cu da lam rung chuyen Real Madrid hinh anh" [ref=e1159]
+            - generic [ref=e1160]:
+              - heading "Cú đá làm rung chuyển Real Madrid" [level=3] [ref=e1161]:
+                - link "Cú đá làm rung chuyển Real Madrid" [ref=e1162] [cursor=pointer]:
+                  - /url: https://znews.vn/video-cu-da-lam-rung-chuyen-real-madrid-post1643982.html
+              - paragraph [ref=e1163]:
+                - link "Thể thao" [ref=e1164] [cursor=pointer]:
+                  - /url: /video-the-thao.html
+                - text: 
+              - paragraph
+          - article [ref=e1165]:
+            - paragraph [ref=e1166]:
+              - link " Chi huy quan doi Pakistan toi Tehran thuc day dam phan My - Iran hinh anh" [ref=e1167] [cursor=pointer]:
+                - /url: https://znews.vn/video-chi-huy-quan-doi-pakistan-toi-tehran-thuc-day-dam-phan-my-iran-post1643981.html
+                - text: 
+                - img "Chi huy quan doi Pakistan toi Tehran thuc day dam phan My - Iran hinh anh" [ref=e1168]
+            - generic [ref=e1169]:
+              - heading "Chỉ huy quân đội Pakistan tới Tehran thúc đẩy đàm phán Mỹ - Iran" [level=3] [ref=e1170]:
+                - link "Chỉ huy quân đội Pakistan tới Tehran thúc đẩy đàm phán Mỹ - Iran" [ref=e1171] [cursor=pointer]:
+                  - /url: https://znews.vn/video-chi-huy-quan-doi-pakistan-toi-tehran-thuc-day-dam-phan-my-iran-post1643981.html
+              - paragraph [ref=e1172]:
+                - link "Thế giới" [ref=e1173] [cursor=pointer]:
+                  - /url: /video-the-gioi.html
+                - text: 
+              - paragraph
+          - article [ref=e1174]:
+            - paragraph [ref=e1175]:
+              - link " My tiep tuc phong toa eo bien Hormuz trong hon 48 gio qua hinh anh" [ref=e1176] [cursor=pointer]:
+                - /url: https://znews.vn/video-my-tiep-tuc-phong-toa-eo-bien-hormuz-trong-hon-48-gio-qua-post1644019.html
+                - text: 
+                - img "My tiep tuc phong toa eo bien Hormuz trong hon 48 gio qua hinh anh" [ref=e1177]
+            - generic [ref=e1178]:
+              - heading "Mỹ tiếp tục phong tỏa eo biển Hormuz trong hơn 48 giờ qua" [level=3] [ref=e1179]:
+                - link "Mỹ tiếp tục phong tỏa eo biển Hormuz trong hơn 48 giờ qua" [ref=e1180] [cursor=pointer]:
+                  - /url: https://znews.vn/video-my-tiep-tuc-phong-toa-eo-bien-hormuz-trong-hon-48-gio-qua-post1644019.html
+              - paragraph [ref=e1181]:
+                - link "Thế giới" [ref=e1182] [cursor=pointer]:
+                  - /url: /video-the-gioi.html
+                - text: 
+              - paragraph
+          - article [ref=e1183]:
+            - paragraph [ref=e1184]:
+              - link " Bayern ca khuc khai hoan, Real Madrid co quyen ngang cao dau hinh anh" [ref=e1185] [cursor=pointer]:
+                - /url: https://znews.vn/video-bayern-ca-khuc-khai-hoan-real-madrid-co-quyen-ngang-cao-dau-post1643976.html
+                - text: 
+                - img "Bayern ca khuc khai hoan, Real Madrid co quyen ngang cao dau hinh anh" [ref=e1186]
+            - generic [ref=e1187]:
+              - heading "Bayern ca khúc khải hoàn, Real Madrid có quyền ngẩng cao đầu" [level=3] [ref=e1188]:
+                - link "Bayern ca khúc khải hoàn, Real Madrid có quyền ngẩng cao đầu" [ref=e1189] [cursor=pointer]:
+                  - /url: https://znews.vn/video-bayern-ca-khuc-khai-hoan-real-madrid-co-quyen-ngang-cao-dau-post1643976.html
+              - paragraph [ref=e1190]:
+                - link "Thể thao" [ref=e1191] [cursor=pointer]:
+                  - /url: /video-the-thao.html
+                - text: 
+              - paragraph
+          - article [ref=e1192]:
+            - paragraph [ref=e1193]:
+              - link " Mau thuan gay gat sau that bai cua Real Madrid hinh anh" [ref=e1194] [cursor=pointer]:
+                - /url: https://znews.vn/video-mau-thuan-gay-gat-sau-that-bai-cua-real-madrid-post1643970.html
+                - text: 
+                - img "Mau thuan gay gat sau that bai cua Real Madrid hinh anh" [ref=e1195]
+            - generic [ref=e1196]:
+              - heading "Mâu thuẫn gay gắt sau thất bại của Real Madrid" [level=3] [ref=e1197]:
+                - link "Mâu thuẫn gay gắt sau thất bại của Real Madrid" [ref=e1198] [cursor=pointer]:
+                  - /url: https://znews.vn/video-mau-thuan-gay-gat-sau-that-bai-cua-real-madrid-post1643970.html
+              - paragraph [ref=e1199]:
+                - link "Thể thao" [ref=e1200] [cursor=pointer]:
+                  - /url: /video-the-thao.html
+                - text: 
+              - paragraph
+          - article [ref=e1201]:
+            - paragraph [ref=e1202]:
+              - link " Chi gai be em chay khi mua da roi thung mai nha hinh anh" [ref=e1203] [cursor=pointer]:
+                - /url: https://znews.vn/video-chi-gai-be-em-chay-khi-mua-da-roi-thung-mai-nha-post1644063.html
+                - text: 
+                - img "Chi gai be em chay khi mua da roi thung mai nha hinh anh" [ref=e1204]
+            - generic [ref=e1205]:
+              - heading "Chị gái bế em chạy khi mưa đá rơi thủng mái nhà" [level=3] [ref=e1206]:
+                - link "Chị gái bế em chạy khi mưa đá rơi thủng mái nhà" [ref=e1207] [cursor=pointer]:
+                  - /url: https://znews.vn/video-chi-gai-be-em-chay-khi-mua-da-roi-thung-mai-nha-post1644063.html
+              - paragraph [ref=e1208]:
+                - link "Đời sống" [ref=e1209] [cursor=pointer]:
+                  - /url: /video-doi-song.html
+                - text: 
+              - paragraph
+          - article [ref=e1210]:
+            - paragraph [ref=e1211]:
+              - link " Lien tiep xa sung truong hoc o Tho Nhi Ky, 9 nguoi tu vong hinh anh" [ref=e1212] [cursor=pointer]:
+                - /url: https://znews.vn/video-lien-tiep-xa-sung-truong-hoc-o-tho-nhi-ky-9-nguoi-tu-vong-post1644001.html
+                - text: 
+                - img "Lien tiep xa sung truong hoc o Tho Nhi Ky, 9 nguoi tu vong hinh anh" [ref=e1213]
+            - generic [ref=e1214]:
+              - heading "Liên tiếp xả súng trường học ở Thổ Nhĩ Kỳ, 9 người tử vong" [level=3] [ref=e1215]:
+                - link "Liên tiếp xả súng trường học ở Thổ Nhĩ Kỳ, 9 người tử vong" [ref=e1216] [cursor=pointer]:
+                  - /url: https://znews.vn/video-lien-tiep-xa-sung-truong-hoc-o-tho-nhi-ky-9-nguoi-tu-vong-post1644001.html
+              - paragraph [ref=e1217]:
+                - link "Thế giới" [ref=e1218] [cursor=pointer]:
+                  - /url: /video-the-gioi.html
+              - paragraph
+          - article [ref=e1219]:
+            - paragraph [ref=e1220]:
+              - link " Man cau hon lang man cua Van Thanh voi 'chi dep' gymer hinh anh" [ref=e1221] [cursor=pointer]:
+                - /url: https://znews.vn/video-man-cau-hon-lang-man-cua-van-thanh-voi-chi-dep-gymer-post1643919.html
+                - text: 
+                - img "Man cau hon lang man cua Van Thanh voi 'chi dep' gymer hinh anh" [ref=e1222]
+            - generic [ref=e1223]:
+              - heading "Màn cầu hôn lãng mạn của Văn Thanh với 'chị đẹp' gymer" [level=3] [ref=e1224]:
+                - link "Màn cầu hôn lãng mạn của Văn Thanh với 'chị đẹp' gymer" [ref=e1225] [cursor=pointer]:
+                  - /url: https://znews.vn/video-man-cau-hon-lang-man-cua-van-thanh-voi-chi-dep-gymer-post1643919.html
+              - paragraph [ref=e1226]:
+                - link "Đời sống" [ref=e1227] [cursor=pointer]:
+                  - /url: /video-doi-song.html
+                - text: 
+              - paragraph
+  - contentinfo [ref=e1228]:
+    - generic [ref=e1229]:
+      - paragraph [ref=e1232]:
+        - text: Tạp chí điện tử Tri Thức
+        - text: "Cơ quan chủ quản: Hội Xuất bản Việt Nam"
+        - text: "Giấy phép báo chí: số 75/GP-BTTTT và số 442/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 26/02/2020 và ngày 29/11/2023"
+        - text: "Tổng biên tập: Lâm Quang Hiếu"
+        - text: © Toàn bộ bản quyền thuộc Tri Thức
+      - generic [ref=e1233]:
+        - paragraph [ref=e1234]:
+          - text: "Tòa soạn: Tầng 10, D29 Phạm Văn Bạch, phường Cầu Giấy, Hà Nội"
+          - text: "Hotline: 0931.222.666"
+        - paragraph [ref=e1235]:
+          - link "Liên hệ" [ref=e1236] [cursor=pointer]:
+            - /url: /lien-he.html
+          - text: ":"
+          - link "toasoan@znews.vn" [ref=e1237] [cursor=pointer]:
+            - /url: mailto:toasoan@znews.vn
+  - generic [ref=e1240]:
+    - generic [ref=e1241]:
+      - img [ref=e1242]
+      - paragraph [ref=e1244]:
+        - text: Chúng tôi sử dụng cookie để cải thiện trải nghiệm của bạn. Tìm hiểu về
+        - link "Chính sách Cookie" [ref=e1245] [cursor=pointer]:
+          - /url: //static.znews.vn/support/Znews_Chinh_sach_cookie.zip
+        - text: tại đây
+    - generic [ref=e1246]:
+      - generic [ref=e1247] [cursor=pointer]: Từ chối
+      - generic [ref=e1248] [cursor=pointer]: Đồng ý
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | 
+  3  | const SITES = ['https://vnexpress.net/', 'https://zingnews.vn/'];
+  4  | 
+  5  | for (const url of SITES) {
+  6  |   test(`advanced bug scan: ${url}`, async ({ page, request }) => {
+  7  |     const consoleErrors: string[] = [];
+  8  |     const pageErrors: string[] = [];
+  9  |     const badResponses: string[] = [];
+  10 | 
+  11 |     page.on('console', msg => {
+  12 |       if (msg.type() === 'error') consoleErrors.push(msg.text());
+  13 |     });
+  14 | 
+  15 |     page.on('pageerror', err => pageErrors.push(String(err)));
+  16 | 
+  17 |     page.on('response', res => {
+  18 |       if (res.status() >= 400) badResponses.push(`${res.status()} ${res.url()}`);
+  19 |     });
+  20 | 
+  21 |     const main = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
+  22 |     await page.waitForTimeout(5000);
+  23 | 
+  24 |     // 1) Chụp bằng chứng luôn
+  25 |     const safe = url.replace(/^https?:\/\//, '').replace(/[^\w.-]+/g, '_');
+  26 |     await page.screenshot({ path: `artifacts/${safe}_full.png`, fullPage: true });
+  27 | 
+  28 |     // 2) Kiểm tra ảnh hỏng (naturalWidth = 0)
+  29 |     const brokenImages = await page.$$eval('img', imgs =>
+  30 |       imgs
+  31 |         .filter(img => img.complete && (img as HTMLImageElement).naturalWidth === 0)
+  32 |         .map(img => (img as HTMLImageElement).src)
+  33 |     );
+  34 | 
+  35 |     // 3) Kiểm tra 20 link đầu (tránh quá nặng)
+  36 |     const links = await page.$$eval('a[href]', as =>
+  37 |       as.map(a => (a as HTMLAnchorElement).href).filter(Boolean)
+  38 |     );
+  39 |     const uniqueLinks = [...new Set(links)]
+  40 |       .filter(h => h.startsWith('http'))
+  41 |       .slice(0, 20);
+  42 | 
+  43 |     const brokenLinks: string[] = [];
+  44 |     for (const link of uniqueLinks) {
+  45 |       try {
+  46 |         const r = await request.get(link, { timeout: 15000 });
+  47 |         if (r.status() >= 400) brokenLinks.push(`${r.status()} ${link}`);
+  48 |       } catch {
+  49 |         brokenLinks.push(`ERR ${link}`);
+  50 |       }
+  51 |     }
+  52 | 
+  53 |     // 4) Assert
+  54 |     expect(main, `Không mở được ${url}`).not.toBeNull();
+  55 |     expect(main!.status(), `Main document lỗi ${url}`).toBeLessThan(400);
+  56 | 
+  57 |     expect(
+  58 |       pageErrors,
+  59 |       `JS runtime error tại ${url}:\n${pageErrors.slice(0, 10).join('\n')}`
+  60 |     ).toHaveLength(0);
+  61 | 
+  62 |     expect(
+  63 |       consoleErrors,
+  64 |       `Console error tại ${url}:\n${consoleErrors.slice(0, 10).join('\n')}`
+  65 |     ).toHaveLength(0);
+  66 | 
+  67 |     expect(
+  68 |       brokenImages,
+  69 |       `Broken images tại ${url}:\n${brokenImages.slice(0, 10).join('\n')}`
+> 70 |     ).toHaveLength(0);
+     |       ^ Error: Broken images tại https://zingnews.vn/:
+  71 | 
+  72 |     expect(
+  73 |       brokenLinks,
+  74 |       `Broken links tại ${url} (20 link đầu):\n${brokenLinks.slice(0, 20).join('\n')}`
+  75 |     ).toHaveLength(0);
+  76 | 
+  77 |     // Tùy chọn: giới hạn tổng response lỗi
+  78 |     expect(
+  79 |       badResponses.length,
+  80 |       `Có response >=400 tại ${url}. Ví dụ:\n${badResponses.slice(0, 20).join('\n')}`
+  81 |     ).toBeLessThan(15);
+  82 |   });
+  83 | }
+```

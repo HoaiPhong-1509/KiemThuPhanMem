@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html><head><meta charset="utf-8"><title>BUG-PLAY-01 Evidence</title>
+<style>
+body{font-family:Segoe UI,Arial,sans-serif;background:#0b1020;color:#e8eefc;margin:0;padding:24px}
+.card{max-width:1200px;margin:0 auto;background:#141b34;border:1px solid #2c3b6a;border-radius:12px;padding:20px}
+h1{margin:0 0 12px;color:#ff6b6b} .meta{color:#a9b8df;margin-bottom:14px}
+pre{background:#0a1228;border:1px solid #31467f;border-left:6px solid #ff6b6b;border-radius:8px;padding:14px;white-space:pre-wrap;word-break:break-word;color:#ffd8d8}
+.note{margin-top:12px;color:#d4defa}
+</style></head><body>
+<div class="card">
+  <h1>BUG-PLAY-01 - VnExpress cannot load (Timeout)</h1>
+  <div class="meta">Source: Playwright error-context | test: advanced bug scan: https://vnexpress.net/</div>
+  <pre>Error: page.goto: net::ERR_CONNECTION_TIMED_OUT at https://vnexpress.net/
+Call log:
+- navigating to "https://vnexpress.net/", waiting until "domcontentloaded"
+
+Edge page snapshot:
+- "Hmmm... can't reach this page"
+- ERR_CONNECTION_TIMED_OUT</pre>
+  <div class="note">Expected: Homepage loads successfully. Actual: request timed out, test failed at page.goto().</div>
+</div>
+</body></html>

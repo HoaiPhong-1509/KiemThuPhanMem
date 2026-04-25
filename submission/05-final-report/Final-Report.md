@@ -14,31 +14,35 @@
 ## 3. Cong cu su dung
 - Selenium WebDriver (C#)
 - NUnit
+- Playwright
 - Apache JMeter
 - .NET 6 SDK
 
 ## 4. Ket qua test
 
 ### 4.1 Pass/Fail
-- UI Test: 10 pass / 0 fail
+- UI Test (Selenium): 10 pass / 0 fail
 - Logic Test: 6 pass / 0 fail
-- Performance Test: Da thuc thi thanh cong script JMeter 500-1000 users
+- Bug Scan (Playwright): 0 pass / 2 fail
+- Performance Test (JMeter): Da thuc thi thanh cong script stress 500-1000 users
 
 ### 4.2 Bug summary
-- So bug tong: 4
-- High: 0
+- So bug tong: 3
+- High: 1
 - Medium: 2
-- Low: 2
+- Low: 0
 
 ## 5. Danh gia he thong
-- Muc do on dinh: On dinh tot o muc chuc nang UI va logic trong lan chay hien tai (16/16 pass).
+- Muc do on dinh: On dinh o muc Selenium + logic trong lan chay hien tai (16/16 pass).
 - Diem yeu chinh:
-  - Ket qua stress test cho thay endpoint VnExpress co error rate cao (~48% o 500-1000 users).
-  - Selector UI phu thuoc layout website cong khai, co rui ro flaky khi giao dien thay doi.
+  - Playwright bug scan phat hien console errors tren VnExpress va broken images/tracking responses tren Zing.
+  - Ket qua stress test cho thay endpoint VnExpress co error rate rat cao (89-91%).
+  - EdgeDriver 146 dang canh bao chua verify voi Edge 147 (rui ro on dinh moi truong).
 
 ## 7. Ket qua performance bo sung
-- 500 users: Throughput 45.05 req/s, Error rate 47.63%, p95 10007 ms.
-- 1000 users: Throughput 61.30 req/s, Error rate 48.32%, p95 10012 ms.
+- Total: Throughput 96.90 req/s, Error rate 34.08%, p95 51521 ms.
+- GET VnExpress Home: Error rate 89.18%.
+- GET VnExpress Home - 1000: Error rate 91.19%.
 
 ## 6. De xuat cai tien
 1. Toi uu co che cache va CDN cho trang chu.
@@ -51,4 +55,5 @@
 - Test case: `submission/02-test-case-document/Test-Cases.md`
 - Bug report: `submission/03-bug-report/Bug-Report.md`
 - Performance report: `submission/04-performance-report/Performance-Report.md`
-- Ket qua test NUnit (TRX): `submission/01-source-code/test-results/submission-nunit-results.trx`
+- Ket qua test NUnit (TRX): `submission/01-source-code/test-results/results-after-screenshot-fix.trx`
+- Ket qua JMeter moi nhat: `submission/01-source-code/test-results/all-results-latest.jtl`
